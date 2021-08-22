@@ -8,14 +8,14 @@
         </div>
     </div>
     {{-- End Search --}}
-    <div class="text-rigth md:mb-3 mx-4 mt-4 md:mx-16">
+    <div class="text-rigth mb-6 md:mb-3 mx-4 mt-4 md:mx-16">
         <h1 class="text-3xl text-rojo">Próximos eventos</h1>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 md:gap-5 mx-4 md:mx-16 mb-10">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-md">
         @forelse ($events as $event)
             <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-md">
                 <a href="{{ route('showEvent', $event) }}">
-                    <img class="rounded-t-lg h-72 md:h-80 w-full object-cover object-top mx-auto"
+                    <img class="rounded-t-lg h-96 md:h-80 w-full object-cover object-top mx-auto"
                         src="{{ asset('img/' . $event->image . '') }}" alt="">
                     <div class="grid grid-cols-1 md:items-center mt-4">
 
