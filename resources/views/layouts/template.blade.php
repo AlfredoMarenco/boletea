@@ -45,12 +45,12 @@
         </div>
         <div class="hidden lg:block text-gray-300">
             <ul>
-                <li><a class="cursor-pointer font-bold text-sm" href="{{ route('index') }}">Inicio</a></li>
-                <li><a class="cursor-pointer font-bold text-sm" hfer="{{ route('about') }}">Quiénes Somos</a></li>
-                <li><a class="cursor-pointer font-bold text-sm" href="{{ route('conditions') }}">Terminos y
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500" href="{{ route('index') }}">Inicio</a></li>
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500" href="{{ route('about') }}">Quiénes Somos</a></li>
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500" href="{{ route('conditions') }}">Terminos y
                         condiciones</a></li>
-                <li><a class="cursor-pointer font-bold text-sm" href="{{ route('privacity') }}">Aviso de privacidad</a></li>
-                <li><a class="cursor-pointer font-bold text-sm">Acceso a promotores</a></li>
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500" href="{{ route('privacity') }}">Aviso de privacidad</a></li>
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500">Acceso a promotores</a></li>
             </ul>
         </div>
         <div class="text-gray-300 text-md hidden lg:block">
