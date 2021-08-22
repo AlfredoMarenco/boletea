@@ -26,6 +26,7 @@ class CreateEventsTable extends Migration
             $table->string('fecha')->nullable();
             $table->string('hora')->nullable();
             $table->string('recinto')->nullable();
+            $table->string('fechaBusqueda')->nullable();
             $table->string('ciudad')->nullable();
             $table->string('lugar')->nullable();
             $table->string('link')->nullable();
