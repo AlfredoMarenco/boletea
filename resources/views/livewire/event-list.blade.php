@@ -13,8 +13,8 @@
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 md:gap-5 mx-4 md:mx-16 mb-10">
         @forelse ($events as $event)
-            <a href="{{ route('showEvent', $event) }}">
-                <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-md">
+            <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-md">
+                <a href="{{ route('showEvent', $event) }}">
                     <img class="rounded-t-lg h-72 md:h-80 w-full object-cover object-top mx-auto"
                         src="{{ asset('img/' . $event->image . '') }}" alt="">
                     <div class="grid grid-cols-1 md:items-center mt-4">
@@ -36,8 +36,8 @@
                                 class=" text-center block px-3 py-2 bg-rojo text-white font-bold">Comprar Boletos</a>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         @empty
             <div class="col-span-4 rounded-lg bg-white border-gray-300 text-center">
                 <p>No hay resultados para la busqueda... {{ $search }}</p>
