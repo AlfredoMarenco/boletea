@@ -45,7 +45,7 @@
         </div>
         <div class="hidden lg:block text-gray-300">
             <ul>
-                <li><a class="cursor-pointer font-bold text-sm">Inicio</a></li>
+                <li><a class="cursor-pointer font-bold text-sm" href="{{ route('index') }}">Inicio</a></li>
                 <li><a class="cursor-pointer font-bold text-sm" hfer="{{ route('about') }}">Quiénes Somos</a></li>
                 <li><a class="cursor-pointer font-bold text-sm" href="{{ route('conditions') }}">Terminos y
                         condiciones</a></li>
