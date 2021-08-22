@@ -14,22 +14,21 @@
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 md:gap-5 mx-4 md:mx-16 mb-10">
         @forelse ($events as $event)
             <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-md">
-                <img class="rounded-t-lg h-72 md:h-80 w-full object-cover mx-auto"
+                <img class="rounded-t-lg h-72 md:h-80 w-full object-cover object-top mx-auto"
                     src="{{ asset('img/' . $event->image . '') }}" alt="">
-                <div class="grid grid-cols-1 md:grid-cols-3 md:items-center mt-4">
-                    <div class="hidden md:block md:text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-rojo mx-auto" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        <h5 class="font-semibold text-md text-gray-600">{{ $event->fecha }}</h5>
-                    </div>
-                    <div class="px-2 md:px-0 col-span-2 text-left">
-                        <h5 class="block lg:hidden font-semibold text-md text-gray-600">{{ $event->fecha }}</h5>
+                <div class="grid grid-cols-1 md:items-center mt-4">
+
+                    <div class="px-2 md:ml-3 col-span-2 text-left">
+                        <h5 class="block lg:hidden font-semibold text-md">{{ $event->fecha }}</h5>
                         <h3 class="font-bold text-xl mb-2">{{ $event->title }}</h3>
                         {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
-                        <h3 class="font-semibold text-sm px-1"><i class="fas fa-map-marker-alt text-center"></i> {{ $event->ciudad }}</h3>
+                        <p class="font-semibold text-sm"><i class="fas fa-map-marker-alt mr-1"></i>
+                            {{ $event->ciudad }}</p>
+                        <p class="font-semibold text-sm"><i class="far fa-calendar mr-1"></i>
+                            {{ $event->fecha }}</p>
+                    </div>
+                    <div class="md:flex hidden md:text-center">
+
                     </div>
                     <div class="col-span-3 pt-4 w-full">
                         <a href="{{ route('showEvent', $event) }}"
@@ -43,8 +42,8 @@
             </div>
         @endforelse
         @if ($events->count() >= $perPage)
-            <div class="col-span-4 bg-white text-center shadow-md ">
-                <a wire:click="morePerPage" class="font-bold text-gray-900 cursor-pointer hover:text-gray-700">Ver
+            <div class="col-span-4 bg-white text-center py-2 shadow-md hover:bg-gray-100 hover:text-gray-700 ">
+                <a wire:click="morePerPage" class="font-bold text-gray-900 cursor-pointer ">Ver
                     más</a>
             </div>
         @endif

@@ -16,7 +16,7 @@ class EventSeeder extends Seeder
     {
 
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen1',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -30,7 +30,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen2',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -44,7 +44,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen3',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -58,7 +58,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen4',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -72,7 +72,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen5',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -86,7 +86,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen6',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -100,7 +100,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen7',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -114,7 +114,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen8',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -128,7 +128,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen9',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -142,7 +142,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen10',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -156,7 +156,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen11',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -170,7 +170,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen12',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -184,7 +184,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen13',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -198,7 +198,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen14',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',
@@ -212,7 +212,7 @@ class EventSeeder extends Seeder
             'ciudad' => 'CD del Carmen, Campeche',
         ]);
         Event::create([
-            'name' => 'christiannodalciudaddelcarmen',
+            'name' => 'christiannodalciudaddelcarmen15',
             'title' => 'CHRISTIAN NODAL',
             'subtitle' => 'AY AY AY TOUR 2021',
             'description' => '',

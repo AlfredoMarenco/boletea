@@ -11,7 +11,7 @@
                                 <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-center"
                                     style="background-image: url('{{ asset('img/' . $event->slider . '') }}');">
                                     <div
-                                        class="lg:absolute w-full md:h-96 bg-black bg-opacity-20 hover:bg-opacity-40 block hover:hidden">
+                                        class="lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-40 block hover:hidden">
                                         <div class="text-center w-full  text-white py-20">
                                             <h1 class="text-xl md:text-sm md:my-1">{{ $event->ciudad }}</h1>
                                             <h1 class="text-xl md:text-2xl md:my-3">{{ $event->recinto }}</h1>

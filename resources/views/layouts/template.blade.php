@@ -53,8 +53,8 @@
                 <li><a class="cursor-pointer font-bold text-sm">Acceso a promotores</a></li>
             </ul>
         </div>
-        <div class="text-gray-300 text-md font-semibold hidden lg:block">
-            <h2 class="text-2xl mb-2">Contáctanos</h2>
+        <div class="text-gray-300 text-md hidden lg:block">
+            <h2 class="text-2xl mb-2 font-semibold">Contáctanos</h2>
             <div>
                 <i class="far fa-envelope"></i> info@boletea.com
             </div>

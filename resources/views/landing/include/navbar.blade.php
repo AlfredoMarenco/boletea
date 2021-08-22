@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
-                <a href="#">
+                <a href="{{ route('index') }}">
                     <span class="sr-only">Boletea</span>
                     <img class="h-8 w-auto sm:h-10" src="{{ asset('img/logoBoletea.png') }}" alt="">
                 </a>
@@ -42,7 +42,7 @@
             </nav>
             <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <a href="https://boletea.com.mx/myaccount.asp?gifrompage=1&gitopage=1"
-                    class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-rojo hover:bg-gray-100 hover:text-black hover:border-gray-300">
+                    class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-bold text-white bg-rojo hover:bg-gray-100 hover:text-black hover:border-gray-300">
                     Iniciar sesion
                 </a>
             </div>
