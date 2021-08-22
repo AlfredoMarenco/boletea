@@ -15,9 +15,12 @@ class EventList extends Component
     {
         return view('livewire.event-list', [
             'events' => Event::where('visible', 'LIKE', 'si')
-                ->Where('title', 'LIKE', '%' . $this->search . '%')
+                ->where('title', 'LIKE', '%' . $this->search . '%')
+                ->orWhere('name', 'LIKE', '%' . $this->search . '%')
                 ->orWhere('recinto', 'LIKE', '%' . $this->search . '%')
-                ->orWhere('ciudad', 'LIKE', '%' . $this->search . '%')->paginate($this->perPage)
+                ->orWhere('ciudad', 'LIKE', '%' . $this->search . '%')
+                ->orderBy('fechaBusqueda', 'asc')
+                ->paginate($this->perPage)
         ]);
     }
 

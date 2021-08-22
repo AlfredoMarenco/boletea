@@ -15,16 +15,16 @@
         @forelse ($events as $event)
             <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-md">
                 <img class="rounded-t-lg h-72 md:h-80 w-full object-cover object-top mx-auto"
-                    src="{{ asset('img/' . $event->image . '') }}" alt="">
+                    src="{{ asset('img/'. $event->image .'') }}" alt="">
                 <div class="grid grid-cols-1 md:items-center mt-4">
 
                     <div class="px-2 md:ml-3 col-span-2 text-left">
                         <h5 class="block lg:hidden font-semibold text-md">{{ $event->fecha }}</h5>
                         <h3 class="font-bold text-xl mb-2">{{ $event->title }}</h3>
                         {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
-                        <p class="font-semibold text-sm"><i class="fas fa-map-marker-alt mr-1"></i>
+                        <p class="font-semibold text-sm"><i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
                             {{ $event->ciudad }}</p>
-                        <p class="font-semibold text-sm"><i class="far fa-calendar mr-1"></i>
+                        <p class="font-semibold text-sm"><i class="far fa-calendar mr-1 text-rojo"></i>
                             {{ $event->fecha }}</p>
                     </div>
                     <div class="md:flex hidden md:text-center">
