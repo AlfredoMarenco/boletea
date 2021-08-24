@@ -19,15 +19,19 @@
             <p class="font-semibold text-gray-800 my-2 md:my-4"><i class="far fa-calendar text-2xl text-center mr-3"></i>
                 <span>{{ $event->fecha }} | {{ $event->hora }}</span>
             </p>
-            <p class="font-semibold text-gray-800 mb-2 md:mb-4"><i class="fab fa-fort-awesome text-2xl text-center mr-3"></i>
+            <p class="font-semibold text-gray-800 mb-2 md:mb-4"><i
+                    class="fab fa-fort-awesome text-2xl text-center mr-3"></i>
                 <span>{{ $event->recinto }}</span>
             </p>
-            <p class="font-semibold text-gray-800 mb-2 md:mb-4"><i class="fas fa-map-marker-alt text-2xl text-center mr-3"></i>
+            <p class="font-semibold text-gray-800 mb-2 md:mb-4"><i
+                    class="fas fa-map-marker-alt text-2xl text-center mr-3"></i>
                 <span>{{ $event->ciudad }}</span>
             </p>
             <div class="md:flex items-center justify-around">
                 <div class="my-6">
-                    <a href="{{ $event->link }}" class="block text-white text-lg font-bold bg-rojo px-20 py-2 w-full">Comprar boleto</a>
+                    <a href="{{ $event->link }}"
+                        class="block text-white text-lg font-bold bg-rojo px-20 py-2 w-full hover:bg-red-700">Comprar
+                        boleto</a>
                 </div>
                 <div class="">
                     <h4 class="text-2xl text-gray-800">Centros de venta</h4>

@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-span-3 pt-4 w-full">
                             <a href="{{ route('showEvent', $event) }}"
-                                class=" text-center block px-3 py-2 bg-rojo text-white font-bold">Comprar Boletos</a>
+                                class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600">Comprar Boletos</a>
                         </div>
                     </div>
                 </a>
