@@ -18,11 +18,14 @@
             <h3 class="text-md font-semibold text-gray-900 mt-2 mb-3">
                 {!! $event->subtitle !!}
             </h3>
-            <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i class="fas fa-chevron-down"></i>
-            </h3>
-            <p x-show="open" class="text-xs text-justify">
-                {!! $event->description !!}
-            </p>
+            @if ($event->description)
+                <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i
+                        class="fas fa-chevron-down"></i>
+                </h3>
+                <p x-show="open" class="text-xs text-justify">
+                    {!! $event->description !!}
+                </p>
+            @endif
             <p class="font-semibold text-gray-800 my-2 md:my-4"><i class="far fa-calendar text-2xl text-center mr-3"></i>
                 <span>{{ $event->fecha }} | {{ $event->hora }}</span>
             </p>
