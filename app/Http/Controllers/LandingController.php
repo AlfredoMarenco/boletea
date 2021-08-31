@@ -9,7 +9,7 @@ class LandingController extends Controller
 {
     public function index()
     {
-        $events = Event::all();
+        $events = Event::orderBy('fechaBusqueda')->get();
         return view('landing.index', compact('events'));
     }
 
