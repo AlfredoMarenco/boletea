@@ -13,7 +13,7 @@
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-md">
         @forelse ($events as $event)
-            <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-md">
+            <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
                 <a href="{{ route('showEvent', $event) }}">
                     <img class="rounded-t-lg h-96 md:h-80 w-full object-cover object-top mx-auto"
                         src="{{ asset('img/' . $event->image . '') }}" alt="">
@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-span-3 pt-4 w-full">
                             <a href="{{ route('showEvent', $event) }}"
-                                class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600">Comprar Boletos</a>
+                                class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar Boletos</a>
                         </div>
                     </div>
                 </a>

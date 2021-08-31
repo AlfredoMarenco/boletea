@@ -20,7 +20,7 @@ class EventList extends Component
                 ->orWhere('recinto', 'LIKE', '%' . $this->search . '%')
                 ->orWhere('ciudad', 'LIKE', '%' . $this->search . '%')
                 ->orderBy('fechaBusqueda', 'asc')
-                ->paginate($this->perPage)
+                ->get()
         ]);
     }
 
