@@ -10,13 +10,13 @@
                             <li class="splide__slide">
                                 <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
                                     style="background-image: url('{{ asset('img/' . $event->slider . '') }}');">
-                                    <div
-                                        class="lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
+                                    <div class="lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                         <div class="group text-center w-full  text-white py-20">
                                             <h1 class="text-xl md:text-sm md:my-1 font-bold">{{ $event->ciudad }}</h1>
                                             <h1 class="text-xl md:text-2xl md:my-3 font-bold">{{ $event->recinto }}</h1>
                                             <h1 class="text-3xl md:text-5xl md:my-3 font-bold">{{ $event->title }}</h1>
-                                            <h1 class="text-2xl md:text-3xl md:mt-3 mb-2 md:mb-6 font-bold ">{{ $event->fecha }}
+                                            <h1 class="text-2xl md:text-3xl md:mt-3 mb-2 md:mb-6 font-bold ">
+                                                {{ $event->fecha }}
                                             </h1>
                                             <a href="{{ route('showEvent', $event) }}"
                                                 class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
@@ -34,8 +34,86 @@
 @endsection
 
 @section('content')
-    <section>
+    <section class="divide-y-2">
         @livewire('event-list')
+    </section>
+
+    <section>
+        <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
+            <div>
+                <h1 class="text-3xl font-bold text-rojo">Feria Torreón</h1>
+            </div>
+            <a href="{{ route('eventsFeria') }}"
+                class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
+                todos</a>
+        </div>
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-md bg-white">
+            @forelse ($explanadaferia as $event)
+                <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
+                    <a href="{{ route('showEvent', $event) }}">
+                        <img class="rounded-t-lg h-96 md:h-72 w-full object-cover object-top mx-auto"
+                            src="{{ asset('img/' . $event->image . '') }}" alt="">
+                        <div class="grid grid-cols-1 place-content-end mt-4">
+
+                            <div class="px-2 md:ml-3 col-span-2 text-left">
+                                {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
+                                <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
+                                {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
+                                <p class="font-semibold text-sm mb-2"><i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
+                                    {{ $event->ciudad }}</p>
+                                <p class="font-semibold text-xs"><i class="far fa-calendar mr-1 text-rojo"></i>
+                                    {{ $event->fecha }}</p>
+                            </div>
+                            <div class="col-span-3 pt-4 w-full place-self-end">
+                                <a href="{{ route('showEvent', $event) }}"
+                                    class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
+                                    Boletos</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            @endforeach
+        </div>
+    </section>
+
+    <section class="divide-y">
+        <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
+            <div>
+                <h1 class="text-3xl font-bold text-rojo">Poliforum</h1>
+            </div>
+            <a href="{{ route('eventsPoliforum') }}"
+            class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
+            todos</a>
+        </div>
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-md bg-white">
+            @forelse ($poliforum as $event)
+                <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
+                    <a href="{{ route('showEvent', $event) }}">
+                        <img class="rounded-t-lg h-96 md:h-72 w-full object-cover object-top mx-auto"
+                            src="{{ asset('img/' . $event->image . '') }}" alt="">
+                        <div class="grid grid-cols-1 place-content-end mt-4">
+
+                            <div class="px-2 md:ml-3 col-span-2 text-left">
+                                {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
+                                <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
+                                {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
+                                <p class="font-semibold text-sm mb-2"><i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
+                                    {{ $event->ciudad }}</p>
+                                <p class="font-semibold text-xs"><i class="far fa-calendar mr-1 text-rojo"></i>
+                                    {{ $event->fecha }}</p>
+                            </div>
+                            <div class="col-span-3 pt-4 w-full place-self-end">
+                                <a href="{{ route('showEvent', $event) }}"
+                                    class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
+                                    Boletos</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            @endforeach
+        </div>
     </section>
 
     <section>

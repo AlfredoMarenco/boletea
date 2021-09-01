@@ -10,8 +10,29 @@ class LandingController extends Controller
     public function index()
     {
         $events = Event::orderBy('fechaBusqueda')->get();
-        return view('landing.index', compact('events'));
+        $explanadaferia = Event::where('visible', 'LIKE', 'si')->where('recinto', 'LIKE', '%Explanada%')->orderBy('fechaBusqueda', 'asc')->paginate(5);
+        $poliforum = Event::where('visible', 'LIKE', 'si')->where('recinto', 'LIKE', '%Poliforum%')->orderBy('fechaBusqueda', 'asc')->paginate(5);
+        return view('landing.index', compact('events', 'explanadaferia', 'poliforum'));
     }
+
+    public function allEvents()
+    {
+        $events = Event::where('visible', 'LIKE', 'si')->orderBy('fechaBusqueda', 'asc')->get();
+        return view('landing.all-events', compact('events'));
+    }
+
+    public function eventsFeria()
+    {
+        $events = Event::where('visible', 'LIKE', 'si')->where('recinto', 'LIKE', '%Explanada%')->orderBy('fechaBusqueda', 'asc')->get();
+        return view('landing.feria-torreon', compact('events'));
+    }
+
+    public function eventsPoliforum()
+    {
+        $events = Event::where('visible', 'LIKE', 'si')->where('recinto', 'LIKE', '%Poliforum%')->orderBy('fechaBusqueda', 'asc')->get();
+        return view('landing.poliforum', compact('events'));
+    }
+
 
     public function about()
     {

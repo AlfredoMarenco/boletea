@@ -19,6 +19,9 @@ Route::get('/quienessomos', [LandingController::class, 'about'])->name('about');
 Route::get('/terminosycondiciones', [LandingController::class, 'conditions'])->name('conditions');
 Route::get('/avisodeprivacidad', [LandingController::class, 'privacity'])->name('privacity');
 Route::get('/evento/{event}', [LandingController::class, 'showEvent'])->name('showEvent');
+Route::get('/todos-los-eventos', [LandingController::class, 'allEvents'])->name('allEvents');
+Route::get('/feria-de-torreon', [LandingController::class, 'eventsFeria'])->name('eventsFeria');
+Route::get('/poliforum-feria-de-torreon', [LandingController::class, 'eventsPoliforum'])->name('eventsPoliforum');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

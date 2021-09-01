@@ -17,10 +17,11 @@ class EventList extends Component
             'events' => Event::where('visible', 'LIKE', 'si')
                 ->where('title', 'LIKE', '%' . $this->search . '%')
                 ->orWhere('name', 'LIKE', '%' . $this->search . '%')
+                ->orWhere('subtitle', 'LIKE', '%' . $this->search . '%')
                 ->orWhere('recinto', 'LIKE', '%' . $this->search . '%')
                 ->orWhere('ciudad', 'LIKE', '%' . $this->search . '%')
                 ->orderBy('fechaBusqueda', 'asc')
-                ->get()
+                ->paginate(5)
         ]);
     }
 
