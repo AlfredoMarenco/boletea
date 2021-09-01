@@ -28,7 +28,18 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37701686-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-37701686-2');
+    </script>
 </head>
 <style>
 
@@ -46,11 +57,15 @@
         </div>
         <div class="hidden lg:block text-gray-300">
             <ul>
-                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500" href="{{ route('index') }}">Inicio</a></li>
-                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500" href="{{ route('about') }}">Quiénes Somos</a></li>
-                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500" href="{{ route('conditions') }}">Terminos y
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500"
+                        href="{{ route('index') }}">Inicio</a></li>
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500" href="{{ route('about') }}">Quiénes
+                        Somos</a></li>
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500"
+                        href="{{ route('conditions') }}">Terminos y
                         condiciones</a></li>
-                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500" href="{{ route('privacity') }}">Aviso de privacidad</a></li>
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500"
+                        href="{{ route('privacity') }}">Aviso de privacidad</a></li>
                 <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500">Acceso a promotores</a></li>
             </ul>
         </div>
