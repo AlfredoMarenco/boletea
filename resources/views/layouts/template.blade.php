@@ -29,7 +29,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37701686-2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPZSVDXMFE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -38,7 +38,7 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'UA-37701686-2');
+        gtag('config', 'G-SPZSVDXMFE');
     </script>
 </head>
 <style>
