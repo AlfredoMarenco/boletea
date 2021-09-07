@@ -40,7 +40,7 @@
             <div class="md:flex items-center justify-around">
                 <div class="block md:hidden my-6">
                     <a href="{{ $event->link }}"
-                        class="text-white text-lg font-bold bg-rojo px-24 py-2 w-full hover:bg-red-700">Comprar
+                        class="text-white text-lg font-bold bg-rojo md:px-24 py-2 w-full hover:bg-red-700">Comprar
                         boleto</a>
                 </div>
                 <div class="mx-4 px-1">
