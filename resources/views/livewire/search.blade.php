@@ -11,11 +11,11 @@
                     @if ($event->visible == 'si')
                         <a href="{{ route('showEvent', $event) }}"
                             class="flex text-md hover:bg-rojo font-semibold hover:text-white items-center py-2 px-4">
-                            <span class="mx-1 text-sm md:text-md"> {{ $event->title }}</span>
-                            <span class="mx-1 text-sm md:text-md"> / </span>
-                            <span class="mx-1 text-sm md:text-md"> {{ $event->recinto }}</span>
-                            <span class="mx-1 text-sm md:text-md"> / </span>
-                            <span class="mx-1 text-sm md:text-md"> {{ $event->ciudad }}</span>
+                            <span class="mx-1 text-xs md:text-md"> {{ $event->title }}</span>
+                            <span class="mx-1 text-xs md:text-md"> / </span>
+                            <span class="mx-1 text-xs md:text-md"> {{ $event->recinto }}</span>
+                            <span class="mx-1 text-xs md:text-md"> / </span>
+                            <span class="mx-1 text-xs md:text-md"> {{ $event->ciudad }}</span>
                         </a>
                     @endif
                 @empty
