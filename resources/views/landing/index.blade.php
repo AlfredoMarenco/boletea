@@ -50,7 +50,7 @@
                 class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
                 todos</a>
         </div>
-        <div class="mx-12 md:mx-16">
+        <div class="mx-4 md:mx-16">
             <div class="glider-contain">
                 <ul class="glider-2">
                     @foreach ($explanadaferia as $event)
@@ -96,7 +96,7 @@
             class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
             todos</a>
         </div>
-        <div class="mx-12 md:mx-16">
+        <div class="mx-4 md:mx-16">
             <div class="glider-contain">
                 <ul class="glider-3">
                     @foreach ($poliforum as $event)
