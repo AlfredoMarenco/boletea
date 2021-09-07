@@ -9,7 +9,7 @@
     </div> --}}
     {{-- End Search --}}
     <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
-        <h1 class="text-3xl font-bold text-rojo">Próximos eventos</h1>
+        <h1 class="text-lg md:text-3xl font-bold text-rojo">Próximos eventos</h1>
         <a href="{{ route('allEvents') }}"
             class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
             todos</a>
