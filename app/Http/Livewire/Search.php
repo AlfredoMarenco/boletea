@@ -29,6 +29,7 @@ class Search extends Component
             ->orWhere('ciudad','LIKE','%'.$this->search.'%')
             ->orWhere('recinto','LIKE','%'.$this->search.'%')
             ->orWhere('fecha','LIKE','%'.$this->search.'%')
+            ->orderBy('fechaBusqueda', 'asc')
             ->get()
         ]);
     }

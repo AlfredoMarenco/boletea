@@ -12,7 +12,7 @@ class EventList extends Component
     public function render()
     {
         return view('livewire.event-list', [
-            'events' => Event::where('visible','=','si')->get()
+            'events' => Event::where('visible','=','si')->orderBy('fechaBusqueda', 'asc')->get()
         ]);
     }
 
