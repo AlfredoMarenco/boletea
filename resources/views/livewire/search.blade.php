@@ -1,4 +1,4 @@
-<div class="flex-1 relative mx-16 mt-6" x-data>
+<div class="flex-1 relative mx-4 md:mx-16 mt-6" x-data>
 
     <x-jet-input name="name" wire:model="search" type="text"
         class="flex w-full shadow-lg border-rojo  focus:border-rojo focus:ring-rojo text-center font-semibold bg-gray-100 py-1 border-2 rounded-md"
