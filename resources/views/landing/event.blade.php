@@ -3,15 +3,15 @@
 @section('title', $event->title)
 
 @section('titleFacebook', $event->title)
-@section('imageFacebook', 'https://boletea.com/img/'.$event->image)
+@section('imageFacebook', 'https://www.boletea.com/img/'.$event->image)
 @section('descriptionFacebook', $event->subtitle)
 
 @section('titleTwitter', $event->title)
-@section('imageTwitter', 'https://boletea.com/img/'.$event->image)
+@section('imageTwitter', 'https://www.boletea.com/img/'.$event->image)
 @section('descriptionTwitter', $event->subtitle)
 
 @section('titleMeta', $event->title)
-@section('imageMeta', 'https://boletea.com/img/'.$event->image)
+@section('imageMeta', 'https://www.boletea.com/img/'.$event->image)
 @section('descriptionMeta', $event->subtitle)
 
 @section('content')
