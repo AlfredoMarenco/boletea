@@ -1,5 +1,16 @@
 @extends('layouts.template')
 
+@section('title', $event->title)
+@section('titleFacebook', $event->title)
+
+@section('imageFacebook', Storage::url($event->image))
+
+@section('titleTwitter', $event->title)
+@section('imageTwitter', Storage::url($event->image))
+
+@section('titleMeta', $event->title)
+@section('imageMeta', Storage::url($event->image))
+
 @section('content')
     <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{open:false}">
         <div class="col-span-3 md:col-span-1">
@@ -19,8 +30,7 @@
                 {!! $event->subtitle !!}
             </h3>
             @if ($event->description)
-                <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i
-                        class="fas fa-chevron-down"></i>
+                <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i class="fas fa-chevron-down"></i>
                 </h3>
                 <p x-show="open" class="text-xs text-justify">
                     {!! $event->description !!}
