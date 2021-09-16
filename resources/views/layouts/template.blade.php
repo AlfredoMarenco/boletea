@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title','Inicio') Boletea Tickets</title>
+    <title>@yield('title','Inicio') | Boletea Tickets</title>
     <!-- Open Graph para Facebook -->
     <meta property="og:title" content=@yield('titleFacebook')>
     <meta property="og:type" content="website">
