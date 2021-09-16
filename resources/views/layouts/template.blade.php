@@ -8,7 +8,7 @@
     <!-- Open Graph para Facebook -->
     <meta property="og:title" content=@yield('titleFacebook')>
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.bajce.com/">
+    <meta property="og:url" content="http://www.boletea.com">
     <meta property="og:image" content=@yield('imageFacebook')>
     <meta property="og:description" content=@yield('descriptionFacebook')>
     <meta property="og:site_name" content="Boletea Tickets">
