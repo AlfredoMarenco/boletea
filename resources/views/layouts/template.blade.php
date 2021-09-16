@@ -10,19 +10,19 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.bajce.com/">
     <meta property="og:image" content=@yield('imageFacebook')>
-    <meta property="og:description" content="Boletea Tickets">
+    <meta property="og:description" content=@yield('descriptionFacebook')>
     <meta property="og:site_name" content="Boletea Tickets">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=@yield('titleTwitter')>
-    <meta name="twitter:description" content="Boletea Tickets">
+    <meta name="twitter:description" content=@yield('descriptionTwitter')>
     <meta name="twitter:creator" content=@yield('authTwitter')>
     <meta name="twitter:image" content=@yield('imageTwitter')>
 
     <!-- Schema.org para Google+ -->
     <meta itemprop="name" content=@yield('titleMeta')>
-    <meta itemprop="description" content="Boletea Tickets">
+    <meta itemprop="description" content=@yield('descriptionMeta')>
     <meta itemprop="image" content=@yield('imageMeta')>
     <title>{{ config('app.name', 'Laravel') }}</title>
     {{-- <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/bicon.png') }}"> --}}

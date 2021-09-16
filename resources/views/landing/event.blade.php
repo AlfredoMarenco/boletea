@@ -1,15 +1,18 @@
 @extends('layouts.template')
 
 @section('title', $event->title)
-@section('titleFacebook', $event->title)
 
+@section('titleFacebook', $event->title)
 @section('imageFacebook', 'https://boletea.com/img/'.$event->image)
+@section('descriptionFacebook', $event->description)
 
 @section('titleTwitter', $event->title)
 @section('imageTwitter', 'https://boletea.com/img/'.$event->image)
+@section('descriptionTwitter', $event->description)
 
 @section('titleMeta', $event->title)
 @section('imageMeta', 'https://boletea.com/img/'.$event->image)
+@section('descriptionMeta', $event->description)
 
 @section('content')
     <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{open:false}">
