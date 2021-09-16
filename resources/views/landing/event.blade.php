@@ -2,17 +2,17 @@
 
 @section('title', $event->title)
 
-@section('titleFacebook', "".$event->title)
-@section('imageFacebook', "https://www.boletea.com/img/".$event->image."")
-@section('descriptionFacebook', "".$event->subtitle)
+@section('titleFacebook', '' . $event->title)
+@section('imageFacebook', 'https://www.boletea.com/img/' . $event->image . '')
+@section('descriptionFacebook', '' . $event->subtitle)
 
-@section('titleTwitter', "".$event->title)
-@section('imageTwitter', "https://www.boletea.com/img/".$event->image."")
-@section('descriptionTwitter', "".$event->subtitle)
+@section('titleTwitter', '' . $event->title)
+@section('imageTwitter', 'https://www.boletea.com/img/' . $event->image . '')
+@section('descriptionTwitter', '' . $event->subtitle)
 
-@section('titleMeta', "".$event->title)
-@section('imageMeta', "https://www.boletea.com/img/".$event->image."")
-@section('descriptionMeta', "".$event->subtitle)
+@section('titleMeta', '' . $event->title)
+@section('imageMeta', 'https://www.boletea.com/img/' . $event->image . '')
+@section('descriptionMeta', '' . $event->subtitle)
 
 @section('content')
     <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{open:false}">
@@ -88,11 +88,19 @@
                             </div>
                         @break
                         @default
-
                     @endswitch
                 </div>
-
             </div>
         </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
+                crossorigin="anonymous"></script>
+        <!-- Anuncio 1 -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610" data-ad-slot="1210961234"
+            data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 @endsection
