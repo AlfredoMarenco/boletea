@@ -93,7 +93,7 @@
             </div>
         </div>
     </div>
-    <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md">
+    <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md lg:hidden">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
                 crossorigin="anonymous"></script>
         <!-- Anuncio 1 -->
