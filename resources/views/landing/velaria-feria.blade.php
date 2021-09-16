@@ -4,7 +4,7 @@
     <section>
         <div class="flex justify-center items-end text-rigth mb-6 px-2 md:mb-8 mx-4 mt-4 md:mx-16">
             <div>
-                <h1 class="text-5xl font-bold text-rojo">Velaria - Feria Torreón</h1>
+                <h1 class="text-5xl font-bold text-rojo">Velaria - Feria Gómez Pälacio</h1>
             </div>
         </div>
         <div

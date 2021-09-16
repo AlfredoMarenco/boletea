@@ -136,7 +136,7 @@
     <section class="mb-4">
         <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
             <div>
-                <h1 class="text-3xl font-bold text-rojo">Velaria - Feria Torreón</h1>
+                <h1 class="text-3xl font-bold text-rojo">Velaria - Feria Gómez Palacio</h1>
             </div>
             <a href="{{ route('eventsVelaria') }}"
             class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
