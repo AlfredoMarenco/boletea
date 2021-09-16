@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Open Graph para Facebook -->
     <meta property="og:title" content=@yield('titleFacebook')>
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.boletea.com">
+    <meta property="og:url" content="https://www.boletea.com">
     <meta property="og:image" content=@yield('imageFacebook')>
     <meta property="og:description" content=@yield('descriptionFacebook')>
     <meta property="og:site_name" content="Boletea Tickets">
@@ -24,7 +25,8 @@
     <meta itemprop="name" content=@yield('titleMeta')>
     <meta itemprop="description" content=@yield('descriptionMeta')>
     <meta itemprop="image" content=@yield('imageMeta')>
-    <title>{{ config('app.name', 'Laravel') }}</title>
+
+
     {{-- <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/bicon.png') }}"> --}}
 
     <!-- Fonts -->
