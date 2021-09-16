@@ -10,7 +10,7 @@
                 @forelse ($events as $event)
                     @if ($event->visible == 'si')
                         <a href="{{ route('showEvent', $event) }}"
-                            class="flex text-md hover:bg-rojo font-semibold hover:text-white items-center py-2 px-4">
+                            class="flex text-md hover:bg-rojo font-semibold bg-gray-100 hover:text-white items-center py-2 px-4">
                             <span class="mx-1 text-xs md:text-md"> {{ $event->title }}</span>
                             <span class="mx-1 text-xs md:text-md"> / </span>
                             <span class="mx-1 text-xs md:text-md"> {{ $event->recinto }}</span>
