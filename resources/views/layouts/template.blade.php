@@ -55,7 +55,7 @@
         integrity="sha512-tHimK/KZS+o34ZpPNOvb/bTHZb6ocWFXCtdGqAlWYUcz+BGHbNbHMKvEHUyFxgJhQcEO87yg5YqaJvyQgAEEtA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GY72PFW77"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114937810-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -64,7 +64,7 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'G-1GY72PFW77');
+        gtag('config', 'UA-114937810-1');
     </script>
 </head>
 <style>
