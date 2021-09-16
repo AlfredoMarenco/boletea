@@ -2,17 +2,17 @@
 
 @section('title', $event->title)
 
-@section('titleFacebook', $event->title)
+@section('titleFacebook', "".$event->title)
 @section('imageFacebook', "https://www.boletea.com/img/".$event->image."")
-@section('descriptionFacebook', $event->subtitle)
+@section('descriptionFacebook', "".$event->subtitle)
 
-@section('titleTwitter', $event->title)
+@section('titleTwitter', "".$event->title)
 @section('imageTwitter', "https://www.boletea.com/img/".$event->image."")
-@section('descriptionTwitter', $event->subtitle)
+@section('descriptionTwitter', "".$event->subtitle)
 
-@section('titleMeta', $event->title)
+@section('titleMeta', "".$event->title)
 @section('imageMeta', "https://www.boletea.com/img/".$event->image."")
-@section('descriptionMeta', $event->subtitle)
+@section('descriptionMeta', "".$event->subtitle)
 
 @section('content')
     <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{open:false}">
