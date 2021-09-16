@@ -66,10 +66,10 @@
 
         gtag('config', 'UA-114937810-1');
     </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
+        crossorigin="anonymous"></script>
 </head>
-<style>
 
-</style>
 
 <body style="background-image: url('{{ asset('img/bg-boleto.png') }}');">
     @include('landing.include.navbar')
