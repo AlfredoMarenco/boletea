@@ -116,7 +116,7 @@
     @livewireScripts
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        $(document).ready(function() {
             new Splide('.splide', {
                 type: 'loop',
                 perPage: 1,
@@ -166,10 +166,10 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 draggable: true,
-                dots: '.dots',
+                dots: '.glider-2 ~ .dots',
                 arrows: {
-                    prev: '.glider-prev',
-                    next: '.glider-next'
+                    prev: '.glider-2 ~ .glider-prev',
+                    next: '.glider-2 ~ .glider-next'
                 },
                 responsive: [{
                         breakpoint: 640,
@@ -205,10 +205,10 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 draggable: true,
-                dots: '.dots',
+                dots: '.glider-3 ~.dots',
                 arrows: {
-                    prev: '.glider-prev',
-                    next: '.glider-next'
+                    prev: '.glider-3 ~.glider-prev',
+                    next: '.glider-3 ~.glider-next'
                 },
                 responsive: [{
                         breakpoint: 640,
@@ -244,10 +244,49 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 draggable: true,
-                dots: '.dots',
+                dots: '.glider-4 ~.dots',
                 arrows: {
-                    prev: '.glider-prev',
-                    next: '.glider-next'
+                    prev: '.glider-4 ~.glider-prev',
+                    next: '.glider-4 ~.glider-next'
+                },
+                responsive: [{
+                        breakpoint: 640,
+                        settings: {
+                            slidesToShow: 1.5,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3.5,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4.5,
+                            slidesToScroll: 4,
+                        }
+                    },
+                    {
+                        breakpoint: 1280,
+                        settings: {
+                            slidesToShow: 4.5,
+                            slidesToScroll: 5,
+                        }
+                    },
+                ]
+            });
+            new Glider(document.querySelector('.glider-5'), {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                draggable: true,
+                dots: '.glider-5 ~.dots',
+                arrows: {
+                    prev: '.glider-5 ~.glider-prev',
+                    next: '.glider-5 ~.glider-next'
                 },
                 responsive: [{
                         breakpoint: 640,

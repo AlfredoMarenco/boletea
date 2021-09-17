@@ -23,6 +23,7 @@ Route::get('/todos-los-eventos', [LandingController::class, 'allEvents'])->name(
 Route::get('/feria-de-torreon', [LandingController::class, 'eventsFeria'])->name('eventsFeria');
 Route::get('/poliforum-feria-de-torreon', [LandingController::class, 'eventsPoliforum'])->name('eventsPoliforum');
 Route::get('/velariaferiagomezpalacio', [LandingController::class, 'eventsVelaria'])->name('eventsVelaria');
+Route::get('/palenqueferiagomezpalacio', [LandingController::class, 'eventsPalenque'])->name('eventsPalenque');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
