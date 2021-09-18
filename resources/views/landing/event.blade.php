@@ -83,7 +83,7 @@
                                 <img class="flex-auto w-20 object-contain object-center mx-2"
                                     src="{{ asset('cdvs/imgCintilloBIPS.png') }}" alt="">
                                 <img class="flex-auto w-24 object-contain object-center mx-2"
-                                    src="{{ asset('cdvs/imgCintilloCimaco.png') }}" alt="">ñ
+                                    src="{{ asset('cdvs/imgCintilloCimaco.png') }}" alt="">
                                 <img class="md:flex-auto w-13 md:w-16 object-contain object-center mx-2"
                                     src="{{ asset('cdvs/imgeSombrererialafe.jpeg') }}" alt="">
                                 <img class="md:flex-auto w-13 md:w-20 object-contain object-center mx-2"
