@@ -92,7 +92,8 @@
                         condiciones</a></li>
                 <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500"
                         href="{{ route('privacity') }}">Aviso de privacidad</a></li>
-                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500">Acceso a promotores</a></li>
+                <li><a class="cursor-pointer font-bold text-sm hover:text-gray-500"
+                        href="https://boletea.com.mx/reporting/login.asp">Acceso a promotores</a></li>
             </ul>
         </div>
         <div class="text-gray-300 text-md hidden lg:block">
