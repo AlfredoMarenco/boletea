@@ -69,7 +69,7 @@
                                     src="{{ asset('cdvs/imgCintilloCimaco.png') }}" alt="">
                                 <img class="md:flex-auto w-13 md:w-16 object-contain object-center mx-2"
                                     src="{{ asset('cdvs/imgeSombrererialafe.jpeg') }}" alt="">
-                                <img class="md:flex-auto w-13 md:w-13 object-contain object-center mx-2"
+                                <img class="w-13 md:w-13 object-contain object-center mx-2"
                                     src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}" alt="">
                             </div>
                         @break
@@ -86,7 +86,7 @@
                                     src="{{ asset('cdvs/imgCintilloCimaco.png') }}" alt="">
                                 <img class="md:flex-auto w-13 md:w-16 object-contain object-center mx-2"
                                     src="{{ asset('cdvs/imgeSombrererialafe.jpeg') }}" alt="">
-                                <img class="md:flex-auto w-13 md:w-13 object-contain object-center mx-2"
+                                <img class="w-13 md:w-13 object-contain object-center mx-2"
                                     src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}" alt="">
                             </div>
                         @break
