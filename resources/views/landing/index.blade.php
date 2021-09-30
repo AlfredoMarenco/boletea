@@ -41,14 +41,61 @@
         @livewire('event-list')
     </section>
 
+    <section class="
+        hidden">
+        <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
+            <div>
+                <h1 class="text-3xl font-bold text-rojo">Feria Torreón</h1>
+            </div>
+            <a href="{{ route('eventsFeria') }}"
+                class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
+                todos</a>
+        </div>
+        <div class="mx-6 md:mx-16">
+            <div class="glider-contain">
+                <ul class="glider-2">
+                    @foreach ($explanadaferia as $event)
+                        <li class="mx-2 rounded-lg border bg-white border-gray-300 shadow-lg">
+                            <a href="{{ route('showEvent', $event) }}">
+                                <img class="rounded-t-lg h-96 md:h-72 w-full object-cover object-top mx-auto"
+                                    src="{{ asset('img/' . $event->image . '') }}" alt="">
+                                <div class="grid grid-cols-1 place-content-end mt-4">
+
+                                    <div class="px-2 md:ml-3 col-span-2 text-left">
+                                        {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
+                                        <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
+                                        {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
+                                        <p class="font-semibold text-sm mb-2"><i
+                                                class="fas fa-map-marker-alt mr-1 text-rojo"></i>
+                                            {{ Str::limit($event->ciudad, 20, '...') }}</p>
+                                        <p class="font-semibold text-xs"><i class="far fa-calendar mr-1 text-rojo"></i>
+                                            {{ $event->fecha }}</p>
+                                    </div>
+                                    <div class="col-span-3 pt-4 w-full place-self-end">
+                                        <a href="{{ route('showEvent', $event) }}"
+                                            class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
+                                            Boletos</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+                <button aria-label="Previous" class="glider-prev">«</button>
+                <button aria-label="Next" class="glider-next">»</button>
+                <div role="tablist" class="dots"></div>
+            </div>
+        </div>
+    </section>
+
     <section>
         <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
             <div>
                 <h1 class="text-3xl font-bold text-rojo">Poliforum</h1>
             </div>
             <a href="{{ route('eventsPoliforum') }}"
-            class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
-            todos</a>
+                class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
+                todos</a>
         </div>
         <div class="mx-6 md:mx-16">
             <div class="glider-contain">
@@ -62,7 +109,8 @@
 
                                     <div class="px-2 md:ml-3 col-span-2 text-left">
                                         {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
-                                        <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
+                                        <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}
+                                        </h3>
                                         {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
                                         <p class="font-semibold text-sm mb-2"><i
                                                 class="fas fa-map-marker-alt mr-1 text-rojo"></i>
@@ -93,8 +141,8 @@
                 <h1 class="text-xl lg:text-3xl font-bold text-rojo">Velaria - Feria Gómez Palacio</h1>
             </div>
             <a href="{{ route('eventsVelaria') }}"
-            class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
-            todos</a>
+                class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
+                todos</a>
         </div>
         <div class="mx-6 md:mx-16">
             <div class="glider-contain">
@@ -108,7 +156,8 @@
 
                                     <div class="px-2 md:ml-3 col-span-2 text-left">
                                         {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
-                                        <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
+                                        <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}
+                                        </h3>
                                         {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
                                         <p class="font-semibold text-sm mb-2"><i
                                                 class="fas fa-map-marker-alt mr-1 text-rojo"></i>
@@ -138,8 +187,8 @@
                 <h1 class="text-xl lg:text-3xl font-bold text-rojo">Palenque - Feria Gómez Palacio</h1>
             </div>
             <a href="{{ route('eventsPalenque') }}"
-            class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
-            todos</a>
+                class="font-semibold bg-white text-rojo border text-sm md:text-lg border-rojo md:py-1 py-1 px-2 md:px-3 rounded-lg hover:bg-rojo hover:text-gray-100 cursor-pointer">Ver
+                todos</a>
         </div>
         <div class="mx-6 md:mx-16">
             <div class="glider-contain">
@@ -153,7 +202,8 @@
 
                                     <div class="px-2 md:ml-3 col-span-2 text-left">
                                         {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
-                                        <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
+                                        <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}
+                                        </h3>
                                         {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
                                         <p class="font-semibold text-sm mb-2"><i
                                                 class="fas fa-map-marker-alt mr-1 text-rojo"></i>
