@@ -41,8 +41,7 @@
         @livewire('event-list')
     </section>
 
-    <section class="
-        hidden">
+    <section class="hidden">
         <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
             <div>
                 <h1 class="text-3xl font-bold text-rojo">Feria Torreón</h1>
@@ -88,7 +87,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="hidden">
         <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
             <div>
                 <h1 class="text-3xl font-bold text-rojo">Poliforum</h1>
