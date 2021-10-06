@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LandingController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +27,7 @@ Route::get('/poliforum-feria-de-torreon', [LandingController::class, 'eventsPoli
 Route::get('/velariaferiagomezpalacio', [LandingController::class, 'eventsVelaria'])->name('eventsVelaria');
 Route::get('/palenqueferiagomezpalacio', [LandingController::class, 'eventsPalenque'])->name('eventsPalenque');
 
+
+Route::get('cache', function () {
+    Artisan::call('cache:clear');
+});
