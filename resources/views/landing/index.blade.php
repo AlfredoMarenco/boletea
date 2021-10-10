@@ -8,7 +8,7 @@
                     @foreach ($events as $event)
                         @if ($event->slider != null)
                             <li class="splide__slide">
-                                <a class="sm:hidden" href="{{ route('showEvent', $event) }}"
+                                <a class="sm:hidden lg:block" href="{{ route('showEvent', $event) }}"
                                     class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
                                     <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
                                         style="background-image: url('{{ asset('img/' . $event->slider) }}');">
