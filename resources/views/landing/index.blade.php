@@ -2,45 +2,31 @@
 
 @section('slider')
     <section>
-        {{-- <div class="glider-contain">
-            <ul class="glider-6">
-                @foreach ($events as $event)
-                    @if ($event->slider != null)
-                        <li class="bg-white border-gray-300 shadow-lg">
-                            <a href="{{ route('showEvent', $event) }}">
-                                <img class="w-full h-full object-cover mx-auto"
-                                    src="{{ asset('img/' . $event->slider . '') }}" alt="">
-                            </a>
-                        </li>
-                    @endif
-                @endforeach
-            </ul>
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <button aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
-        </div> --}}
         <div class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
                     @foreach ($events as $event)
                         @if ($event->slider != null)
                             <li class="splide__slide">
-                                <a href="{{ route('showEvent', $event) }}"
+                                <a class="sm:hidden" href="{{ route('showEvent', $event) }}"
                                     class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
                                     <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
                                         style="background-image: url('{{ asset('img/' . $event->slider) }}');">
-                                        <div class="lg:absolute w-full md:h-96">
-                                            {{-- <div class="text-center w-full text-white py-20">
-                                            <h1 class="text-xl md:text-sm md:my-1 font-bold">{{ $event->ciudad }}</h1>
-                                            <h1 class="text-xl md:text-2xl md:my-3 font-bold">{{ $event->recinto }}</h1>
-                                            <h1 class="text-3xl md:text-5xl md:my-3 font-bold">{{ $event->title }}</h1>
-                                            <h1 class="text-2xl md:text-3xl md:mt-3 mb-2 md:mb-6 font-bold ">
-                                                {{ $event->fecha }}
-                                            </h1>
-                                            <a href="{{ route('showEvent', $event) }}"
-                                                class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
-                                                Boletos</a>
-                                        </div> --}}
+                                        <div
+                                            class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
+                                            <div class="text-center w-full text-white py-20">
+                                                <h1 class="text-xl md:text-sm md:my-1 font-bold">{{ $event->ciudad }}</h1>
+                                                <h1 class="text-xl md:text-2xl md:my-3 font-bold">{{ $event->recinto }}
+                                                </h1>
+                                                <h1 class="text-3xl md:text-5xl md:my-3 font-bold">{{ $event->title }}
+                                                </h1>
+                                                <h1 class="text-2xl md:text-3xl md:mt-3 mb-2 md:mb-6 font-bold ">
+                                                    {{ $event->fecha }}
+                                                </h1>
+                                                <a href="{{ route('showEvent', $event) }}"
+                                                    class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
+                                                    Boletos</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
