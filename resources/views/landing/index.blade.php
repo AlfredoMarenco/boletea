@@ -2,6 +2,23 @@
 
 @section('slider')
     <section>
+        {{-- <div class="glider-contain">
+            <ul class="glider-6">
+                @foreach ($events as $event)
+                    @if ($event->slider != null)
+                        <li class="bg-white border-gray-300 shadow-lg">
+                            <a href="{{ route('showEvent', $event) }}">
+                                <img class="w-full h-full object-cover mx-auto"
+                                    src="{{ asset('img/' . $event->slider . '') }}" alt="">
+                            </a>
+                        </li>
+                    @endif
+                @endforeach
+            </ul>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+        </div> --}}
         <div class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -9,9 +26,9 @@
                         @if ($event->slider != null)
                             <li class="splide__slide">
                                 <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
-                                    style="background-image: url('{{ asset('img/' . $event->slider . '') }}');">
+                                    style="background-image: url('{{ asset('img/' . $event->slider) }}');">
                                     <div class="lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
-                                        <div class="group text-center w-full  text-white py-20">
+                                        <div class="text-center w-full text-white py-20">
                                             <h1 class="text-xl md:text-sm md:my-1 font-bold">{{ $event->ciudad }}</h1>
                                             <h1 class="text-xl md:text-2xl md:my-3 font-bold">{{ $event->recinto }}</h1>
                                             <h1 class="text-3xl md:text-5xl md:my-3 font-bold">{{ $event->title }}</h1>
@@ -41,7 +58,8 @@
         @livewire('event-list')
     </section>
 
-    <section class="hidden">
+    <section class="
+        hidden">
         <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
             <div>
                 <h1 class="text-3xl font-bold text-rojo">Feria Torreón</h1>
@@ -62,7 +80,8 @@
 
                                     <div class="px-2 md:ml-3 col-span-2 text-left">
                                         {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
-                                        <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
+                                        <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}
+                                        </h3>
                                         {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
                                         <p class="font-semibold text-sm mb-2"><i
                                                 class="fas fa-map-marker-alt mr-1 text-rojo"></i>
