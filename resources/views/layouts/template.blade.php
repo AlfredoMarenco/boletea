@@ -138,28 +138,28 @@
                     breakpoint: 640,
                     settings: {
                         slidesToShow: 1.5,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 3.5,
-                        slidesToScroll: 3,
+                        slidesToScroll: 2,
                     }
                 },
                 {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 4,
+                        slidesToScroll: 3,
                     }
                 },
                 {
                     breakpoint: 1280,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 5,
+                        slidesToScroll: 4,
                     }
                 },
             ]
@@ -177,28 +177,28 @@
                     breakpoint: 640,
                     settings: {
                         slidesToShow: 1.5,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 3.5,
-                        slidesToScroll: 3,
+                        slidesToScroll: 2,
                     }
                 },
                 {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 4,
+                        slidesToScroll: 3,
                     }
                 },
                 {
                     breakpoint: 1280,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 5,
+                        slidesToScroll: 4,
                     }
                 },
             ]
@@ -216,28 +216,28 @@
                     breakpoint: 640,
                     settings: {
                         slidesToShow: 1.5,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 3.5,
-                        slidesToScroll: 3,
+                        slidesToScroll: 2,
                     }
                 },
                 {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 4,
+                        slidesToScroll: 3,
                     }
                 },
                 {
                     breakpoint: 1280,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 5,
+                        slidesToScroll: 4,
                     }
                 },
             ]
@@ -255,28 +255,28 @@
                     breakpoint: 640,
                     settings: {
                         slidesToShow: 1.5,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 3.5,
-                        slidesToScroll: 3,
+                        slidesToScroll: 2,
                     }
                 },
                 {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 4,
+                        slidesToScroll: 3,
                     }
                 },
                 {
                     breakpoint: 1280,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 5,
+                        slidesToScroll: 4,
                     }
                 },
             ]
@@ -294,41 +294,31 @@
                     breakpoint: 640,
                     settings: {
                         slidesToShow: 1.5,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 3.5,
-                        slidesToScroll: 3,
+                        slidesToScroll: 2,
                     }
                 },
                 {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 4,
+                        slidesToScroll: 3,
                     }
                 },
                 {
                     breakpoint: 1280,
                     settings: {
                         slidesToShow: 4.5,
-                        slidesToScroll: 5,
+                        slidesToScroll: 4,
                     }
                 },
             ]
-        });
-        new Glider(document.querySelector('.glider-6'), {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            draggable: true,
-            dots: '.glider-6 ~.dots',
-            arrows: {
-                prev: '.glider-6 ~.glider-prev',
-                next: '.glider-6 ~.glider-next'
-            },
         });
     </script>
 </body>
