@@ -15,9 +15,9 @@ class CreateRefundsTable extends Migration
     public function up()
     {
         Schema::create('refunds', function (Blueprint $table) {
-            $table->id();
             $table->string('order');
             $table->string('platform');
+            $table->primary(['order','platform']);
             $table->string('name');
             $table->string('lastname');
             $table->string('email');
@@ -33,7 +33,7 @@ class CreateRefundsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
 
-            $table->unsignedBigInteger('update_user_id');
+            $table->unsignedBigInteger('update_user_id')->nullable();
             $table->foreign('update_user_id')->references('id')->on('users');
 
             $table->timestamps();

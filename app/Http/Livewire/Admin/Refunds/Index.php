@@ -8,6 +8,8 @@ class Index extends Component
 {
     public $index = true, $create = false;
 
+    protected $listeners = ['return' => 'navigation'];
+
     public function navigation($option)
     {
         switch ($option) {
@@ -22,10 +24,6 @@ class Index extends Component
             case 'return':
                 $this->create = false;
                 $this->index = true;
-                break;
-
-            default:
-                # code...
                 break;
         }
     }

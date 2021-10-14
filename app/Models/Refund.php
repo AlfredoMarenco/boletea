@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Refund extends Model
 {
     use HasFactory;
-    protected $guarded = ['id'];
-    
+    protected $guarded = [];
+
     const PENDING = 0;
     const PROCESS = 1;
     const COMPLETE = 2;
