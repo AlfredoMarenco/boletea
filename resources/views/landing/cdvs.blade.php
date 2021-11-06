@@ -1,4 +1,5 @@
 @extends('layouts.template')
+@section('title', 'Centros de venta')
 
 @section('content')
     <div class="py-8">
