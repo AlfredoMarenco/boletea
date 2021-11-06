@@ -1,12 +1,12 @@
 <div>
-    <div class="grid grid-cols-5 gap-6">
+    <div class="grid grid-cols-1 lg:grid-cols-5 lg:gap-6">
         <div class="col-span-1">
             <ul class="bg-white p-6 text-center">
                 <li class="border-rojo p-2 border-2 uppercase">Coahuila</li>
             </ul>
         </div>
         <div class="col-span-4 mt-6">
-            <div class="grid grid-cols-4 gap-2 justify-items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 justify-items-center">
                 <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                     <img src="{{ asset('cdvs/imgCintilloColiseoCentenario.png') }}" class="mx-auto mb-2" alt="">
                     <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Coliseo Centenario<br></span>San Pedro de
