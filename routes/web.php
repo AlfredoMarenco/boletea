@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LandingController::class, 'index'])->name('index');
 Route::get('/quienessomos', [LandingController::class, 'about'])->name('about');
+Route::get('/centros-de-venta', [LandingController::class, 'cdvs'])->name('cdvs');
 Route::get('/terminosycondiciones', [LandingController::class, 'conditions'])->name('conditions');
 Route::get('/avisodeprivacidad', [LandingController::class, 'privacity'])->name('privacity');
 Route::get('/evento/{event}', [LandingController::class, 'showEvent'])->name('showEvent');

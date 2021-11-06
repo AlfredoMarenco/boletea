@@ -13,9 +13,9 @@ class LandingController extends Controller
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->orderBy('fechaBusqueda')->get();
         $explanadaferia = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', '%Explanada%')->orderBy('fechaBusqueda', 'asc')->get();
         $poliforum = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', '%Poliforum%')->orderBy('fechaBusqueda', 'asc')->get();
-        $velaria = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', 'Velaria de la Feria')->where('ciudad','LIKE','Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
-        $palenque = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', 'Palenque de la Feria')->where('ciudad','LIKE','Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
-        return view('landing.index', compact('events', 'explanadaferia', 'poliforum', 'velaria','palenque'));
+        $velaria = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', 'Velaria de la Feria')->where('ciudad', 'LIKE', 'Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
+        $palenque = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', 'Palenque de la Feria')->where('ciudad', 'LIKE', 'Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
+        return view('landing.index', compact('events', 'explanadaferia', 'poliforum', 'velaria', 'palenque'));
     }
 
     public function allEvents()
@@ -42,13 +42,14 @@ class LandingController extends Controller
     public function eventsVelaria()
     {
         $date = date('Ymd');
-        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', 'Velaria de la Feria')->where('ciudad','LIKE','Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
+        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', 'Velaria de la Feria')->where('ciudad', 'LIKE', 'Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
         return view('landing.velaria-feria', compact('events'));
     }
 
-    public function eventsPalenque(){
+    public function eventsPalenque()
+    {
         $date = date('Ymd');
-        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', 'Palenque de la Feria')->where('ciudad','LIKE','Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
+        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>', $date)->where('recinto', 'LIKE', 'Palenque de la Feria')->where('ciudad', 'LIKE', 'Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
         return view('landing.palenque-feria', compact('events'));
     }
 
@@ -70,5 +71,10 @@ class LandingController extends Controller
     public function showEvent(Event $event)
     {
         return view('landing.event', compact('event'));
+    }
+
+    public function cdvs()
+    {
+        return view('landing.cdvs');
     }
 }

@@ -6,8 +6,11 @@
         </div>
         <div class="flex items-center ml-3">
             <x-jet-label class="text-xs">Estatus:</x-jet-label>
-            <select class="ml-2 py-0.5 rounded-lg border border-gray-100 focus:ring-0 focus:border-indigo-300">
-                <option value="">Pendiente</option>
+            <select class="ml-2 py-0.5 rounded-lg border border-gray-100 focus:ring-0 focus:border-indigo-300" wire:model="status">
+                <option value="0">Pendiente</option>
+                <option value="1">Process</option>
+                <option value="2">Complete</option>
+                <option value="3">Reject</option>
             </select>
         </div>
     </div>
