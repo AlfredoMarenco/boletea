@@ -32,3 +32,7 @@ Route::get('/palenqueferiagomezpalacio', [LandingController::class, 'eventsPalen
 Route::get('cache', function () {
     Artisan::call('cache:clear');
 });
+
+Route::get('migrates', function () {
+    Artisan::call('migrate');
+});
