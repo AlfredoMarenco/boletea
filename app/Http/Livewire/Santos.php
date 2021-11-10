@@ -35,7 +35,7 @@ class Santos extends Component
                 'status' => 'scanning',
                 'user_id' => auth()->user()->id,
                 'created_at' => $created_at,
-                'updated_at' => $updated_at
+                'updated_at' => $created_at
             ]);
             $this->emit('saved');
         } else {
