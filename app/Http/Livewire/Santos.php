@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Kit;
+use Carbon\Carbon;
 use Livewire\Component;
 
 class Santos extends Component
@@ -21,6 +22,7 @@ class Santos extends Component
 
     public function save()
     {
+        $created_at = Carbon::now()->setTimezone('America/Mexico_City');
         if (Kit::where('barcode', $this->barcode)->count()) {
             $this->time = Kit::where('barcode', $this->barcode)->first();
         } else {
@@ -31,7 +33,8 @@ class Santos extends Component
             Kit::create([
                 'barcode' => $this->barcode,
                 'status' => 'scanning',
-                'user_id' => auth()->user()->id
+                'user_id' => auth()->user()->id,
+                'created_at' => $created_at
             ]);
             $this->emit('saved');
         } else {
