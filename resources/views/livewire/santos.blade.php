@@ -20,7 +20,7 @@
                     <x-jet-input-error class="mr-3 text-6xl py-4 font-bold" for="barcode">
                     </x-jet-input-error>
                     @if ($time)
-                        {{ Carbon::parse($time['created_at'])->format('l jS \\of F Y h:i:s A') }}
+                        {{ \Carbon::parse($time['created_at'])->format('l jS \\of F Y h:i:s A') }}
                     @endif
                 </div>
             </div>
