@@ -25,8 +25,8 @@
                 </div>
             </div>
 
-            <div class="text-center">
-                {{ $scanning->count() }}
+            <div class="text-center bg-white overflow-hidden shadow-xl sm:rounded-lg mt-4 p-2">
+                <p class="font-bold">Kits entregados: {{ $scanning->count() }}</p>
             </div>
         </div>
     </div>
