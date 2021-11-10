@@ -8,6 +8,7 @@ use Livewire\Component;
 class Santos extends Component
 {
     public $barcode = "";
+    public $time="";
 
     protected $rules = [
         'barcode' => 'required|unique:kits'
@@ -20,6 +21,12 @@ class Santos extends Component
 
     public function save()
     {
+        if (Kit::where('barcode', $this->barcode)->count()) {
+            $this->time = Kit::where('barcode', $this->barcode)->first();
+        }else{
+            $this->reset('time');
+        }
+
         if ($this->validate($this->rules)) {
             Kit::create([
                 'barcode' => $this->barcode,

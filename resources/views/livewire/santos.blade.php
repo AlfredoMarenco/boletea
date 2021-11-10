@@ -19,6 +19,9 @@
                     </x-jet-action-message>
                     <x-jet-input-error class="mr-3 text-6xl py-4 font-bold" for="barcode">
                     </x-jet-input-error>
+                    @if ($time)
+                        {{ $time['created_at'] }}
+                    @endif
                 </div>
             </div>
         </div>
