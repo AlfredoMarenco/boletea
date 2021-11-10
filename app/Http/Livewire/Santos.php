@@ -8,7 +8,7 @@ use Livewire\Component;
 class Santos extends Component
 {
     public $barcode = "";
-    public $time="";
+    public $time = "";
 
     protected $rules = [
         'barcode' => 'required|unique:kits'
@@ -23,7 +23,7 @@ class Santos extends Component
     {
         if (Kit::where('barcode', $this->barcode)->count()) {
             $this->time = Kit::where('barcode', $this->barcode)->first();
-        }else{
+        } else {
             $this->reset('time');
         }
 
@@ -43,6 +43,7 @@ class Santos extends Component
     public function render()
     {
         $this->reset('barcode');
-        return view('livewire.santos')->layout('layouts.santos');
+        $scanning = Kit::where('user_id', auth()->user()->id)->get();
+        return view('livewire.santos', compact('scanning'))->layout('layouts.santos');
     }
 }

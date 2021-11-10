@@ -24,6 +24,10 @@
                     @endif
                 </div>
             </div>
+
+            <div class="text-center">
+                {{ $scanning->count() }}
+            </div>
         </div>
     </div>
 </div>
