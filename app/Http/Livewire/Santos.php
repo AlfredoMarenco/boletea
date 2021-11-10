@@ -34,7 +34,8 @@ class Santos extends Component
                 'barcode' => $this->barcode,
                 'status' => 'scanning',
                 'user_id' => auth()->user()->id,
-                'created_at' => $created_at
+                'created_at' => $created_at,
+                'updated_at' => $updated_at
             ]);
             $this->emit('saved');
         } else {
