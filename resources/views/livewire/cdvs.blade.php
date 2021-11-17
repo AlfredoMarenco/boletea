@@ -3,7 +3,7 @@
         <div class="col-span-1">
             <ul class="bg-white p-6 text-center">
                 <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer">Coahuila</li>
-                <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer">Durango</li>
+                {{-- <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer">Durango</li> --}}
             </ul>
         </div>
         <div class="col-span-4 mt-6">
