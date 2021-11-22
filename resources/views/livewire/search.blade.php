@@ -6,11 +6,12 @@
 
     <div class="absolute w-full hidden z-50" :class="{'hidden': !$wire.open}" @click.away="$wire.open = false">
         <div class="bg-white rounded-lg shadow mt-1">
-            <div class="px-4 py-3 space-y-1">
+            <div class="px-4 py-3 space-y-1 rounded-lg">
                 @forelse ($events as $event)
                     @if ($event->visible == 'si')
                         <a href="{{ route('showEvent', $event) }}"
-                            class="flex text-md hover:bg-rojo font-semibold bg-gray-100 hover:text-white items-center py-2 px-4">
+                            class="flex text-md hover:bg-rojo font-semibold bg-gray-100 hover:text-white items-center py-2 px-4 rounded-lg">
+                            <img src="./img/{{ $event->image }}" class="w-24 mr-4" alt="">
                             <span class="mx-1 text-xs md:text-md"> {{ $event->title }}</span>
                             <span class="mx-1 text-xs md:text-md"> / </span>
                             <span class="mx-1 text-xs md:text-md"> {{ $event->recinto }}</span>
