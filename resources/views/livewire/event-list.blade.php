@@ -16,7 +16,7 @@
     </div>
 
     <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-lg bg-white py-4 px-1 rounded-lg">
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-lg bg-white py-4 px-1 rounded-lg">
         @forelse ($events as $event)
             <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
                 <a href="{{ route('showEvent', $event) }}">

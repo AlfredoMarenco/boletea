@@ -8,10 +8,11 @@ use Livewire\Component;
 
 class Create extends Component
 {
-    public $order, $platform, $name, $lastname, $email, $phone, $amount, $type = "", $user_id;
+    public $order, $platform, $name, $lastname, $email, $phone, $amount, $event = "", $user_id, $hash;
     public $bank = "", $type_acount = "", $number_acount, $name_acount;
     public $setInfo = false;
     public $success = false;
+    public $id_session;
     protected $rules = [
         'order' => 'required',
         'platform' => 'required',
@@ -20,7 +21,7 @@ class Create extends Component
         'phone' => 'min:0|max:10',
         'email' => 'required|email',
         'amount' => 'required|numeric',
-        'type' => 'required',
+        'event' => 'required',
         'name_acount' => 'required',
         'bank' => 'required',
         'type_acount' => 'required',
@@ -32,6 +33,7 @@ class Create extends Component
     {
         $this->user_id = auth()->user()->id;
         session()->forget('duplicate');
+        $this->id_session = session('id');
     }
 
     public function setInfo()
@@ -58,10 +60,8 @@ class Create extends Component
             Refund::create($validateData);
             $this->success = true;
         } catch (\Throwable $th) {
-            session()->flash('duplicate', 'Este reembolso ya está tramitado');
+            session()->flash('duplicate', $th);
         }
-
-
     }
 
     public function render()

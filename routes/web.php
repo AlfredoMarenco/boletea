@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\RefundsController;
+use App\Http\Livewire\RefundsGenerate;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
@@ -27,6 +29,7 @@ Route::get('/feria-de-torreon', [LandingController::class, 'eventsFeria'])->name
 Route::get('/poliforum-feria-de-torreon', [LandingController::class, 'eventsPoliforum'])->name('eventsPoliforum');
 Route::get('/velariaferiagomezpalacio', [LandingController::class, 'eventsVelaria'])->name('eventsVelaria');
 Route::get('/palenqueferiagomezpalacio', [LandingController::class, 'eventsPalenque'])->name('eventsPalenque');
+Route::get('/tramitar-reembolso', RefundsController::class);
 
 
 Route::get('cache', function () {

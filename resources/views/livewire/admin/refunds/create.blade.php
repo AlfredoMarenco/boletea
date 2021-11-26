@@ -32,6 +32,7 @@
                 </div>
             @endif
             <input type="hidden" wire:model="user_id">
+            <input type="hidden" wire:model="hash" value="{{ session()->getId() }}">
             <div class="p-4 px-8 mb-2 shadow-lg rounded-lg">
                 <div>
                     <h2 class="text-2xl font-bold text-gray-700 mb-2">Información de la orden</h2>
@@ -128,7 +129,7 @@
                         <x-jet-label class="ml-1">
                             Evento / Tipo:
                         </x-jet-label>
-                        <select wire:model="type" class="py-1 rounded-lg focus:ring-0 border-gray-300 w-full">
+                        <select wire:model="event" class="py-1 rounded-lg focus:ring-0 border-gray-300 w-full">
                             <option value="" selected disabled>Selecciona una opcion</option>
                             <option value="CSO">CSO</option>
                             <option value="TECATE LOCATION">TECATE LOCATION</option>
@@ -136,7 +137,7 @@
                             <option value="CHRISTIAN NODAL DURANGO">CHRISTIAN NODAL DURANGO</option>
                             <option value="GUNS AND ROSES">GUNS AND ROSES</option>
                         </select>
-                        @error('type')
+                        @error('event')
                             <small class="text-xs text-red-700">{{ $message }}</small>
                         @enderror
                     </div>
@@ -250,7 +251,6 @@
                         @enderror
                     </div>
                 </div>
-
                 <div class="flex mb-4">
                     <div class="mr-4 flex-1">
                         <x-jet-label class="ml-1">
@@ -274,7 +274,8 @@
             <i class="text-green-600 text-7xl fas fa-check-circle"></i>
             <p class="font-semibold text-gray-700 text-md">Reembolso registrado con éxito</p>
             <div class="flex justify-center mt-2">
-                <x-jet-secondary-button class="mx-1" wire:click="$emit('return','return')">Return</x-jet-secondary-button>
+                <x-jet-secondary-button class="mx-1" wire:click="$emit('return','return')">Return
+                </x-jet-secondary-button>
                 <x-jet-button class="mx-1">New refund</x-jet-button>
             </div>
         </div>
