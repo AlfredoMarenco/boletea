@@ -10,17 +10,25 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="px-6 py-6">
                     <x-jet-label value="Codigo:" />
-                    <x-jet-input wire:model.defer="barcode" wire:keydown.enter='save' type="text"
+                    <x-jet-input wire:model.defer="barcode" wire:keydown.enter='check' type="text"
                         placeholder="Ingresa el codigo del abono aqui!" class="w-full" />
                 </div>
                 <div class="text-center">
-                    <x-jet-action-message class="mr-3 text-6xl text-green-700 font-bold py-4" on="saved">
-                        ACEPTADO
-                    </x-jet-action-message>
-                    <x-jet-input-error class="mr-3 text-6xl py-4 font-bold" for="barcode">
-                    </x-jet-input-error>
-                    @if ($time)
-                        {{ \Carbon\Carbon::parse($time['created_at'])->format('l jS \\of F Y h:i:s A') }}
+                    @if ($message == 'VALIDO')
+                        <div>
+                            <p class="text-5xl text-green-600 font-bold">KIT VALIDO</p>
+                        </div>
+                    @endif
+                    @if ($message == 'ESCANEADO')
+                        <div>
+                            <p class="text-5xl text-red-600 font-bold">KIT YA CANJEADO</p>
+                            <p>{{ $kit->created_at }}</p>
+                        </div>
+                    @endif
+                    @if ($message == 'NO VALIDO')
+                    <div>
+                        <p class="text-5xl text-red-600 font-bold">CODIGO NO VALIDO</p>
+                    </div>
                     @endif
                 </div>
             </div>

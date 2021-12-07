@@ -16,8 +16,8 @@ class CreateKitsTable extends Migration
         Schema::create('kits', function (Blueprint $table) {
             $table->id();
             $table->string('barcode');
-            $table->string('status');
-            $table->unsignedBigInteger('user_id');
+            $table->string('status')->default('ACTIVO');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
