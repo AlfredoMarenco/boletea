@@ -11,7 +11,7 @@ class CalendarController extends Controller
     public function index($recinto = null)
     {
         if ($recinto) {
-            $events = Calendar::where('recinto', '=', $recinto)->get();
+            $events = Calendar::where('recinto', 'LIKE', $recinto)->get();
         }else{
             $events = Calendar::all();
         }

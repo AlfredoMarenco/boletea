@@ -1,5 +1,5 @@
 <div>
-    <div class=" flex flex-row-reverse px-2 pt-4 pb-2">
+    <div class=" flex flex-row-reverse px-2 pt-4">
         <x-jet-button wire:click="$set('open',true)">Agregar evento</x-jet-button>
     </div>
     <x-jet-dialog-modal wire:model="open">
@@ -35,16 +35,16 @@
             <div>
                 <x-jet-label value="Recinto" />
                 {{-- <x-jet-input wire:model="status" type="color" class="w-full" /> --}}
-                <select wire:model="status" class="form-control w-full">
-                    <option value="coliseocentenario">Apartado</option>
-                    <option value="acr">Anticipo</option>
-                    <option value="3">Pagado</option>
+                <select wire:model="recinto" class="form-control w-full">
+                    <option value="coliseocentenario">Coliseo Centenario</option>
+                    <option value="auditoriognp">Auditorio GNP</option>
+                    <option value="forognp">Foro GNP</option>
                 </select>
-                <x-jet-input-error for="status" />
+                <x-jet-input-error for="recinto" />
             </div>
         </x-slot>
         <x-slot name="footer">
-            <x-jet-button wire:clicl="addEvent">Guardar</x-jet-button>
+            <x-jet-button wire:click="addEvent">Guardar</x-jet-button>
         </x-slot>
     </x-jet-dialog-modal>
 </div>

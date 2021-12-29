@@ -17,8 +17,10 @@ class CreateCalendarsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('start');
-            $table->string('url');
+            $table->string('end');
+            $table->string('url')->nullable();
             $table->string('status');
+            $table->string('backgroundColor')->nullable();
             $table->string('recinto');
             $table->timestamps();
         });
