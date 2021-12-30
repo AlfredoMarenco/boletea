@@ -16,14 +16,11 @@ class IndexCalendar extends Component
                 return redirect()->route('calendar.index',$this->recinto);
                 break;
             case 'auditoriognp':
+                $this->recinto = 'auditoriognp';
                 return redirect()->route('calendar.index',$this->recinto);
                 break;
             case 'forognp':
                 return redirect()->route('calendar.index',$this->recinto);
-                break;
-
-            default:
-                # code...
                 break;
         }
     }

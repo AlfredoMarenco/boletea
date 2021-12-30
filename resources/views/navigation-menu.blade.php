@@ -18,6 +18,9 @@
                     <x-jet-nav-link href="{{ route('refunds.index') }}" :active="request()->routeIs('refunds.*')">
                         {{ __('Refunds') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('calendar.index') }}" :active="request()->routeIs('calendar.*')">
+                        {{ __('Calendario') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 
