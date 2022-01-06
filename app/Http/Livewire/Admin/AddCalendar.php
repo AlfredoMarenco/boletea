@@ -28,6 +28,7 @@ class AddCalendar extends Component
             'status' => $this->status,
             'color' => $this->color,
             'recinto' => $this->recinto,
+            'user_id' => auth()->user()->id
         ]);
 
         $calendar->update([

@@ -18,6 +18,9 @@
 
                 <x-slot name="form">
                     <div class="col-span-6 sm:col-span-6">
+                        <h1>Evento agregado por: <span class="font-bold">{{ $calendar->user->name }}</span></h1>
+                    </div>
+                    <div class="col-span-6 sm:col-span-6">
                         <x-jet-label value="Evento" />
                         <x-jet-input type="text" placeholder="Nombre del evento" wire:model="title"
                             class="w-full" />
