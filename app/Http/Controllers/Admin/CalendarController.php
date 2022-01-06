@@ -8,15 +8,18 @@ use Illuminate\Http\Request;
 
 class CalendarController extends Controller
 {
-    public function index($recinto = null)
+    public function index()
     {
-        if ($recinto) {
-            $events = Calendar::where('recinto', 'LIKE', $recinto)->get();
-        }else{
-            $events = Calendar::all();
-        }
+        $events = Calendar::all();
+        $recinto = '';
+        return view('calendar.index', compact('events','recinto'));
+    }
 
-        return view('calendar.index', compact('events'));
+
+    public function filter(Request $request){
+        $events = Calendar::where('recinto', 'LIKE', $request->recinto)->get();
+        $recinto = $request->recinto;
+        return view('calendar.index', compact('events','recinto'));
     }
 
     public function show(Calendar $calendar)

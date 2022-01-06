@@ -8,4 +8,4 @@ Route::get('/panel', Santos::class)->name('santos.kits');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return redirect()->route('santos.kits');
-})->name('dashboard');
+})->name('dashboard.santos');
