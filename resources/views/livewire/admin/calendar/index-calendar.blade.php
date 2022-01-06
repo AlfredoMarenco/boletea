@@ -9,7 +9,7 @@
         </select>
         <x-jet-input-error for="recinto" /> --}}
     </div>
-    <div class="py-4 px-24" id='calendar' wire:ignore></div>
+    <div class="py-4 lg:px-24" id='calendar' wire:ignore></div>
     @push('js')
         <script>
             document.addEventListener('DOMContentLoaded', function() {
