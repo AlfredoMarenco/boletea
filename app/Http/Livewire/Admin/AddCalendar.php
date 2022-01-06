@@ -16,7 +16,7 @@ class AddCalendar extends Component
 
     public function mount(){
         $this->start = Carbon::now()->format('Y-m-d');
-        $this->time = Carbon::now()->format('h:i:s');
+        $this->time = Carbon::now()->format('h:i');
     }
 
     public function addEvent(){
