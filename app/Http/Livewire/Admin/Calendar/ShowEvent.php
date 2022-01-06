@@ -8,11 +8,11 @@ use Livewire\Component;
 class ShowEvent extends Component
 {
     public $calendar;
-    public $title, $start, $end, $status, $color, $recinto;
+    public $title, $start, $time, $status, $color, $recinto;
     protected $rules = [
         'title' => 'required',
         'start' => 'required',
-        'end' => 'required',
+        'time' => 'required',
     ];
 
     protected $listeners = ['render'=>'render'];
@@ -21,7 +21,7 @@ class ShowEvent extends Component
         $this->calendar = $calendar;
         $this->title = $calendar->title;
         $this->start = $calendar->start;
-        $this->end = $calendar->end;
+        $this->time = $calendar->time;
         $this->status = $calendar->status;
         $this->color = $calendar->color;
         $this->recinto = $calendar->recinto;
@@ -46,7 +46,7 @@ class ShowEvent extends Component
         $calendar->update([
             'title' => $this->title,
             'start' => $this->start,
-            'end' => $this->end,
+            'time' => $this->time,
             'status' => $this->status,
             'recinto' => $this->recinto,
             'backgroundColor' => $this->color

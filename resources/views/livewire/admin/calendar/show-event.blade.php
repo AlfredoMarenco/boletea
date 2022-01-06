@@ -31,9 +31,9 @@
                     </div>
                     <div class="col-span-6 sm:col-span-3">
                         <x-jet-label value="Fecha de finalizacion" />
-                        <x-jet-input type="date" wire:model="end"
+                        <x-jet-input type="time" wire:model="time"
                             class="w-full" />
-                        <x-jet-input-error for="end" />
+                        <x-jet-input-error for="time" />
                     </div>
                     <div class="col-span-6 sm:col-span-3">
                         <x-jet-label value="Fecha de finalizacion" />

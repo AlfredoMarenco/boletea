@@ -9,14 +9,14 @@ use Livewire\Component;
 class AddCalendar extends Component
 {
     public $open = false;
-    public $title, $start, $end, $status="1", $color, $recinto="coliseocentenario";
+    public $title, $start, $time, $status="1", $color, $recinto="coliseocentenario";
     protected $rules = [
         'title' => 'required',
     ];
 
     public function mount(){
         $this->start = Carbon::now()->format('Y-m-d');
-        $this->end = Carbon::now()->format('Y-m-d');
+        $this->time = Carbon::now()->format('h:i:s');
     }
 
     public function addEvent(){
@@ -24,7 +24,7 @@ class AddCalendar extends Component
         $calendar = Calendar::create([
             'title' => $this->title,
             'start' => $this->start,
-            'end' => $this->end,
+            'time' => $this->time,
             'status' => $this->status,
             'color' => $this->color,
             'recinto' => $this->recinto,

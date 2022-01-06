@@ -19,8 +19,8 @@
             </div>
             <div>
                 <x-jet-label value="Fecha de termino" />
-                <x-jet-input wire:model="end" type="date" class="w-full" />
-                <x-jet-input-error for="end" />
+                <x-jet-input wire:model="time" type="time" class="w-full" />
+                <x-jet-input-error for="time" />
             </div>
             <div>
                 <x-jet-label value="Estado" />
