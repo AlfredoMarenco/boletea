@@ -18,7 +18,7 @@
                 <x-jet-input-error for="promotor" />
             </div>
             <div>
-                <x-jet-label value="Fecha de inicio" />
+                <x-jet-label value="Fecha" />
                 <x-jet-input wire:model="start" type="date" class="w-full" />
                 <x-jet-input-error for="start" />
             </div>
