@@ -38,12 +38,12 @@
                         <x-jet-input-error for="start" />
                     </div>
                     <div class="col-span-6 sm:col-span-3">
-                        <x-jet-label value="Fecha de finalizacion" />
+                        <x-jet-label value="Hora" />
                         <x-jet-input type="time" wire:model="time" class="w-full" />
                         <x-jet-input-error for="time" />
                     </div>
                     <div class="col-span-6 sm:col-span-3">
-                        <x-jet-label value="Fecha de finalizacion" />
+                        <x-jet-label value="Status" />
                         <select wire:model="status" class="form-control w-full">
                             <option value="1">Reservada</option>
                             <option value="2">Confirmada</option>
@@ -52,7 +52,7 @@
                         <x-jet-input-error for="status" />
                     </div>
                     <div class="col-span-6 sm:col-span-3">
-                        <x-jet-label value="Fecha de finalizacion" />
+                        <x-jet-label value="Recinto" />
                         <select wire:model="recinto" class="form-control w-full">
                             <option value="coliseocentenario">Coliseo Centenario</option>
                             <option value="auditoriognp">Auditorio GNP</option>

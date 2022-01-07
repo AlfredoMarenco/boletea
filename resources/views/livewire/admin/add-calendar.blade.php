@@ -23,7 +23,7 @@
                 <x-jet-input-error for="start" />
             </div>
             <div>
-                <x-jet-label value="Fecha de termino" />
+                <x-jet-label value="Hora" />
                 <x-jet-input wire:model="time" type="time" class="w-full" />
                 <x-jet-input-error for="time" />
             </div>
