@@ -9,7 +9,7 @@ use Livewire\Component;
 class AddCalendar extends Component
 {
     public $open = false;
-    public $title, $start, $time, $status="1", $color, $recinto="coliseocentenario";
+    public $title, $start, $time, $status="1", $color, $recinto="coliseocentenario",$promotor;
     protected $rules = [
         'title' => 'required',
     ];
@@ -28,6 +28,7 @@ class AddCalendar extends Component
             'status' => $this->status,
             'color' => $this->color,
             'recinto' => $this->recinto,
+            'promotor' => $this->promotor,
             'user_id' => auth()->user()->id
         ]);
 

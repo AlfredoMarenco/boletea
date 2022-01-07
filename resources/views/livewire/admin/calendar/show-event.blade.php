@@ -26,6 +26,12 @@
                             class="w-full" />
                         <x-jet-input-error for="title" />
                     </div>
+                    <div class="col-span-6 sm:col-span-6">
+                        <x-jet-label value="Promotor" />
+                        <x-jet-input type="text" placeholder="Nombre del promotor" wire:model="promotor"
+                            class="w-full" />
+                        <x-jet-input-error for="promotor" />
+                    </div>
                     <div class="col-span-6 sm:col-span-3">
                         <x-jet-label value="Fecha de inicio" />
                         <x-jet-input type="date" wire:model="start"

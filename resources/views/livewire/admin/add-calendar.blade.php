@@ -13,6 +13,11 @@
                 <x-jet-input-error for="title" />
             </div>
             <div>
+                <x-jet-label value="Promotor" />
+                <x-jet-input wire:model="promotor" type="text" placeholder="Promotor" class="w-full" />
+                <x-jet-input-error for="promotor" />
+            </div>
+            <div>
                 <x-jet-label value="Fecha de inicio" />
                 <x-jet-input wire:model="start" type="date" class="w-full" />
                 <x-jet-input-error for="start" />

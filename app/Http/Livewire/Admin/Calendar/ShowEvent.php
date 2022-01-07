@@ -8,7 +8,7 @@ use Livewire\Component;
 class ShowEvent extends Component
 {
     public $calendar;
-    public $title, $start, $time, $status, $color, $recinto;
+    public $title, $start, $time, $status, $color, $recinto,$promotor;
     protected $rules = [
         'title' => 'required',
         'start' => 'required',
@@ -25,6 +25,7 @@ class ShowEvent extends Component
         $this->status = $calendar->status;
         $this->color = $calendar->color;
         $this->recinto = $calendar->recinto;
+        $this->promotor = $calendar->promotor;
     }
 
 
@@ -49,6 +50,7 @@ class ShowEvent extends Component
             'time' => $this->time,
             'status' => $this->status,
             'recinto' => $this->recinto,
+            'promotor' => $this->promotor,
             'backgroundColor' => $this->color
         ]);
 
