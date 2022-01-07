@@ -12,6 +12,7 @@ class AddCalendar extends Component
     public $title, $start, $time, $status="1", $color, $recinto="coliseocentenario",$promotor;
     protected $rules = [
         'title' => 'required',
+        'promotor' => 'required',
     ];
 
     public function mount(){

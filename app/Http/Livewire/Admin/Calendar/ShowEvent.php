@@ -13,6 +13,7 @@ class ShowEvent extends Component
         'title' => 'required',
         'start' => 'required',
         'time' => 'required',
+        'promotor' => 'required',
     ];
 
     protected $listeners = ['render'=>'render'];
