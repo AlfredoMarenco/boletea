@@ -10,13 +10,14 @@
             <form action="{{ route('calendar.filter') }}" method="POST">
                 @csrf
                 <div class="mb-2 text-sm flex items-center space-x-2">
-                    <input type="radio" name="recinto" value="coliseocentenario" {{ $recinto = 'coliseocentenario' ? 'checked' : ''  }}>
+                    <input type="radio" name="recinto" value="coliseocentenario" @if ($recinto == 'coliseocentenario') checked @endif >
                     <label for="">Coliseo centenario</label>
-                    <input type="radio" name="recinto" value="auditoriognp" {{ $recinto = 'auditoriognp' ? 'checked' : ''  }}>
+                    <input type="radio" name="recinto" value="auditoriognp" @if ($recinto == 'auditoriognp') checked @endif>
                     <label for="">Auditorio GNP</label>
-                    <input type="radio" name="recinto" value="forognp" {{ $recinto = 'forognp' ? 'checked' : ''  }}>
-                    <label for="">Foro GNP</label>
-
+                    <input type="radio" name="recinto" value="poliforum" @if ($recinto == 'poliforum') checked @endif>
+                    <label for="">Poliforum</label>
+                    <input type="radio" name="recinto" value="explanadaferia" @if ($recinto == 'explanadaferia') checked @endif>
+                    <label for="">Explanada feria</label>
                     <x-jet-button type="submit" class="py-0.5">Filtar</x-jet-button>
                 </div>
             </form>

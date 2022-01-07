@@ -34,13 +34,13 @@ class ShowEvent extends Component
         $calendar = $this->calendar;
         switch ($this->status) {
             case '1':
-                    $this->color = '#FC7214';
+                $this->color = '#F5D348';
                 break;
             case '2':
-                $this->color = '#8F3AFC';
+                $this->color = '#FA443A';
                 break;
             case '3':
-                $this->color = '#009C05';
+                $this->color = '#F50C05';
                 break;
             }
 

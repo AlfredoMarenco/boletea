@@ -31,9 +31,9 @@
                 <x-jet-label value="Estado" />
                 {{-- <x-jet-input wire:model="status" type="color" class="w-full" /> --}}
                 <select wire:model="status" class="form-control w-full">
-                    <option value="1">Apartado</option>
-                    <option value="2">Anticipo</option>
-                    <option value="3">Pagado</option>
+                    <option value="1">Reservada</option>
+                    <option value="2">Confirmada</option>
+                    <option value="3">A la venta</option>
                 </select>
                 <x-jet-input-error for="status" />
             </div>
@@ -43,7 +43,8 @@
                 <select wire:model="recinto" class="form-control w-full">
                     <option value="coliseocentenario">Coliseo Centenario</option>
                     <option value="auditoriognp">Auditorio GNP</option>
-                    <option value="forognp">Foro GNP</option>
+                    <option value="poliforum">Poliforum</option>
+                    <option value="explanadaferia">Explanada feria</option>
                 </select>
                 <x-jet-input-error for="recinto" />
             </div>

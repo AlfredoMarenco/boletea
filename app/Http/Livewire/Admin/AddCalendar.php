@@ -38,17 +38,17 @@ class AddCalendar extends Component
         switch ($this->status) {
             case '1':
                 $calendar->update([
-                    'backgroundColor' => '#FC7214'
+                    'backgroundColor' => '#F5D348'
                 ]);
                 break;
             case '2':
                 $calendar->update([
-                    'backgroundColor' => '#8F3AFC'
+                    'backgroundColor' => '#FA443A'
                 ]);
                 break;
                 case '3':
                 $calendar->update([
-                    'backgroundColor' => '#009C05'
+                    'backgroundColor' => '#F50C05'
                 ]);
                 break;
         }
