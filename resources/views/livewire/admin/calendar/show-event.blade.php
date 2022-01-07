@@ -64,7 +64,9 @@
                 </x-slot>
 
                 <x-slot name="actions">
-                    <x-jet-danger-button class="mr-2" wire:click="delete">Borrar</x-jet-danger-button>
+                    @if ($calendar->user_id == auth()->user()->id)
+                        <x-jet-danger-button class="mr-2" wire:click="delete">Borrar</x-jet-danger-button>
+                    @endif
                     <x-jet-button wire:click="update">Actualizar</x-jet-button>
                 </x-slot>
             </x-jet-form-section>
