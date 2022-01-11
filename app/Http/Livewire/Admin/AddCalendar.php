@@ -21,6 +21,8 @@ class AddCalendar extends Component
     }
 
     public function addEvent(){
+        $events = Calendar::where('start','LIKE' ,$this->start)->get();
+
         $this->validate();
         $calendar = Calendar::create([
             'title' => $this->title,
