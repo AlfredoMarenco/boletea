@@ -40,14 +40,6 @@
                             10:00 am a 6:00 pm</p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
-                        <img src="{{ asset('cdvs/imgCintilloBIPS.png') }}" class="mx-auto mt-2" alt="">
-                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">BIPS Almanara
-                                <br></span>Periférico Raúl López Sánchez #5000, Col, Residencial el Fresno</p>
-                        <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
-                            Domingo :
-                            10:00 am a 7:00 pm</p>
-                    </div>
-                    <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/imgCintilloCimaco.png') }}" class="mx-auto my-4" alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Suc.
                                 Hidalgo<br></span>Av. Hidalgo 399. Primero de Cobian centro 2700 Torreón, Coah.</p>
