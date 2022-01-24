@@ -31,6 +31,10 @@ Route::get('/velariaferiagomezpalacio', [LandingController::class, 'eventsVelari
 Route::get('/palenqueferiagomezpalacio', [LandingController::class, 'eventsPalenque'])->name('eventsPalenque');
 Route::get('/tramitar-reembolso', RefundsController::class);
 
+Route::get('evento/laorejadevangohg',function(){
+    return redirect('https://boletea.com/evento/laorejadevangogh');
+});
+
 
 Route::get('cache', function () {
     Artisan::call('cache:clear');
