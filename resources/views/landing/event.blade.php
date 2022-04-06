@@ -14,8 +14,35 @@
 @section('imageMeta', 'https://www.boletea.com/img/' . $event->image . '')
 @section('descriptionMeta', '' . $event->subtitle)
 
+
+@push('json-ld')
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "{{ $event->name }}",
+            "startDate": "{{ $event->created_at }}",
+            "endDate": "{{ $event->updated_at }}",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+                "@type": "Place",
+                "name": "{{ $event->recinto }}",
+            },
+            "image": [
+                "{{ $event->image }}",
+            ],
+            "description": "{{ $event->description }}",
+            "performer": {
+                "@type": "PerformingGroup",
+                "name": "{{ $event->subtitle }}",
+            },
+        }
+    </script>
+@endpush
+
 @section('content')
-    <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{open:false}">
+    <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{ open: false }">
         <div class="col-span-3 md:col-span-1">
             <img class="w-full mx-auto md:ml-4 rounded-md" src="{{ asset('img/' . $event->image . '') }}" alt="">
             <div class="hidden md:block col-span-3 justify-self-auto ml-4 md:text-center my-6">
@@ -25,7 +52,7 @@
             </div>
         </div>
         <div class="col-span-2 p-4 mt-1 text-center md:text-left">
-         @if ($event->name == 'elcaminoparasalvarunmatrimonio')
+            @if ($event->name == 'elcaminoparasalvarunmatrimonio')
                 <a data-type="countdown" data-id="3174182" class="tickcounter"
                     style="display: block; width: 100%; position: relative; padding-bottom: 25%" title="Countdown"
                     href="//www.tickcounter.com/">Countdown</a>
@@ -48,7 +75,8 @@
                 {!! $event->subtitle !!}
             </h3>
             @if ($event->description)
-                <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i class="fas fa-chevron-down"></i>
+                <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i
+                        class="fas fa-chevron-down"></i>
                 </h3>
                 <p x-show="open" class="text-xs text-justify">
                     {!! $event->description !!}
@@ -87,6 +115,7 @@
                                     title="Suc. Fco. I. Madero, Suc. San Pedro">
                             </div>
                         @break
+
                         @case('durango')
                             <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
                             <div class="flex justify-center items-center flex-wrap">
@@ -98,12 +127,13 @@
                                     src="{{ asset('cdvs/imgCintilloCimaco.png') }}" alt="">
                                 <img class="md:flex-auto w-13 md:w-16 object-contain object-center mx-2"
                                     src="{{ asset('cdvs/imgeSombrererialafe.jpeg') }}" alt="">
-                                <img class="w-13 md:w-13 object-contain object-center mx-2"
-                                <img class="w-13 md:w-13 object-contain object-center mx-2"
-                                src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}"
-                                title="Suc. Fco. I. Madero, Suc. San Pedro">
+                                <img class="w-13 md:w-13 object-contain object-center mx-2" <img
+                                    class="w-13 md:w-13 object-contain object-center mx-2"
+                                    src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}"
+                                    title="Suc. Fco. I. Madero, Suc. San Pedro">
                             </div>
                         @break
+
                         @case('campeche')
                             <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
                             <div class="flex flex-wrap">
@@ -111,6 +141,7 @@
                                     src="{{ asset('cdvs/logoHolidayInn.png') }}" alt="">
                             </div>
                         @break
+
                         @default
                     @endswitch
                 </div>
