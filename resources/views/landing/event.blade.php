@@ -28,6 +28,14 @@
             "location": {
                 "@type": "Place",
                 "name": "{{ $event->recinto }} {{ $event->ciudad }}",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "100 West Snickerpark Dr",
+                    "addressLocality": "Snickertown",
+                    "postalCode": "19019",
+                    "addressRegion": "PA",
+                    "addressCountry": "US"
+                }
             },
             "image": [
                 "https://boletea.com/img/"+{{ $event->image }}",
