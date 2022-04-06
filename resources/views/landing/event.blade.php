@@ -38,7 +38,7 @@
                 }
             },
             "image": [
-                "https://boletea.com/img/sliderFlansQueretaro.jpeg",
+                "https://boletea.com/img/sliderFlansQueretaro.jpg",
             ],
             "description": "{{ $event->description }}",
             "offers": {
