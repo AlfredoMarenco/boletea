@@ -28,6 +28,14 @@
             "location": {
                 "@type": "Place",
                 "name": "{{ $event->recinto }}",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "100 West Snickerpark Dr",
+                    "addressLocality": "Snickertown",
+                    "postalCode": "19019",
+                    "addressRegion": "PA",
+                    "addressCountry": "US"
+                  }
             },
             "image": [
                 "{{ $event->image }}",
@@ -36,7 +44,7 @@
             "performer": {
                 "@type": "PerformingGroup",
                 "name": "{{ $event->subtitle }}",
-            },
+            }
         }
     </script>
 @endpush
