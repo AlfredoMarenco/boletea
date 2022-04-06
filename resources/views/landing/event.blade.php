@@ -28,37 +28,27 @@
             "location": {
                 "@type": "Place",
                 "name": "{{ $event->recinto }} {{ $event->ciudad }}",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "100 West Snickerpark Dr",
-                    "addressLocality": "Snickertown",
-                    "postalCode": "19019",
-                    "addressRegion": "PA",
-                    "addressCountry": "US"
-                }
             },
             "image": [
-                "https://example.com/photos/1x1/photo.jpg",
-                "https://example.com/photos/4x3/photo.jpg",
-                "https://example.com/photos/16x9/photo.jpg"
+                "https://boletea.com/img/"+{{ $event->image }}",
             ],
-            "description": "The Adventures of Kira and Morrison is coming to Snickertown in a can't miss performance.",
+            "description": "{{ $event->description }}",
             "offers": {
                 "@type": "Offer",
-                "url": "https://www.example.com/event_offer/12345_201803180430",
-                "price": "30",
-                "priceCurrency": "USD",
+                "url": "https://www.boletea.com/evento/{{ $event->name }}",
+                "price": null,
+                "priceCurrency": "MXN",
                 "availability": "https://schema.org/InStock",
                 "validFrom": "2024-05-21T12:00"
             },
             "performer": {
                 "@type": "PerformingGroup",
-                "name": "Kira and Morrison"
+                "name": "{{ $event->subtitle }}"
             },
             "organizer": {
                 "@type": "Organization",
-                "name": "Kira and Morrison Music",
-                "url": "https://kiraandmorrisonmusic.com"
+                "name": "Boletea Tickets",
+                "url": "https://boletea.com"
             }
         }
     </script>
