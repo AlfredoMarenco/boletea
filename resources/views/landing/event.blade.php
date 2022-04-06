@@ -38,9 +38,8 @@
                 }
             },
             "image": [
-                "https://boletea.com/img/1x1/photo.jpg",
-                "https://example.com/photos/4x3/photo.jpg",
-                "https://example.com/photos/16x9/photo.jpg"
+                "https://www.boletea.com/img/{{ $event->name }}",
+                "https://www.boletea.com/img/{{ $event->slider }}",
             ],
             "description": "{{ $event->description }}",
             "offers": {
