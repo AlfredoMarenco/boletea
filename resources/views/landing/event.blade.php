@@ -20,14 +20,14 @@
         {
             "@context": "https://schema.org",
             "@type": "Event",
-            "name": "The Adventures of Kira and Morrison",
-            "startDate": "2025-07-21T19:00-05:00",
-            "endDate": "2025-07-21T23:00-05:00",
+            "name": "{{ $event->title }}",
+            "startDate": "{{ $event->created_at }}",
+            "endDate": "{{ $event->updated_at }}",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "eventStatus": "https://schema.org/EventScheduled",
             "location": {
                 "@type": "Place",
-                "name": "Snickerpark Stadium",
+                "name": "{{ $event->recinto }} {{ $event->ciudad }}",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "100 West Snickerpark Dr",
