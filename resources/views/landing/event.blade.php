@@ -36,7 +36,7 @@
                     "addressRegion": "PA",
                     "addressCountry": "US"
                   }
-            },
+            }
             "image": [
                 "{{ $event->image }}",
             ],
