@@ -37,11 +37,7 @@
                     "addressCountry": "US"
                 }
             },
-            "image": [
-                "https://boletea.com/img/sliderFlansQueretaro.jpg",
-                "https://boletea.com/img/sliderFlansQueretaro.jpg",
-                "https://boletea.com/img/sliderFlansQueretaro.jpg",
-            ],
+            "image": "https://boletea.com/img/sliderFlansQueretaro.jpg",
             "description": "{{ $event->description }}",
             "offers": {
                 "@type": "Offer",
