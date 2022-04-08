@@ -20,7 +20,7 @@
         @forelse ($events as $event)
             <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
                 <a href="{{ route('showEvent', $event) }}">
-                    <img class="rounded-t-lg h-96 md:h-72 w-full object-cover object-top mx-auto"
+                    <img class="rounded-t-lg h-auto md:h-auto w-full object-cover object-top mx-auto"
                         src="{{ asset('img/' . $event->image . '') }}" alt="">
                     <div class="grid grid-cols-1 place-content-end mt-4">
 
