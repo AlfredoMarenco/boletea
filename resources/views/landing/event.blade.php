@@ -61,7 +61,7 @@
 @endpush
 
 @section('content')
-    <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{ open: false }">
+    <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{ open: true }">
         <div class="col-span-3 md:col-span-1">
             <img class="w-full mx-auto md:ml-4 rounded-md" src="{{ asset('img/' . $event->image . '') }}" alt="">
             <div class="hidden md:block col-span-3 justify-self-auto ml-4 md:text-center my-6">
