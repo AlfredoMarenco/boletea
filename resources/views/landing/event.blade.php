@@ -65,9 +65,11 @@
         <div class="col-span-3 md:col-span-1">
             <img class="w-full mx-auto md:ml-4 rounded-md" src="{{ asset('img/' . $event->image . '') }}" alt="">
             <div class="hidden md:block col-span-3 justify-self-auto ml-4 md:text-center my-6">
-                <a href="{{ $event->link }}"
-                    class="text-white text-lg font-bold bg-rojo md:px-14 px-20 mx-auto py-2 w-full hover:bg-red-700">Comprar
-                    boleto</a>
+                @if ($event->visible == 'si')
+                    <a href="{{ $event->link }}"
+                        class="text-white text-lg font-bold bg-rojo md:px-14 px-20 mx-auto py-2 w-full hover:bg-red-700">Comprar
+                        boleto</a>
+                @endif
             </div>
         </div>
         <div class="col-span-2 p-4 mt-1 text-center md:text-left">
@@ -87,8 +89,9 @@
                 </p>
             @endif
             @if ($event->name == 'elcaminoparasalvarunmatrimonio')
-                    <a class="px-2 py-1 text-2xl text-white bg-green-600 hover:bg-green-800" href="{{ route('streamLive') }}">Ingresar al stream</a>
-                    @endif
+                <a class="px-2 py-1 text-2xl text-white bg-green-600 hover:bg-green-800"
+                    href="{{ route('streamLive') }}">Ingresar al stream</a>
+            @endif
             <p class="font-semibold text-gray-800 my-2 md:my-4"><i class="far fa-calendar text-2xl text-center mr-3"></i>
                 <span>{{ $event->fecha }} | {{ $event->hora }}</span>
             </p>
@@ -102,9 +105,11 @@
             </p>
             <div class="md:flex items-center justify-around">
                 <div class="block md:hidden my-6">
-                    <a href="{{ $event->link }}"
-                        class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">Comprar
-                        boleto</a>
+                    @if ($event->visible == 'si')
+                        <a href="{{ $event->link }}"
+                            class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">Comprar
+                            boleto</a>
+                    @endif
                 </div>
                 <div class="mx-4 px-1">
                     @switch($event->lugar)
