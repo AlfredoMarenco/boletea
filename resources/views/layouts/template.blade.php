@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title','Inicio') | Boletea Tickets</title>
+    <title>@yield('title', 'Inicio') | Boletea Tickets</title>
     <!-- Open Graph para Facebook -->
     <meta property="og:title" content=@yield('titleFacebook')>
     <meta property="og:type" content="website">
@@ -44,6 +44,7 @@
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide-core.min.css"> --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
 
     @livewireStyles
 
@@ -68,6 +69,7 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
 
     @stack('json-ld')
 </head>
@@ -125,6 +127,18 @@
             autoplay: true,
             interval: 5500,
         }).mount();
+    </script>
+    <script>
+        // Change the second argument to your options:
+        // https://github.com/sampotts/plyr/#options
+        const player = new Plyr('video', {
+            captions: {
+                active: true
+            }
+        });
+
+        // Expose player so it can be used from the console
+        window.player = player;
     </script>
     <script>
         new Glider(document.querySelector('.glider'), {
