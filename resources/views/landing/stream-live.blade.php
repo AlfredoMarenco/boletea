@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
-    <div class="grid md:grid-cols-3 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{ open: true }">
+    <div class="grid md:grid-cols-1 gap-6 items-center bg-white my-12 mx-4 md:mx-44 py-3 shadow-md" x-data="{ open: true }">
         @livewire('stream')
     </div>
     <div class="grid md:grid-cols-3 gap-6 items-center h-5 bg-white mb-4 mx-4 md:mx-44 shadow-md lg:hidden">
