@@ -71,21 +71,6 @@
             </div>
         </div>
         <div class="col-span-2 p-4 mt-1 text-center md:text-left">
-            @if ($event->name == 'elcaminoparasalvarunmatrimonio')
-                <a data-type="countdown" data-id="3174182" class="tickcounter"
-                    style="display: block; width: 100%; position: relative; padding-bottom: 25%" title="Countdown"
-                    href="//www.tickcounter.com/">Countdown</a>
-                <script>
-                    (function(d, s, id) {
-                        var js, pjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = "//www.tickcounter.com/static/js/loader.js";
-                        pjs.parentNode.insertBefore(js, pjs);
-                    }(document, "script", "tickcounter-sdk"));
-                </script>
-            @endif
             <h3 class="text-xl font-semibold">Detalles del evento</h3>
             <h1 class="text-4xl font-bold text-rojo mt-4 mb-2">
                 {{ $event->title }}
@@ -94,13 +79,16 @@
                 {!! $event->subtitle !!}
             </h3>
             @if ($event->description)
-                <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i
-                        class="fas fa-chevron-down"></i>
+                <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i class="fas fa-chevron-down"></i>
                 </h3>
                 <p x-show="open" class="text-xs text-justify">
                     {!! $event->description !!}
+
                 </p>
             @endif
+            @if ($event->name == 'elcaminoparasalvarunmatrimonio')
+                    <a class="px-2 py-1 text-2xl text-white bg-green-600 hover:bg-green-800" href="{{ route('streamLive') }}">Ingresar al stream</a>
+                    @endif
             <p class="font-semibold text-gray-800 my-2 md:my-4"><i class="far fa-calendar text-2xl text-center mr-3"></i>
                 <span>{{ $event->fecha }} | {{ $event->hora }}</span>
             </p>

@@ -77,4 +77,7 @@ class LandingController extends Controller
     {
         return view('landing.cdvs');
     }
-}
+
+    public function streamLive(){
+        return view('landing.stream-live');
+    }}

@@ -30,6 +30,7 @@ Route::get('/poliforum-feria-de-torreon', [LandingController::class, 'eventsPoli
 Route::get('/velariaferiagomezpalacio', [LandingController::class, 'eventsVelaria'])->name('eventsVelaria');
 Route::get('/palenqueferiagomezpalacio', [LandingController::class, 'eventsPalenque'])->name('eventsPalenque');
 Route::get('/tramitar-reembolso', RefundsController::class);
+Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('streamLive');
 
 Route::get('evento/laorejadevangohg',function(){
     return redirect('https://boletea.com/evento/laorejadevangogh');
