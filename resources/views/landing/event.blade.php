@@ -83,7 +83,7 @@
             @if ($event->description)
                 <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i class="fas fa-chevron-down"></i>
                 </h3>
-                <p x-show="open" class="text-xs text-justify">
+                <p x-show="open" class="text-md font-bold text-justify">
                     {!! $event->description !!}
 
                 </p>
