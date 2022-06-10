@@ -74,6 +74,14 @@
                             Sábados :
                             11:00 am a 7:00 pm</p>
                     </div>
+                    <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
+                        <img src="{{ asset('cdvs/cdvVaqueroNorteño.png') }}" class="mx-auto my-4" alt="">
+                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Paseo Durango<br>
+                        </span>Blvd. Felipe Pescador 1401 centro comercial paseo, La Esperanza, 34080 Durango, Dgo.</p>
+                        <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
+                            Domingo :
+                            11:00 am a 9:00 pm</p>
+                    </div>
                 </div>
             </div>
         @endif
