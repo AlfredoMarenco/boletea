@@ -13,10 +13,21 @@
             <div class="col-span-4 mt-6">
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 justify-items-center">
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
-                        <img src="{{ asset('cdvs/bomsa.png') }}" class="mx-auto w-36 mb-2" alt="">
-                        <p class="text-sm font-semibold mb-2"><span
-                                class="font-bold text-lg text-rojo">Bomssa<br></span>Av. Lopez Portillo, Lote 44, SM 66,
-                            Esquina Torcasitas Col. Supermanzana 3, Cancun, Qroo.</p>
+                        <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
+                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Bomssa
+                                - Tulum<br></span>Avenida Cobá Norte, manzana 27, lote 002, entre Oriente y Sagitario
+                            Oriente, Tulum, Quintana Roo.</p>
+                        <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
+                            Sábado :
+                            10:00 am a 7:00 pm
+                            <br>
+                            Domingo: 11:00 am a 2:00 pm
+                        </p>
+                    </div>
+                    <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
+                        <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
+                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Bomssa
+                                - Playa del Carmen<br></span>Avenida Juárez, manzana 212, lote 10, entre Avenida 55 y 60, avenida colonia Ejidal, Playa del Carmen, Quintana Roo.</p>
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Sábado :
                             10:00 am a 7:00 pm
@@ -76,8 +87,10 @@
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/cdvVaqueroNorteño.png') }}" class="mx-auto my-4" alt="">
-                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Paseo Durango<br>
-                        </span>Blvd. Felipe Pescador 1401 centro comercial paseo, La Esperanza, 34080 Durango, Dgo.</p>
+                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Paseo
+                                Durango<br>
+                            </span>Blvd. Felipe Pescador 1401 centro comercial paseo, La Esperanza, 34080 Durango, Dgo.
+                        </p>
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Domingo :
                             11:00 am a 9:00 pm</p>
