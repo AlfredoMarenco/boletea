@@ -156,7 +156,13 @@
                                     src="{{ asset('cdvs/logoHolidayInn.png') }}" alt="">
                             </div>
                         @break
-
+                        @case('quintanaroo')
+                            <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
+                            <div class="flex flex-wrap">
+                                <img class="w-full h-12 object-contain object-center mx-1"
+                                    src="{{ asset('cdvs/logo-bomssa.png') }}" alt="">
+                            </div>
+                        @break
                         @default
                     @endswitch
                 </div>
