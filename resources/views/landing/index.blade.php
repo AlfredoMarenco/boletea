@@ -57,5 +57,14 @@
                     partidos</a>
             </div>
         </div>
+        <div class="md:mx-16 mb-8 md:flex items-center bg-white py-2 shadow-md">
+            <div class="text-center mx-auto bg-white">
+                <h3 class="md:text-3xl font-bold mb-2 mt-1 md:mt-0 md:mb-4">Compra tus boletos aquí!!</h3>
+                <a href="https://atlasfc.boletea.com.mx"
+                class="md:px-3 md:py-2 px-2 py-1 bg-red-700 font-semibold rounded-sm hover:bg-red-700 text-white">Próximos
+                partidos</a>
+            </div>
+            <img class="object-cover w-full md:w-2/3" src="{{ asset('img/BANNER_PRN_BOLETEA.png') }}" alt="">
+        </div>
     </section>
 @endsection
