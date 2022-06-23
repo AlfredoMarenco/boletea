@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class CalendarController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['role:admin','permission:calendar']);
+    }
+
     public function index()
     {
         $events = Calendar::all();

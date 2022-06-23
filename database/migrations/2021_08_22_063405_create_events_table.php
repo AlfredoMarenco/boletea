@@ -16,20 +16,10 @@ class CreateEventsTable extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique()->nullable();
-            $table->string('title')->nullable();
-            $table->string('subtitle')->nullable();
-            $table->text('description')->nullable();
-            $table->string('visible')->nullable();
-            $table->string('category')->nullable();
-            $table->string('image')->nullable();
-            $table->string('slider')->nullable();
-            $table->string('fecha')->nullable();
-            $table->string('hora')->nullable();
-            $table->string('recinto')->nullable();
-            $table->string('fechaBusqueda')->nullable();
-            $table->string('ciudad')->nullable();
-            $table->string('lugar')->nullable();
-            $table->string('link')->nullable();
+            $table->string('slug');
+            $table->string('image_url')->nullable();
+            $table->string('slider_url')->nullable();
+            $table->foreignId('category_id');
             $table->timestamps();
         });
     }

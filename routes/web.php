@@ -3,9 +3,11 @@
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\RefundsController;
 use App\Http\Livewire\RefundsGenerate;
+use App\Models\User;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,10 +39,12 @@ Route::get('evento/laorejadevangohg',function(){
 });
 
 
-Route::get('cache', function () {
+
+/* Route::get('cache', function () {
     Artisan::call('cache:clear');
 });
 
 Route::get('migrates', function () {
     Artisan::call('migrate');
 });
+ */

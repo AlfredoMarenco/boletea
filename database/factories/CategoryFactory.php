@@ -3,18 +3,16 @@
 namespace Database\Factories;
 
 use App\Models\Category;
-use App\Models\Event;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
-class EventFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Event::class;
+    protected $model = Category::class;
 
     /**
      * Define the model's default state.
@@ -23,12 +21,8 @@ class EventFactory extends Factory
      */
     public function definition()
     {
-        $name = $this->faker->sentence();
         return [
-            'name' => $name,
-            'slug' => Str::slug($name),
-            'category_id' => Category::all()->random()->id,
-            'image_url' => 'https://boletea.com/img/imgeEdenMunoz.jpeg',
+            'name' => $this->faker->word(),
         ];
     }
 }

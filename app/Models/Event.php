@@ -11,8 +11,19 @@ class Event extends Model
 
     protected $guarded = ['id'];
 
+    //Relacion uno a muchos con la tabla categories inversa
+    public function category(){
+        return $this->belongsTo(Category::class);
+    }
+
+    //Relacion uno a muchos con la tabla performances
+    public function performances(){
+        return $this->hasMany(Performance::class);
+    }
+
+
     public function getRouteKeyName()
     {
-        return  "name";
+        return  "slug";
     }
 }

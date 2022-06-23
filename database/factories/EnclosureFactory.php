@@ -22,7 +22,14 @@ class EnclosureFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->sentence,
+            'address' => $this->faker->address,
+            'city' => $this->faker->city,
+            'postal_code' => $this->faker->postcode,
+            'state' => $this->faker->state,
+            'maps_url' => $this->faker->url,
+            'image_url' => 'https://boletea.com/img/imgeEdenMunoz.jpeg',
+
         ];
     }
 }

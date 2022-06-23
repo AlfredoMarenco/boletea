@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Enclosure extends Model
+class Category extends Model
 {
     use HasFactory;
 
     protected $guarded = ['id'];
 
-    //Relacion uno a muchos con la tabla performances
-    public function performances()
+    //Relacion uno a muchos con la tabla events
+    public function events()
     {
-        return $this->hasMany(Performance::class);
+        return $this->hasMany(Event::class);
     }
+
 }
