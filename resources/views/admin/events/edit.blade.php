@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Categories') }} / {{ __('Edit') }}
+            {{ __('Events') }} / {{ __('Edit') }}
         </h2>
     </x-slot>
 
@@ -18,59 +18,62 @@
                 </div>
             @endif
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <form action="{{ route('enclosures.update', $enclosure) }}" method="post" class="px-8 py-6" enctype="multipart/form-data">
+                <form action="{{ route('events.update', $event) }}" method="post" class="px-8 py-6"
+                    enctype="multipart/form-data">
                     @method('PUT')
                     @csrf
+                    <x-jet-validation-errors class="ml-4" />
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center mb-4">
-                        <div>
-                            <x-jet-validation-errors for="name" class="ml-4" />
+                        <div class="col-span-2">
                             <x-jet-label value="Name: *" class="mr-4" />
-                            <x-jet-input type="text" name="name" value="{{ $enclosure->name }}" class="w-full mr-4" />
+                            <x-jet-input type="text" name="name" value="{{ $event->name }}"
+                                class="w-full mr-4" />
+                        </div>
+                        <div class="col-span-2">
+                            <x-jet-label value="Slug:" class="mr-4" />
+                            <x-jet-input type="text" name="slug" value="{{ $event->slug }}"
+                                class="w-full mr-4 bg-gray-200" disabled />
+                        </div>
+                        <div class="col-span-2">
+                            <x-jet-label value="Category: *" class="mr-4" />
+                            <select name="category_id" class="rounded border-gray-300 w-full">
+                                @foreach ($categories as $category)
+                                    <option value="{{ $category->id }}"
+                                        {{ $category->id == $event->category_id ? 'selected' : '' }}>
+                                        {{ $category->name }}</option>
+                                @endforeach
+                            </select>
                         </div>
                         <div>
-                            <x-jet-validation-errors for="address" class="ml-4" />
-                            <x-jet-label value="Address:" class="mr-4" />
-                            <x-jet-input type="text" name="address" value="{{ $enclosure->address }}" class="w-full mr-4" />
+                            <x-jet-label value="Image primary:" class="mr-4" />
+                            <x-jet-input type="file" name="image_url" id="image_url" class="w-full mr-4" />
                         </div>
                         <div>
-                            <x-jet-validation-errors for="city" class="ml-4" />
-                            <x-jet-label value="City: *" class="mr-4" />
-                            <x-jet-input type="text" name="city" value="{{ $enclosure->city }}" class="w-full mr-4" />
+                            @if ($event->image_url)
+                                <img src="{{ Storage::url($event->image_url) }}" alt="{{ $event->name }}"
+                                    class="w-1/2 object-cover object-center mx-auto">
+                            @endif
                         </div>
                         <div>
-                            <x-jet-validation-errors for="postal_code" class="ml-4" />
-                            <x-jet-label value="Postal Code:" class="mr-4" />
-                            <x-jet-input type="text" name="postal_code" value="{{ $enclosure->postal_code }}" class="w-full mr-4" />
+                            <x-jet-label value="Slider:" class="mr-4" />
+                            <x-jet-input type="file" name="slider_url" id="slider_url" class="w-full mr-4" />
                         </div>
                         <div>
-                            <x-jet-validation-errors for="state" class="ml-4" />
-                            <x-jet-label value="State: *" class="mr-4" />
-                            <x-jet-input type="text" name="state" value="{{ $enclosure->state }}" class="w-full mr-4" />
-                        </div>
-                        <div>
-                            <x-jet-validation-errors for="url_maps" class="ml-4" />
-                            <x-jet-label value="Url Google Maps:" class="mr-4" />
-                            <x-jet-input type="text" name="maps_url" value="{{ $enclosure->maps_url }}" class="w-full mr-4" />
-                        </div>
-                        <div>
-                            <x-jet-validation-errors for="image_url" class="ml-4" />
-                            <x-jet-label value="Image:" class="mr-4" />
-                            <x-jet-input type="file" name="image_url" class="w-full mr-4" />
-                        </div>
-                        <div class="mx-auto">
-                            @if ($enclosure->image_url)
-                                <img src="{{ Storage::url($enclosure->image_url) }}" alt="{{ $enclosure->name }}" class="w-32 object-cover object-center mr-4" />
+                            @if ($event->slider_url)
+                                <img src="{{ Storage::url($event->slider_url) }}" alt="{{ $event->name }}"
+                                    class="w-full object-cover object-center mx-auto">
                             @endif
                         </div>
                     </div>
                     <div class="flex justify-end">
-                        <x-jet-button>{{ __('Update') }}</x-jet-button>
-                        <form action="{{ route('enclosures.destroy', $enclosure) }}" method="post">
-                            @method('DELETE')
-                            @csrf
-                            <button class="text-red-600 ml-4">Eliminar</button>
-                        </form>
+                        <x-jet-button>{{ __('Save') }}</x-jet-button>
+
                     </div>
+                </form>
+                <form action="{{ route('events.destroy', $event) }}" method="post">
+                    @method('DELETE')
+                    @csrf
+                    <button class="text-red-600 ml-4">Eliminar</button>
                 </form>
             </div>
         </div>

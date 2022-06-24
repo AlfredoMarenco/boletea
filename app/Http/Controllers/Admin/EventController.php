@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class EventController extends Controller
 {
@@ -39,7 +41,26 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'category_id' => 'required',
+            'image_url' => 'required|image|mimes:jpeg,png,jpg',
+            'slider_url' => 'image|mimes:jpeg,png,jpg',
+        ]);
+        if ($request->file('slider_url')) {
+            $slider = $request->file('slider_url')->store('events/sliders');
+        }else{
+            $slider = null;
+        }
+
+        $event = Event::create([
+            'name' => $request->name,
+            'slug' => Str::slug($request->name),
+            'category_id' => $request->category_id,
+            'image_url' =>  $request->file('image_url')->store('events/images'),
+            'slider_url' => $slider
+        ]);
+        return redirect()->route('events.edit',$event)->with('success', 'Evento creado correctamente');
     }
 
     /**
@@ -59,9 +80,10 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Event $event)
     {
-        //
+        $categories = Category::all();
+        return view('admin.events.edit', compact('event','categories'));
     }
 
     /**
@@ -71,9 +93,32 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Event $event)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'category_id' => 'required',
+            'image_url' => 'image|mimes:jpeg,png,jpg',
+            'slider_url' => 'image|mimes:jpeg,png,jpg',
+        ]);
+        if ($request->file('slider_url')) {
+            Storage::delete($event->slider_url);
+            $slider = $request->file('slider_url')->store('events/sliders');
+        }
+        if ($request->file('image_url')) {
+            Storage::delete($event->image_url);
+            $image = $request->file('image_url')->store('events/images');
+        }
+        $event->update([
+            'name' => $request->name,
+            'slug' => Str::slug($request->name),
+            'category_id' => $request->category_id,
+            'image_url' => $image ?? $event->image_url,
+            'slider_url' => $slider ?? $event->slider_url
+        ]);
+
+        return redirect()->route('events.edit',$event)->with('success', 'Evento actualizado correctamente');
+
     }
 
     /**
@@ -82,8 +127,13 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Event $event)
     {
-        //
+        if ($event->performances->count() > 0) {
+            return redirect()->route('events.edit',$event)->with('error', 'No se puede eliminar el evento porque tiene funciones ligadas');
+        }else{
+            $event->delete();
+            return redirect()->route('events.index')->with('success', 'Evento eliminado correctamente');
+        }
     }
 }

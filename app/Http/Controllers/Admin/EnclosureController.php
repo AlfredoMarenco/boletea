@@ -42,6 +42,7 @@ class EnclosureController extends Controller
             'name' => 'required',
             'city' => 'required',
             'state' => 'required',
+            'image_url' => 'image|mimes:jpeg,png,jpg',
         ]);
         $url = $request->file('image_url')->store('enclosures');
 
@@ -93,6 +94,7 @@ class EnclosureController extends Controller
             'name' => 'required',
             'city' => 'required',
             'state' => 'required',
+            'image_url' => 'image|mimes:jpeg,png,jpg',
         ]);
 
         if ($enclosure->image_url && $request->file('image_url')) {

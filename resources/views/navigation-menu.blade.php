@@ -24,7 +24,7 @@
                         </x-jet-nav-link>
                     @endcan
                     <x-jet-nav-link href="{{ route('events.index') }}" :active="request()->routeIs('events.*')">
-                        {{ __('Event') }}
+                        {{ __('Events') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('categories.index') }}" :active="request()->routeIs('categories.*')">
                         {{ __('Categories') }}

@@ -720,5 +720,11 @@
     "Emails": "Correos",
     "Templates": "Plantillas",
     "Documents": "Documentos",
-    "Reports": "Reportes"
+    "Reports": "Reportes",
+    "Categories": "Categorias",
+    "Enclosure": "Recinto",
+    "Enclosures": "Recintos",
+    "Category": "Categoria",
+    "Event": "Evento",
+    "Events": "Eventos"
 }

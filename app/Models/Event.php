@@ -21,7 +21,6 @@ class Event extends Model
         return $this->hasMany(Performance::class);
     }
 
-
     public function getRouteKeyName()
     {
         return  "slug";

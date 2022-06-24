@@ -12,14 +12,14 @@
                     @csrf
                     <x-jet-validation-errors class="ml-4" />
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center mb-4">
-                        <div>
+                        <div class="col-span-2">
                             <x-jet-label value="Name: *" class="mr-4" />
                             <x-jet-input type="text" name="name" class="w-full mr-4" />
                         </div>
-                        <div>
+                        {{-- <div>
                             <x-jet-label value="Slug:" class="mr-4" />
                             <x-jet-input type="text" name="slug" class="w-full mr-4" />
-                        </div>
+                        </div> --}}
                         <div class="col-span-2">
                             <x-jet-label value="Category: *" class="mr-4" />
                             <select name="category_id" class="rounded border-gray-300 w-full">
@@ -30,11 +30,11 @@
                         </div>
                         <div>
                             <x-jet-label value="Image primary: *" class="mr-4" />
-                            <x-jet-input type="file" name="image_url" class="w-full mr-4" />
+                            <x-jet-input type="file" name="image_url" id="image_url" class="w-full mr-4" />
                         </div>
                         <div>
                             <x-jet-label value="Slider:" class="mr-4" />
-                            <x-jet-input type="file" name="slider_url" class="w-full mr-4" />
+                            <x-jet-input type="file" name="slider_url" id="slider_url" class="w-full mr-4" />
                         </div>
                     </div>
                     <div class="flex justify-end">
