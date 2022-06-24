@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Enclosure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class EnclosureController extends Controller
 {
@@ -26,7 +27,7 @@ class EnclosureController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.enclosures.create');
     }
 
     /**
@@ -37,7 +38,24 @@ class EnclosureController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'city' => 'required',
+            'state' => 'required',
+        ]);
+        $url = $request->file('image_url')->store('enclosures');
+
+        $enclosure = Enclosure::create([
+            'name' => $request->name,
+            'address' => $request->address,
+            'city' => $request->city,
+            'postal_code' => $request->postal_code,
+            'state' => $request->state,
+            'maps_url' => $request->maps_url,
+            'image_url' => $url,
+        ]);
+
+        return redirect()->route('enclosures.edit',$enclosure)->with('success', 'Recinto creado correctamente');
     }
 
     /**
@@ -57,9 +75,9 @@ class EnclosureController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Enclosure $enclosure)
     {
-        //
+        return view('admin.enclosures.edit',compact('enclosure'));
     }
 
     /**
@@ -69,9 +87,31 @@ class EnclosureController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Enclosure $enclosure)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'city' => 'required',
+            'state' => 'required',
+        ]);
+
+        if ($enclosure->image_url && $request->file('image_url')) {
+            Storage::delete($enclosure->image_url);
+        }
+
+        $url = $request->file('image_url')->store('enclosures');
+
+        $enclosure->update([
+            'name' => $request->name,
+            'address' => $request->address,
+            'city' => $request->city,
+            'postal_code' => $request->postal_code,
+            'state' => $request->state,
+            'maps_url' => $request->maps_url,
+            'image_url' => $url,
+        ]);
+
+        return redirect()->route('enclosures.edit',$enclosure)->with('success', 'Recinto actualizado correctamente');
     }
 
     /**
@@ -80,8 +120,16 @@ class EnclosureController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Enclosure $enclosure)
     {
-        //
+        if ($enclosure->image_url) {
+            Storage::delete($enclosure->image_url);
+        }
+        if ($enclosure->performances->count()>0) {
+            return redirect()->route('enclosures.edit',$enclosure)->with('error', 'Recinto tiene performances asociadas');
+        }else{
+            $enclosure->delete();
+            return redirect()->route('enclosures.index')->with('success', 'Recinto eliminado correctamente');
+        }
     }
 }
