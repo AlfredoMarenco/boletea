@@ -45,7 +45,7 @@
                             </select>
                         </div>
                         <div>
-                            <x-jet-label value="Image primary:" class="mr-4" />
+                            <x-jet-label value="Image primary:*" class="mr-4" />
                             <x-jet-input type="file" name="image_url" id="image_url" class="w-full mr-4" />
                         </div>
                         <div>

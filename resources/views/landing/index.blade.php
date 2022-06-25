@@ -43,7 +43,7 @@
 
 
     <section class="">
-        {{-- @livewire('search') --}}
+        @livewire('search')
         @livewire('event-list', ['events' => $events])
     </section>
 

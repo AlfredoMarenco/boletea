@@ -33,7 +33,9 @@ class LandingController extends Controller
 
     public function showEvent(Event $event)
     {
-        return view('landing.event', compact('event'));
+        $carbon = new \Carbon\Carbon();
+        $carbon->locale('es');
+        return view('landing.event', compact('event','carbon'));
     }
 
     public function cdvs()

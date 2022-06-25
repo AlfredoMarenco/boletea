@@ -65,12 +65,14 @@
                     </div>
                     <div class="flex justify-end">
                         <x-jet-button>{{ __('Update') }}</x-jet-button>
-                        <form action="{{ route('enclosures.destroy', $enclosure) }}" method="post">
-                            @method('DELETE')
-                            @csrf
-                            <button class="text-red-600 ml-4">Eliminar</button>
-                        </form>
+
                     </div>
+                </form>
+
+                <form action="{{ route('enclosures.destroy', $enclosure) }}" method="post">
+                    @method('DELETE')
+                    @csrf
+                    <button class="text-red-600 ml-4">Eliminar</button>
                 </form>
             </div>
         </div>

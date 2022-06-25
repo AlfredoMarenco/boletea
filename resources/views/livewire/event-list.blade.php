@@ -13,15 +13,20 @@
                     <div class="grid grid-cols-1 place-content-end mt-4">
                         <div class="px-2 md:ml-3 col-span-2 text-left">
                             <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->name, 15, '...') }}</h3>
-                            <p class="font-semibold text-sm mb-2"><i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
-                                {{ $event->performances->first()->enclosure->city }}</p>
-                            <p class="font-semibold text-xs"><i class="far fa-calendar mr-1 text-rojo"></i>
-                                {{ $carbon->parse($event->performances->first()->date_start)->translatedFormat('l j \\de F Y') }}</p>
+                            <p class="font-semibold text-sm mb-2">
+                                <i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
+                                {{ $event->performances->first()->enclosure->city }}
+                            </p>
+                            <p class="font-semibold text-xs">
+                                <i class="far fa-calendar mr-1 text-rojo"></i>
+                                {{ $carbon->parse($event->performances->first()->date_start)->translatedFormat('l j \\de F Y') }}
+                            </p>
                         </div>
                         <div class="col-span-3 pt-4 w-full place-self-end">
                             <a href="{{ route('showEvent', $event) }}"
-                                class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
-                                Boletos</a>
+                                class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">
+                                Comprar Boletos
+                            </a>
                         </div>
                     </div>
                 </a>

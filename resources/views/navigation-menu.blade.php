@@ -26,6 +26,9 @@
                     <x-jet-nav-link href="{{ route('events.index') }}" :active="request()->routeIs('events.*')">
                         {{ __('Events') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('performances.index') }}" :active="request()->routeIs('performances.*')">
+                        {{ __('Performances') }}
+                    </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('categories.index') }}" :active="request()->routeIs('categories.*')">
                         {{ __('Categories') }}
                     </x-jet-nav-link>

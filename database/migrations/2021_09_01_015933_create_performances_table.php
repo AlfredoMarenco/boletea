@@ -23,7 +23,7 @@ class CreatePerformancesTable extends Migration
             $table->time('time_end');
             $table->unsignedBigInteger('status');
             $table->text('description')->nullable();
-            $table->string('image_url');
+            $table->string('image_url')->nullable();
             $table->foreignId('event_id');
             $table->foreignId('enclosure_id');
             $table->timestamps();

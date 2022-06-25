@@ -22,15 +22,12 @@ class Search extends Component
 
     public function render()
     {
+        $events = Event::whereHas('performances', function ($query) {
+            $query->where('status', '=', 1);
+        })->where('name', 'like', '%' . $this->search . '%')->get();
+
         return view('livewire.search',[
-            'events' => Event::where('title','LIKE','%'.$this->search.'%')
-            ->orWhere('name','LIKE','%'.$this->search.'%')
-            ->orwhere('subtitle','LIKE','%'.$this->search.'%')
-            ->orWhere('ciudad','LIKE','%'.$this->search.'%')
-            ->orWhere('recinto','LIKE','%'.$this->search.'%')
-            ->orWhere('fecha','LIKE','%'.$this->search.'%')
-            ->orderBy('fechaBusqueda', 'asc')
-            ->get()
+            'events' => $events
         ]);
     }
 }

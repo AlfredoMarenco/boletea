@@ -44,7 +44,7 @@ class EnclosureController extends Controller
             'state' => 'required',
             'image_url' => 'image|mimes:jpeg,png,jpg',
         ]);
-        $url = $request->file('image_url')->store('enclosures');
+        $url = $request->file('image_url')->store('enclosures/images');
 
         $enclosure = Enclosure::create([
             'name' => $request->name,
@@ -97,11 +97,11 @@ class EnclosureController extends Controller
             'image_url' => 'image|mimes:jpeg,png,jpg',
         ]);
 
-        if ($enclosure->image_url && $request->file('image_url')) {
+        if ($request->file('image_url')) {
             Storage::delete($enclosure->image_url);
+            $image = $request->file('image_url')->store('enclosures/images');
         }
 
-        $url = $request->file('image_url')->store('enclosures');
 
         $enclosure->update([
             'name' => $request->name,
@@ -110,7 +110,7 @@ class EnclosureController extends Controller
             'postal_code' => $request->postal_code,
             'state' => $request->state,
             'maps_url' => $request->maps_url,
-            'image_url' => $url,
+            'image_url' => $image ?? $enclosure->image_url,
         ]);
 
         return redirect()->route('enclosures.edit',$enclosure)->with('success', 'Recinto actualizado correctamente');

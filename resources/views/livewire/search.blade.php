@@ -8,17 +8,15 @@
         <div class="bg-white rounded-lg shadow mt-1">
             <div class="px-4 py-3 space-y-1 rounded-lg">
                 @forelse ($events as $event)
-                    @if ($event->visible == 'si')
                         <a href="{{ route('showEvent', $event) }}"
                             class="flex text-md hover:bg-rojo font-semibold bg-gray-100 hover:text-white items-center py-2 px-4 rounded-lg">
-                            <img src="./img/{{ $event->image }}" class="w-24 mr-4" alt="">
-                            <span class="mx-1 text-xs md:text-md"> {{ $event->title }}</span>
+                            <img src="{{ Storage::url($event->image_url) }}" class="w-24 mr-4" alt="">
+                            <span class="mx-1 text-xs md:text-md"> {{ $event->name }}</span>
                             <span class="mx-1 text-xs md:text-md"> / </span>
-                            <span class="mx-1 text-xs md:text-md"> {{ $event->recinto }}</span>
+                            <span class="mx-1 text-xs md:text-md"> {{ $event->performances->first()->enclosure->name }}</span>
                             <span class="mx-1 text-xs md:text-md"> / </span>
                             <span class="mx-1 text-xs md:text-md"> {{ $event->ciudad }}</span>
                         </a>
-                    @endif
                 @empty
                     <div class="flex">
                         <div class="ml-4 text-trueGray-700 ">
