@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEnclosuresTable extends Migration
+class CreateCityPointTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,10 @@ class CreateEnclosuresTable extends Migration
      */
     public function up()
     {
-        Schema::create('enclosures', function (Blueprint $table) {
+        Schema::create('city_point', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('address')->nullable();
             $table->foreignId('city_id')->constrained();
-            $table->string('postal_code')->nullable();
-            $table->string('state');
-            $table->string('maps_url')->nullable();
-            $table->string('image_url')->nullable();
+            $table->foreignId('point_id')->constrained();
             $table->timestamps();
         });
     }
@@ -33,6 +28,6 @@ class CreateEnclosuresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('enclosures');
+        Schema::dropIfExists('city_point');
     }
 }

@@ -16,4 +16,11 @@ class Enclosure extends Model
     {
         return $this->hasMany(Performance::class);
     }
+
+    //Relacion uno a muchos con el modelo city
+    public function city()
+    {
+        return $this->belongsTo(City::class);
+    }
+
 }

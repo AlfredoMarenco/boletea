@@ -101,7 +101,7 @@
                 </p>
                 <p class="font-semibold text-gray-800 mb-2 md:mb-4"><i
                         class="fas fa-map-marker-alt text-2xl text-center mr-3"></i>
-                    <span>{{ $performance->enclosure->city }}</span>
+                    <span>{{ $performance->enclosure->city->name }}</span>
                 </p>
                 <div class="md:flex items-center justify-around">
                     <div class="block md:hidden my-6">

@@ -2,18 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\City;
-use App\Models\Enclosure;
+use App\Models\Point;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class EnclosureFactory extends Factory
+class PointFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Enclosure::class;
+    protected $model = Point::class;
 
     /**
      * Define the model's default state.
@@ -23,14 +22,10 @@ class EnclosureFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->sentence,
+            'name' => $this->faker->name,
             'address' => $this->faker->address,
-            'city_id' => City::all()->random()->id,
-            'postal_code' => $this->faker->postcode,
-            'state' => $this->faker->state,
-            'maps_url' => $this->faker->url,
+            'schedule' => $this->faker->sentence(),
             'image_url' => 'https://boletea.com/img/imgeEdenMunoz.jpeg',
-
         ];
     }
 }

@@ -15,7 +15,7 @@
                             <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->name, 15, '...') }}</h3>
                             <p class="font-semibold text-sm mb-2">
                                 <i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
-                                {{ $event->performances->first()->enclosure->city }}
+                                {{ $event->performances->first()->enclosure->city->name }}
                             </p>
                             <p class="font-semibold text-xs">
                                 <i class="far fa-calendar mr-1 text-rojo"></i>
