@@ -14,12 +14,12 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center mb-4">
                         <div class="col-span-2">
                             <x-jet-label value="Name: *" class="mr-4" />
-                            <x-jet-input type="text" name="name" class="w-full mr-4" />
+                            <x-jet-input type="text" name="name" class="w-full mr-4" value="{{ old('name') }}" />
                         </div>
-                        {{-- <div>
-                            <x-jet-label value="Slug:" class="mr-4" />
-                            <x-jet-input type="text" name="slug" class="w-full mr-4" />
-                        </div> --}}
+                        <div class="col-span-2">
+                            <x-jet-label value="Url Redirect:" class="mr-4" />
+                            <x-jet-input type="text" name="url_redirect" class="w-full mr-4" />
+                        </div>
                         <div class="col-span-2">
                             <x-jet-label value="Category: *" class="mr-4" />
                             <select name="category_id" class="rounded border-gray-300 w-full">

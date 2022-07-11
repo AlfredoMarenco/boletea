@@ -22,5 +22,10 @@ class Enclosure extends Model
     {
         return $this->belongsTo(City::class);
     }
+    
+    public function maps()
+    {
+        return $this->hasMany(Map::class);
+    }
 
 }

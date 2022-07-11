@@ -7,10 +7,8 @@ use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\PerformanceController;
 use App\Http\Controllers\Admin\RefundController;
 use App\Http\Livewire\Admin\Calendar\ShowEvent;
-use App\Models\User;
+use App\Http\Livewire\Admin\Maps\MapsCreate;
 use Illuminate\Support\Facades\Route;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Models\Role;
 
 Route::get('/refunds', [RefundController::class, 'index'])->name('refunds.index');
 Route::get('/calendar', [CalendarController::class, 'index'])->name('calendar.index');
@@ -20,13 +18,13 @@ Route::resource('/categories', CategoryController::class);
 Route::resource('/enclosures', EnclosureController::class);
 Route::resource('/events', EventController::class);
 Route::resource('/performances', PerformanceController::class);
+Route::get('/map-create/{enclosure}',MapsCreate::class)->name('maps.create');
 
-Route::get('/permision',function(){
+
+/* Route::get('/permision',function(){
     $role = Permission::all();
     return $role;
-});
-
-
+}); */
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return view('dashboard');
 })->name('dashboard');

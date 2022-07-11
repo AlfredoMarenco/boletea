@@ -22,7 +22,13 @@
                         </div>
                         <div>
                             <x-jet-label value="City: *" class="mr-4" />
-                            <x-jet-input type="text" name="city" class="w-full mr-4" />
+                            <select name="city_id" class=" w-full rounded-md border-gray-300">
+                                <option value="" selected disabled>Selecciona una ciudad</option>
+                                @foreach ($cities as $city)
+                                    <option value="{{ $city->id }}">{{ $city->name }}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
                         <div>
                             <x-jet-label value="Postal Code:" class="mr-4" />

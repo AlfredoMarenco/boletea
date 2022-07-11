@@ -19,8 +19,8 @@ class CreateSectionsTable extends Migration
             $table->string('name_real');
             $table->unsignedBigInteger('capacity');
             $table->boolean('type');
-            $table->unsignedBigInteger('cols');
-            $table->unsignedBigInteger('rows');
+            $table->unsignedBigInteger('cols')->nullable();
+            $table->unsignedBigInteger('rows')->nullable();
             $table->foreignId('map_id')->constrained();
             $table->timestamps();
         });

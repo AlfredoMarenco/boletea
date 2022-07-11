@@ -18,7 +18,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = Event::paginate();
+        $events = Event::latest()->paginate();
         return view('admin.events.index', compact('events'));
     }
 
@@ -58,7 +58,8 @@ class EventController extends Controller
             'slug' => Str::slug($request->name),
             'category_id' => $request->category_id,
             'image_url' =>  $request->file('image_url')->store('events/images'),
-            'slider_url' => $slider
+            'slider_url' => $slider,
+            'url_redirect' => $request->url_redirect,
         ]);
         return redirect()->route('events.edit',$event)->with('success', 'Evento creado correctamente');
     }

@@ -19,6 +19,7 @@ class CreateEventsTable extends Migration
             $table->string('slug');
             $table->string('image_url')->nullable();
             $table->string('slider_url')->nullable();
+            $table->string('url_redirect')->nullable();
             $table->foreignId('category_id');
             $table->timestamps();
         });

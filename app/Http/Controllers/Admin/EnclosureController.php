@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\City;
 use App\Models\Enclosure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -27,7 +28,8 @@ class EnclosureController extends Controller
      */
     public function create()
     {
-        return view('admin.enclosures.create');
+        $cities = City::all();
+        return view('admin.enclosures.create',compact('cities'));
     }
 
     /**
@@ -78,7 +80,8 @@ class EnclosureController extends Controller
      */
     public function edit(Enclosure $enclosure)
     {
-        return view('admin.enclosures.edit',compact('enclosure'));
+        $cities = City::all();
+        return view('admin.enclosures.edit',compact('enclosure','cities'));
     }
 
     /**
