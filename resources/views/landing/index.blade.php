@@ -11,7 +11,7 @@
                             <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
                                 style="background-image: url('{{ asset("img/sliderAperturaAtlas2022.png") }}');">
                                 <div
-                                    class="lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
+                                    class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                     <div class="text-center w-full text-white py-20">
                                         <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
                                         <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
@@ -32,7 +32,7 @@
                             <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
                                 style="background-image: url('{{ asset("img/sliderAbonoVaronilAtlas.png") }}');">
                                 <div
-                                    class="lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
+                                    class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                     <div class="text-center w-full text-white py-20">
                                         <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
                                         <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
@@ -53,7 +53,7 @@
                             <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
                                 style="background-image: url('{{ asset("img/sliderAperturaFemenilAtlas2022.png") }}');">
                                 <div
-                                    class="lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
+                                    class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                     <div class="text-center w-full text-white py-20">
                                         <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
                                         <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
@@ -74,7 +74,7 @@
                             <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
                                 style="background-image: url('{{ asset("img/sliderAbonoFemenilAtlas2022.png") }}');">
                                 <div
-                                    class="lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
+                                    class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                     <div class="text-center w-full text-white py-20">
                                         <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
                                         <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
