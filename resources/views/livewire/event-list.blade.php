@@ -32,13 +32,17 @@
                                 {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
                                 <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
                                 {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
-                                <p class="font-semibold text-sm mb-2"><i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
+                                <p class="font-semibold text-sm mb-2"><i
+                                        class="fas fa-map-marker-alt mr-1 text-rojo"></i>
                                     {{ $event->ciudad }}</p>
                                 <p class="font-semibold text-xs"><i class="far fa-calendar mr-1 text-rojo"></i>
                                     {{ $event->fecha }}</p>
                             </div>
                             <div class="col-span-3 pt-4 w-full place-self-end">
-                                <a href="{{ $event->link }}"
+                                {{-- <a href="{{ $event->link }}"
+                                    class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
+                                    Boletos</a> --}}
+                                <a href="{{ route('showEvent', $event) }}"
                                     class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
                                     Boletos</a>
                             </div>
