@@ -1,5 +1,5 @@
 <div>
-    <div class="flex justify-between items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
+    <div class="flex justify-between items-end text-right mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
         <h1 class="text-lg md:text-3xl font-bold text-rojo">Próximos eventos</h1>
     </div>
 
