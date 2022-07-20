@@ -5,29 +5,39 @@ namespace App\Http\Livewire\Admin\Maps;
 use App\Models\Enclosure;
 use App\Models\Map;
 use App\Models\PriceCategory;
+use App\Models\Section;
 use Livewire\Component;
 
 class MapsCreate extends Component
 {
     //Variables utilizadas durante la creacion del mapa
-    public $enclosure,$map;
-    public $name,$description;
-    public $categories_price=1;
-    public $sections_count=4;
+    public $enclosure;
+    public $map;
+    public $name;
+    public $description;
+    public $categories_price=0;
+    public $sections_count=0;
     public $array_categories = [];
     public $array_sections = [];
+    public $prices_categories=[];
     public $rules = [];
-    public $category_price_name,$category_price_color="#FFFFFF";
+    public $category_price_name;
+    public $category_price_color="#FFFFFF";
     public $section_name;
+    public $section_name_real;
+    public $section_price_category_id;
+    public $section_capacity;
+    public $sections_map=[];
 
 
 
     //Vanderas de visibilidad para face de creacion de mapas
-    public $create = false;
+    public $create = true;
     public $category_price = false;
     public $category_price_create = false;
     public $sections = false;
-    public $sections_create = true;
+    public $sections_create = false;
+    public $set_categories = false;
 
 
     //Funciones utilizadas durante la creacion del mapa
@@ -81,10 +91,36 @@ class MapsCreate extends Component
     public function setSections($value){
         $this->sections_count = $value;
         for ($i=1; $i <= $value ; $i++) {
-            $this->array_sections += ["section_name.$i" => "required"];
+            $this->array_sections += ["section_name.$i" => "required",];
+            $this->array_sections += ["section_name_real.$i" => "required",];
+            /* $this->array_sections += ["section_price_category_id.$i" => "required",]; */
+            $this->array_sections += ["section_capacity.$i" => "required"];
         }
+        /* $this->prices_categories = $this->map->prices_categories; */
         $this->sections_create = true;
         $this->sections = false;
+    }
+
+
+    public function return(){
+        $this->sections_map = $this->map->sections;
+        $this->emit('render');
+    }
+
+    public function create_sections(){
+        $this->validate($this->array_sections);
+        for ($i=1; $i <= $this->sections_count ; $i++) {
+            Section::create([
+                'name_section' => $this->section_name[$i],
+                'name_real' => $this->section_name_real[$i],
+                /* 'price_category_id' => $this->section_price_category_id[$i], */
+                'capacity' => $this->section_capacity[$i],
+                'map_id' => $this->map->id,
+            ]);
+        }
+        $this->sections_create = false;
+        $this->set_categories = true;
+
     }
 
     public function render()

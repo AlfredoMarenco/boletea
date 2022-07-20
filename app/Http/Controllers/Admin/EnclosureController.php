@@ -42,16 +42,20 @@ class EnclosureController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'city' => 'required',
+            'city_id' => 'required',
             'state' => 'required',
             'image_url' => 'image|mimes:jpeg,png,jpg',
         ]);
-        $url = $request->file('image_url')->store('enclosures/images');
+        if($request->file('image_url')){
+            $url = $request->file('image_url')->store('enclosures/images');
+        }else{
+            $url = null;
+        }
 
         $enclosure = Enclosure::create([
             'name' => $request->name,
             'address' => $request->address,
-            'city' => $request->city,
+            'city_id' => $request->city_id,
             'postal_code' => $request->postal_code,
             'state' => $request->state,
             'maps_url' => $request->maps_url,

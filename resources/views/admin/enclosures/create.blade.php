@@ -14,11 +14,11 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center mb-4">
                         <div>
                             <x-jet-label value="Name: *" class="mr-4" />
-                            <x-jet-input type="text" name="name" class="w-full mr-4" />
+                            <x-jet-input type="text" name="name" class="w-full mr-4" value="{{ old('name') }}" />
                         </div>
                         <div>
                             <x-jet-label value="Address:" class="mr-4" />
-                            <x-jet-input type="text" name="address" class="w-full mr-4" />
+                            <x-jet-input type="text" name="address" class="w-full mr-4" value="{{ old('address') }}" />
                         </div>
                         <div>
                             <x-jet-label value="City: *" class="mr-4" />
@@ -32,15 +32,15 @@
                         </div>
                         <div>
                             <x-jet-label value="Postal Code:" class="mr-4" />
-                            <x-jet-input type="text" name="postal_code" class="w-full mr-4" />
+                            <x-jet-input type="text" name="postal_code" class="w-full mr-4" value="{{ old('postal_code') }}" />
                         </div>
                         <div>
                             <x-jet-label value="State: *" class="mr-4" />
-                            <x-jet-input type="text" name="state" class="w-full mr-4" />
+                            <x-jet-input type="text" name="state" class="w-full mr-4" value="{{ old('state') }}" />
                         </div>
                         <div>
                             <x-jet-label value="Url Google Maps:" class="mr-4" />
-                            <x-jet-input type="text" name="maps_url" class="w-full mr-4" />
+                            <x-jet-input type="text" name="maps_url" class="w-full mr-4" value="{{ old('maps_url') }}" />
                         </div>
                         <div>
                             <x-jet-label value="Image:" class="mr-4" />

@@ -92,14 +92,13 @@
                     @endif
                     {{-- Formulario para asignar los nombres a las secciones del mapa --}}
                     @if ($sections_create)
-                        <form wire:submit.prevent=''>
+                        <form wire:submit.prevent='create_sections()'>
                             @for ($i = 1; $i <= $sections_count; $i++)
                                 <div class="border-gray-100 shadow-lg p-4 text-center">
                                     <p>Seccion {{ $i }}</p>
                                     <div class="mb-1">
                                         <x-jet-label value="Nombre de la seccion" class="mt-2" />
-                                        <x-jet-input type="text"
-                                            wire:model="section_name.{{ $i }}" />
+                                        <x-jet-input type="text" wire:model="section_name.{{ $i }}" />
                                         <x-jet-input-error for="section_name.{{ $i }}" />
                                     </div>
                                     <div class="mb-1">
@@ -108,19 +107,15 @@
                                             wire:model="section_name_real.{{ $i }}" />
                                         <x-jet-input-error for="section_name_real.{{ $i }}" />
                                     </div>
-                                    <div class="mb-1">
-                                        <x-jet-label value="Tipo de seccion" class="mt-2" />
-                                        <label>
-                                            General
-                                            <input type="radio" wire.model="section_type.{{ $i }}" value="0" name="section_type.{{ $i }}" checked>
-                                        </label>
-
-                                        {{-- <label>
-                                            Numerada
-                                            <input type="radio" wire.model="section_type.{{ $i }}" value="1" name="section_type.{{ $i }}" disabled>
-                                        </label>
-                                        <x-jet-input-error for="section_name_real.{{ $i }}" /> --}}
-                                    </div>
+                                    {{-- <div class="mb-1">
+                                        <x-jet-label value="Categoria de precio" class="mt-2" />
+                                        <select wire.model="section_price_category_id.{{ $i }}" class="rounded-lg border-gray-300" wire:key='section_price_category_id.{{ $i }}' >
+                                            @foreach ($prices_categories as $price_category)
+                                                <option value="{{ $price_category->id }}">{{ $price_category->name }}</option>
+                                            @endforeach
+                                        </select>
+                                        <x-jet-input-error for="section_price_category_id.{{ $i }}" />
+                                    </div> --}}
                                     <div class="mb-1">
                                         <x-jet-label value="Capacidad" class="mt-2" />
                                         <x-jet-input type="number"
@@ -136,6 +131,78 @@
                             </div>
                         </form>
                     @endif
+                    @if ($set_categories)
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead>
+                                <tr>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Nombre</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Nombre real</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Categoria de precio</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Capacidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($map->sections as $section)
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">
+                                                        {{ $section->name_section }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">
+                                                        {{ $section->name_real }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">
+                                                        {{-- {{ $section->price_category }} --}}
+                                                        @if ($section->price_category)
+                                                            Completada
+                                                        @else
+                                                            <x-jet-button>
+                                                                {{ __('Completar') }}
+                                                            </x-jet-button>
+                                                        @endif
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">
+                                                        {{ $section->capacity }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    @endif
+                    <x-jet-button class="mt-4" wire:click="return">
+                        {{ __('Back') }}
+                    </x-jet-button>
                 </div>
             </div>
         </div>
