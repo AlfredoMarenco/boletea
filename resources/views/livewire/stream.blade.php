@@ -11,8 +11,11 @@
         </div>
     @endif
     @if ($show == true)
-        <video class="mx-auto" id="player" autoplay muted playsinline controls data-poster="/path/to/poster.jpg">
-            <source src="{{ asset('videos/ConferenciaPAdre.mp4') }}" type="video/mp4" />
-        </video>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://vimeo.com/event/2315695/embed" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            </iframe>
+        </div>
     @endif
 </div>
