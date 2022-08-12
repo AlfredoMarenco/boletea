@@ -126,6 +126,7 @@
 @section('content')
     <section class="">
         @livewire('search')
+        @livewire('event-list')
         <div class="grid md:grid-cols-3 gap-6 items-center h-5 bg-white mb-4 mx-4 md:mx-44 shadow-md lg:hidden">
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
                 crossorigin="anonymous"></script>
@@ -136,7 +137,6 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
-        @livewire('event-list')
     </section>
 
     <section>
