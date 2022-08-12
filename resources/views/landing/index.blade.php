@@ -129,7 +129,7 @@
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
                 crossorigin="anonymous"></script>
             <!-- search -->
-            <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+            <ins class="adsbygoogle" style="display:inline-block;width:728px;height:50px"
                 data-ad-client="ca-pub-5976709800052610" data-ad-slot="9361422184"></ins>
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
