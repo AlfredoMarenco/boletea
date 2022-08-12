@@ -146,7 +146,7 @@
                     class="md:px-3 md:py-2 px-2 py-1 bg-red-700 font-semibold rounded-sm hover:bg-red-700 text-white">Próximos
                     partidos</a>
             </div>
-            <img class="object-cover w-full md:w-2/3" src="{{ asset('img/BANNER_PRN_BOLETEA.png') }}" alt="">
+            <img class="object-cover w-full md:w-2/3 sm:mt-4" src="{{ asset('img/BANNER_PRN_BOLETEA.png') }}" alt="">
         </div>
     </section>
     <section>
