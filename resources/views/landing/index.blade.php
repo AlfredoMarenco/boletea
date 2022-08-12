@@ -9,9 +9,8 @@
                         <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
                             class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
                             <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
-                                style="background-image: url('{{ asset("img/sliderAperturaAtlas2022.png") }}');">
-                                <div
-                                    class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
+                                style="background-image: url('{{ asset('img/sliderAperturaAtlas2022.png') }}');">
+                                <div class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                     <div class="text-center w-full text-white py-20">
                                         <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
                                         <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
@@ -30,7 +29,7 @@
                         <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
                             class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
                             <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
-                                style="background-image: url('{{ asset("img/sliderAbonoVaronilAtlas.png") }}');">
+                                style="background-image: url('{{ asset('img/sliderAbonoVaronilAtlas.png') }}');">
                                 <div
                                     class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                     <div class="text-center w-full text-white py-20">
@@ -51,7 +50,7 @@
                         <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
                             class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
                             <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
-                                style="background-image: url('{{ asset("img/sliderAperturaFemenilAtlas2022.png") }}');">
+                                style="background-image: url('{{ asset('img/sliderAperturaFemenilAtlas2022.png') }}');">
                                 <div
                                     class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                     <div class="text-center w-full text-white py-20">
@@ -72,14 +71,15 @@
                         <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
                             class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
                             <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
-                                style="background-image: url('{{ asset("img/sliderAbonoFemenilAtlas2022.png") }}');">
+                                style="background-image: url('{{ asset('img/sliderAbonoFemenilAtlas2022.png') }}');">
                                 <div
                                     class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                     <div class="text-center w-full text-white py-20">
                                         <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
                                         <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
                                         </h1>
-                                        <h1 class="text-3xl md:text-5xl md:my-3 font-bold">Abono Torneo de Apertura 2022 Femenil
+                                        <h1 class="text-3xl md:text-5xl md:my-3 font-bold">Abono Torneo de Apertura 2022
+                                            Femenil
                                         </h1>
                                         <a href="https://atlasfc.boletea.com.mx/"
                                             class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
@@ -147,6 +147,18 @@
                     partidos</a>
             </div>
             <img class="object-cover w-full md:w-2/3" src="{{ asset('img/BANNER_PRN_BOLETEA.png') }}" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="block lg:hidden">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
+                crossorigin="anonymous"></script>
+            <!-- Anuncio 1 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610"
+                data-ad-slot="1210961234" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
     </section>
 @endsection
