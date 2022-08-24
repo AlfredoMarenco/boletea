@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
-    <section>
+    <section class="py-4">
         <div class="mb-6">
             <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
