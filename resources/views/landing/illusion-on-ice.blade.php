@@ -3,7 +3,7 @@
 @section('content')
     <section class="py-4">
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24 mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                     <div class="h-6 bg-rojo">
@@ -11,8 +11,8 @@
                     </div>
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Martes 6 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                     <div class="h-6 bg-rojo">
@@ -31,8 +31,8 @@
                     </div>
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Miércoles 7 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                     <div class="h-6 bg-rojo">
@@ -51,8 +51,8 @@
                     </div>
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Jueves 8 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                     <div class="h-6 bg-rojo">
@@ -71,8 +71,8 @@
                     </div>
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Viernes 9 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -84,7 +84,7 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                     <div class="h-6 bg-rojo">
@@ -92,8 +92,8 @@
                     </div>
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Sábado 10 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -105,7 +105,7 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                     <div class="h-6 bg-rojo">
@@ -113,8 +113,8 @@
                     </div>
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Domingo 11 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -125,13 +125,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Lunes 12 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -142,13 +142,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Martes 13 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -159,13 +159,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Miércoles 14 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -176,13 +176,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Jueves 15 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -194,13 +194,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Viernes 16 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -212,13 +212,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Sábado 17 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -230,13 +230,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Domingo 18 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -247,13 +247,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Lunes 19 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -264,13 +264,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Martes 20 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -281,13 +281,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Miércoles 21 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -298,13 +298,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Jueves 22 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -315,13 +315,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Viernes 23 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -333,13 +333,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Sábado 24 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -351,13 +351,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Domingo 25 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -368,13 +368,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Lunes 26 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -385,13 +385,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Martes 27 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -402,13 +402,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Miércoles 28 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -419,13 +419,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Jueves 29 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -436,13 +436,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Viernes 30 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -454,13 +454,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Sábado 1 de octubre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
@@ -472,13 +472,13 @@
             </div>
         </div>
         <div class="mb-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-24 mt-4 mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
                 </div>
                 <div class="bg-gray-200 h-36 col-span-3 p-4 shadow-lg">
-                    <h2 class="text-xl text-rojo font-semibold">Illusión On Ice</h2>
-                    <p>Recinto: Poliforum de la Feria Torreón</p>
+                    <h2 class="text-xl text-rojo font-semibold">Illusion On Ice</h2>
+                    <p><span class="font-semibold">Recinto:</span> Poliforum de la Feria Torreón</p>
                     <p>Fecha: Domingo 2 de octubre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
