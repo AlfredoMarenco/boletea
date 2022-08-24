@@ -27,20 +27,17 @@ Route::get('/evento/{event}', [LandingController::class, 'showEvent'])->name('sh
 Route::get('/todos-los-eventos', [LandingController::class, 'allEvents'])->name('allEvents');
 Route::get('/feria-de-torreon', [LandingController::class, 'eventsFeria'])->name('eventsFeria');
 Route::get('/poliforum-feria-de-torreon', [LandingController::class, 'eventsPoliforum'])->name('eventsPoliforum');
+Route::get('/illusion-on-ice-torreon',[LandingController::class,'illusiononice'])->name('illusiononice');
 Route::get('/velariaferiagomezpalacio', [LandingController::class, 'eventsVelaria'])->name('eventsVelaria');
 Route::get('/palenqueferiagomezpalacio', [LandingController::class, 'eventsPalenque'])->name('eventsPalenque');
 Route::get('/tramitar-reembolso', RefundsController::class);
 Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('streamLive');
 
-Route::get('evento/laorejadevangohg',function(){
-    return redirect('https://boletea.com/evento/laorejadevangogh');
-});
 
-
-Route::get('cache', function () {
+/* Route::get('cache', function () {
     Artisan::call('cache:clear');
 });
 
 Route::get('migrates', function () {
     Artisan::call('migrate');
-});
+}); */

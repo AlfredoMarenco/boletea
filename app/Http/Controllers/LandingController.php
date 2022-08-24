@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -11,11 +12,7 @@ class LandingController extends Controller
     {
         $date = date('Ymd');
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
-        $explanadaferia = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', '%Explanada%')->orderBy('fechaBusqueda', 'asc')->get();
-        $poliforum = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', '%Poliforum%')->orderBy('fechaBusqueda', 'asc')->get();
-        $velaria = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', 'Velaria de la Feria')->where('ciudad', 'LIKE', 'Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
-        $palenque = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', 'Palenque de la Feria')->where('ciudad', 'LIKE', 'Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
-        return view('landing.index', compact('events', 'explanadaferia', 'poliforum', 'velaria', 'palenque'));
+        return view('landing.index', compact('events'));
     }
 
     public function allEvents()
@@ -70,6 +67,9 @@ class LandingController extends Controller
 
     public function showEvent(Event $event)
     {
+        if ($event->name == 'illusiononicetorreon') {
+            return redirect('https://boletea.com/illusion-on-ice-torreon');
+        }
         return view('landing.event', compact('event'));
     }
 
@@ -80,4 +80,9 @@ class LandingController extends Controller
 
     public function streamLive(){
         return view('landing.stream-live');
-    }}
+    }
+
+    public function illusiononice(){
+        return view('landing.illusion-on-ice');
+    }
+}

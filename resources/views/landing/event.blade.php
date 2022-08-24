@@ -81,7 +81,8 @@
                 {!! $event->subtitle !!}
             </h3>
             @if ($event->description)
-                <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i class="fas fa-chevron-down"></i>
+                <h3 class="cursor-pointer" x-on:click="open=!open">Descripción del evento <i
+                        class="fas fa-chevron-down"></i>
                 </h3>
                 <p x-show="open" class="text-md font-bold text-justify">
                     {!! $event->description !!}
@@ -154,6 +155,7 @@
                                     src="{{ asset('cdvs/logoHolidayInn.png') }}" alt="">
                             </div>
                         @break
+
                         @case('quintanaroo')
                             <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
                             <div class="flex flex-wrap">
@@ -161,6 +163,7 @@
                                     src="{{ asset('cdvs/logo-bomssa.png') }}" alt="">
                             </div>
                         @break
+
                         @default
                     @endswitch
                 </div>
@@ -169,7 +172,7 @@
     </div>
     <div class="grid md:grid-cols-3 gap-6 items-center h-5 bg-white mb-4 mx-4 md:mx-44 shadow-md lg:hidden">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
-                crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>
         <!-- Anuncio 1 -->
         <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610" data-ad-slot="1210961234"
             data-ad-format="auto" data-full-width-responsive="true"></ins>
