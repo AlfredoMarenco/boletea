@@ -10,7 +10,7 @@
                 <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
                     wire:click="navigation('1')">Quintana Roo</li>
                 {{-- <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer">Durango</li> --}}
-                <li>
+                <li class="mt-10 hidden lg:block">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
                         crossorigin="anonymous"></script>
                     <!-- Cdvs -->
