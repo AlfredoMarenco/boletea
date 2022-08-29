@@ -48,7 +48,7 @@
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Bomssa
-                                - Plaza Patio<br></span>Entre Calle 10 y 14, Cto. Colonias, Trava Quintero Chuminipolis, 97158 Mérida, Yuc.</p>
+                                - Plaza Patio<br></span>Calle 10 y 14, Cto. Colonias, Trava Quintero Chuminipolis, 97158 Mérida, Yuc.</p>
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Domingo :
                             10:00 am a 9:00 pm
