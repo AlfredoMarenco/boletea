@@ -14,7 +14,7 @@
         </div>
         @if ($cancun)
             <div class="col-span-4 mt-6">
-                <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 justify-items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-items-center">
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Bomssa
@@ -44,7 +44,7 @@
         @endif
         @if ($merida)
             <div class="col-span-4 mt-6">
-                <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 justify-items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-items-center">
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Bomssa
@@ -89,7 +89,7 @@
         @endif
         @if ($torreon)
             <div class="col-span-4 mt-6">
-                <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 justify-items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-items-center">
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/imgCintilloColiseoCentenario.png') }}" class="mx-auto mb-2"
                             alt="">
