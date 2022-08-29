@@ -10,6 +10,14 @@
                 <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
                     wire:click="navigation('1')">Quintana Roo</li>
                 {{-- <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer">Durango</li> --}}
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
+                    crossorigin="anonymous"></script>
+                <!-- Cdvs -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610"
+                    data-ad-slot="4234518932" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </ul>
         </div>
         @if ($cancun)
@@ -48,7 +56,8 @@
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Bomssa
-                                - Plaza Patio<br></span>Calle 10 y 14, Cto. Colonias, Trava Quintero Chuminipolis, 97158 Mérida, Yuc.</p>
+                                - Plaza Patio<br></span>Calle 10 y 14, Cto. Colonias, Trava Quintero Chuminipolis, 97158
+                            Mérida, Yuc.</p>
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Domingo :
                             10:00 am a 9:00 pm
@@ -57,7 +66,8 @@
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Bomssa
-                                - Av. 60 Norte<br></span>Calle.60 No.247 X 21 y 23, Col. Chuburna, 97208 Mérida, Yuc.</p>
+                                - Av. 60 Norte<br></span>Calle.60 No.247 X 21 y 23, Col. Chuburna, 97208 Mérida, Yuc.
+                        </p>
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Sábado :
                             10:00 am a 8:00 pm
@@ -128,7 +138,8 @@
                         </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
-                        <img src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}" class="mx-auto my-4" alt="">
+                        <img src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}" class="mx-auto my-4"
+                            alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Suc. San
                                 Pedro<br></span>Zaragoza No. 42-Local 2, Centro, 27800 San Pedro, Coah.</p>
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
