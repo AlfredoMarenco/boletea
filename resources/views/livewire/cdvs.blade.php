@@ -10,14 +10,16 @@
                 <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
                     wire:click="navigation('1')">Quintana Roo</li>
                 {{-- <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer">Durango</li> --}}
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
-                    crossorigin="anonymous"></script>
-                <!-- Cdvs -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610"
-                    data-ad-slot="4234518932" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                <li>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
+                        crossorigin="anonymous"></script>
+                    <!-- Cdvs -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610"
+                        data-ad-slot="4234518932" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </li>
             </ul>
         </div>
         @if ($cancun)
