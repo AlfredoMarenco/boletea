@@ -135,8 +135,8 @@
                     <p>Fecha: Lunes 12 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4336">8:00 pm</a></span>
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4337">10:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4336">8:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4337">10:00 pm</a></span>
                     </div>
                 </div>
             </div>
@@ -152,8 +152,8 @@
                     <p>Fecha: Martes 13 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4338">8:00 pm</a></span>
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4339">10:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4338">8:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4339">10:00 pm</a></span>
                     </div>
                 </div>
             </div>
@@ -169,8 +169,8 @@
                     <p>Fecha: Miércoles 14 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4340">8:00 pm</a></span>
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4341">10:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4340">8:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4341">10:00 pm</a></span>
                     </div>
                 </div>
             </div>
@@ -186,9 +186,9 @@
                     <p>Fecha: Jueves 15 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4342">8:00 pm</a></span>
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4343">10:00 pm</a></span>
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4344">10:30 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4342">8:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4343">10:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4344">10:30 pm</a></span>
                     </div>
                 </div>
             </div>
@@ -204,9 +204,9 @@
                     <p>Fecha: Viernes 16 de septiembre 2022</p>
                     <p>Funciones</p>
                     <div class="flex space-x-4">
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4345">7:00 pm</a></span>
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4346">9:00 pm</a></span>
-                        <span class="bg-rojo py-0.5 px-2 text-white rounded-md shadow"><a href="https://boletea.com.mx/ordertickets.asp?p=4347">10:30 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4345">7:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4346">9:00 pm</a></span>
+                        <span class="bg-gray-400 py-0.5 px-2 text-white rounded-md shadow line-through "><a href="https://boletea.com.mx/ordertickets.asp?p=4347">10:30 pm</a></span>
                     </div>
                 </div>
             </div>
