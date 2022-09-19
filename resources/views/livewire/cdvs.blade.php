@@ -87,6 +87,7 @@
                             Domingo :
                             10:00 am a 9:00 pm
                         </p>
+                        <p>SOLO BOLETO DIGITAL</p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
