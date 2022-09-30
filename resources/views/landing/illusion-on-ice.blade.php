@@ -401,7 +401,7 @@
                 </div>
             </div>
         </div> --}}
-        <div class="mb-6">
+        {{-- <div class="mb-6">
             <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24 mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
                     <img src="{{ asset('img/imgeIllusionOnIce.png') }}" class="object-center object-cover " alt="">
@@ -434,7 +434,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <div class="mb-6">
             <div class="grid grid-cols-1 lg:grid-cols-5 place-content-center gap-6 h-36 px-4 lg:px-24 mt-4 mb-6">
                 <div class="hidden lg:block lg:col-span-2 bg-gray-200 shadow-lg">
