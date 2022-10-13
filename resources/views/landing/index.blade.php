@@ -6,7 +6,7 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
+                        <a class="sm:hidden lg:block" href="https://boletea.com/evento/tenisfestgnpplazamexico"
                             class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
                             <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-contain bg-no-repeat bg-center"
                                 style="background-image: url('{{ asset('img/sliderRafaelNadalCasperRuud.jpeg') }}');">
