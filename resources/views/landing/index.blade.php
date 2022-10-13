@@ -8,7 +8,27 @@
                     <li class="splide__slide">
                         <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
                             class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
-                            <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
+                            <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-contain bg-no-repeat bg-center"
+                                style="background-image: url('{{ asset('img/sliderAperturaAtlas2022.png') }}');">
+                                <div class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
+                                    <div class="text-center w-full text-white py-20">
+                                        <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
+                                        <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
+                                        </h1>
+                                        <h1 class="text-3xl md:text-5xl md:my-3 font-bold">Torneo de Apertura 2022 Varonil
+                                        </h1>
+                                        <a href="https://atlasfc.boletea.com.mx/"
+                                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
+                                            Boletos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    {{-- <li class="splide__slide">
+                        <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
+                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
+                            <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-contain bg-no-repeat bg-top"
                                 style="background-image: url('{{ asset('img/sliderAperturaAtlas2022.png') }}');">
                                 <div class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
                                     <div class="text-center w-full text-white py-20">
@@ -88,13 +108,13 @@
                                 </div>
                             </div>
                         </a>
-                    </li>
+                    </li> --}}
                     @foreach ($events as $event)
                         @if ($event->slider != null)
                             <li class="splide__slide">
                                 <a class="sm:hidden lg:block" href="{{ route('showEvent', $event) }}"
                                     class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
-                                    <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
+                                    <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-contain bg-no-repeat bg-top"
                                         style="background-image: url('{{ asset('img/' . $event->slider) }}');">
                                         <div
                                             class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
