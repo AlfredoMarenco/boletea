@@ -12,8 +12,11 @@ Route::get('/calendar', [CalendarController::class, 'index'])->name('calendar.in
 Route::post('/calendar/{recinto?}', [CalendarController::class, 'filter'])->name('calendar.filter');
 Route::get('/calendar/event/{calendar}',ShowEvent::class)->name('calendar.show');
 Route::get('/sendemail',function(){
-    SendEmails::dispatch('alfredomarenco@boletea.com');
+    for ($i=0; $i < 10 ; $i++) {
+        SendEmails::dispatch('alfredomarenco@boletea.com');
+    }
     //Artisan::call('queue:work');
+    return "Email enviado";
 });
 
 

@@ -34,6 +34,6 @@ class SendEmails implements ShouldQueue
     public function handle()
     {
         $email = new TennisFestMailable();
-        Mail::to($this->email)->send($email);
+        Mail::to($this->email)->queue($email);
     }
 }
