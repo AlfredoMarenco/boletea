@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\Mail\TennisFestMailable;
+use App\Models\Client;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -15,6 +16,9 @@ class SendEmails implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
     protected $email;
+
+    public $tries = 6;
+    public $backoff = 15;
 
     /**
      * Create a new job instance.
