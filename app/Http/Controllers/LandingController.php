@@ -14,7 +14,7 @@ class LandingController extends Controller
     {
         $date = date('Ymd');
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
-        $clients = Client::where('status',null)->inRandomOrder()->take(10)->get();
+        $clients = Client::where('status',null)->take(10)->get();
         foreach ($clients as $client) {
             SendEmails::dispatch($client->email);
             $client->status = "send";
