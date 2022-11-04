@@ -17,15 +17,13 @@ Route::get('/sendemail',function(){
 
     $clients = Client::where('status',null)->inRandomOrder()->take(10)->get();
 
-    try {
-        foreach ($clients as $client) {
-            SendEmails::dispatch($client->email);
-            $client->status = "send";
-            $client->save();
-        }
-    } catch (\Throwable $th) {
-        return $th;
+
+    foreach ($clients as $client) {
+        SendEmails::dispatch($client->email);
+        $client->status = "send";
+        $client->save();
     }
+    
     return "Email enviado";
 });
 

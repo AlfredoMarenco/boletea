@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendEmails;
+use App\Models\Client;
 use App\Models\Event;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -12,6 +14,12 @@ class LandingController extends Controller
     {
         $date = date('Ymd');
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
+        $clients = Client::where('status',null)->inRandomOrder()->take(10)->get();
+        foreach ($clients as $client) {
+            SendEmails::dispatch($client->email);
+            $client->status = "send";
+            $client->save();
+        }
         return view('landing.index', compact('events'));
     }
 
