@@ -20,8 +20,6 @@ class LandingController extends Controller
             $client->status = "send";
             $client->save();
         } */
-        SendEmails::dispatch('daniel.gomez@boletea.com');
-        SendEmails::dispatch('alfredomarenco@boletea.com');
         return view('landing.index', compact('events'));
     }
 
