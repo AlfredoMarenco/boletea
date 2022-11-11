@@ -14,13 +14,13 @@ class LandingController extends Controller
     {
         $date = date('Ymd');
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
-        /* $clients = Client::where('status',null)->take(2)->get();
+        $clients = Client::where('status',null)->take(4)->get();
         foreach ($clients as $client) {
             SendEmails::dispatch($client->email);
             $client->status = "send";
             $client->save();
-        } */
-       /*  SendEmails::dispatch('daniel.gomez@boletea.com');
+        }
+        /*  SendEmails::dispatch('daniel.gomez@boletea.com');
         SendEmails::dispatch('crecke@orlegi.mx'); */
         return view('landing.index', compact('events'));
     }
