@@ -100,7 +100,7 @@
                 $fecha = date('Ymd');
             @endphp
             @if ($event->fechaBusqueda >= $fecha)
-                @if ($event->id != 212 && $event->id != 183 && $event->id && 214)
+                @if ($event->id != 212)
                     <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
                         <a href="{{ route('showEvent', $event) }}">
                             <img class="rounded-t-lg h-auto md:h-auto w-full object-cover object-top mx-auto"
