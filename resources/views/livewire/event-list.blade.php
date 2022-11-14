@@ -43,12 +43,38 @@
                 </div>
             </a>
         </div>
+        <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
+            <a href="https://boletea.com/evento/christiannodaloaxaca">
+                <img class="rounded-t-lg h-auto md:h-auto w-full object-cover object-top mx-auto"
+                    src="https://boletea.com/img/imgeNodalOaxaca.jpg" alt="">
+                <div class="grid grid-cols-1 place-content-end mt-4">
+
+                    <div class="px-2 md:ml-3 col-span-2 text-left">
+                        {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
+                        <h3 class="font-bold text-lg mb-2">{{ Str::limit('CHRISTIAN NODAL', 15, '...') }}</h3>
+                        {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
+                        <p class="font-semibold text-sm mb-2"><i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
+                            Oaxaca, Oaxaca.</p>
+                        <p class="font-semibold text-xs"><i class="far fa-calendar mr-1 text-rojo"></i>
+                            Domingo 20 de noviembre 2022</p>
+                    </div>
+                    <div class="col-span-3 pt-4 w-full place-self-end">
+                        {{-- <a href="{{ $event->link }}"
+                            class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
+                            Boletos</a> --}}
+                        <a href="https://boletea.com/evento/christiannodaloaxaca"
+                            class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
+                            Boletos</a>
+                    </div>
+                </div>
+            </a>
+        </div>
         @foreach ($events as $event)
             @php
                 $fecha = date('Ymd');
             @endphp
             @if ($event->fechaBusqueda >= $fecha)
-                @if ($event->id != 212)
+                @if ($event->id != 212 || $event->id != 183)
                     <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
                         <a href="{{ route('showEvent', $event) }}">
                             <img class="rounded-t-lg h-auto md:h-auto w-full object-cover object-top mx-auto"
