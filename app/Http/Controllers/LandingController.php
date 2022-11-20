@@ -23,7 +23,7 @@ class LandingController extends Controller
             $client->save();
         } */
 
-        Mail::to('daniel.gomez@boletea.com')->queue(new TennisFestMailable('Daniel'));
+        /* Mail::to('daniel.gomez@boletea.com')->queue(new TennisFestMailable('Daniel')); */
         return view('landing.index', compact('events'));
     }
 
