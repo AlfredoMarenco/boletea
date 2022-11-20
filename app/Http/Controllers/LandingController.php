@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Jobs\SendEmails;
+use App\Mail\TennisFestMailable;
 use App\Models\Client;
 use App\Models\Event;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class LandingController extends Controller
 {
@@ -14,14 +16,14 @@ class LandingController extends Controller
     {
         $date = date('Ymd');
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
-        $clients = Client::where('status',null)->take(4)->get();
+        $clients = Client::where('status',null)->take(1)->get();
         /* foreach ($clients as $client) {
-            SendEmails::dispatch($client->email);
+            Mail::to($client->email)->queue(new TennisFestMailable($client->name));
             $client->status = "send";
             $client->save();
         } */
-        /*  SendEmails::dispatch('daniel.gomez@boletea.com');
-        SendEmails::dispatch('crecke@orlegi.mx'); */
+
+        Mail::to('daniel.gomez@boletea.com')->queue(new TennisFestMailable('Daniel'));
         return view('landing.index', compact('events'));
     }
 

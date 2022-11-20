@@ -267,42 +267,43 @@ sans-serif; line-height : 100%; color : #000000; "
                                                                                             <td class="responsive-td"
                                                                                                 valign="top"
                                                                                                 style="width: 100%;">
-                                                                                                <table cellpadding="0"
-                                                                                                    cellspacing="0"
-                                                                                                    width="100%"
+                                                                                                <table
                                                                                                     role="presentation"
-                                                                                                    style="min-width: 100%;
-"
-                                                                                                    class="stylingblock-content-wrapper">
+                                                                                                    style="min-width: 100%; "
+                                                                                                    class="stylingblock-content-wrapper"
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
                                                                                                     <tr>
                                                                                                         <td
-                                                                                                            class="stylingblock-content-wrapper camarker-inner">
+                                                                                                            class="stylingblock-content-wrapper
+camarker-inner">
                                                                                                             <table
                                                                                                                 width="100%"
-                                                                                                                border="0"
-                                                                                                                align="center"
+                                                                                                                cellspacing="0"
                                                                                                                 cellpadding="0"
-                                                                                                                cellspacing="0">
+                                                                                                                border="0"
+                                                                                                                align="center">
                                                                                                                 <tr>
-                                                                                                                    <td align="center"
-                                                                                                                        valign="top">
+                                                                                                                    <td valign="top"
+                                                                                                                        align="center">
 
                                                                                                                         <table
+                                                                                                                            class="main"
                                                                                                                             width="650"
-                                                                                                                            border="0"
-                                                                                                                            align="center"
-                                                                                                                            cellpadding="0"
                                                                                                                             cellspacing="0"
-                                                                                                                            class="main">
+                                                                                                                            cellpadding="0"
+                                                                                                                            border="0"
+                                                                                                                            align="center">
                                                                                                                             <tr>
-                                                                                                                                <td align="left"
-                                                                                                                                    valign="top">
+                                                                                                                                <td valign="top"
+                                                                                                                                    align="left">
                                                                                                                                     <img src="https://tennisfest.mx/Mailing-images/element/header-top-image.png"
-                                                                                                                                        width="650"
-                                                                                                                                        height="37"
                                                                                                                                         alt=""
-                                                                                                                                        style="display:block;width:100%
-!important; height:auto !important; ">
+                                                                                                                                        style="display:block;width:100% !important; height:auto
+!important; "
+                                                                                                                                        width="650"
+                                                                                                                                        height="37">
                                                                                                                                 </td>
                                                                                                                             </tr>
                                                                                                                         </table>
@@ -313,374 +314,179 @@ sans-serif; line-height : 100%; color : #000000; "
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
-                                                                                                <table cellpadding="0"
-                                                                                                    cellspacing="0"
-                                                                                                    width="100%"
+                                                                                                <table
                                                                                                     role="presentation"
-                                                                                                    style="min-width: 100%; "
-                                                                                                    class="stylingblock-content-wrapper">
+                                                                                                    style="background-color: #00303C; min-width: 100%; "
+                                                                                                    class="stylingblock-content-wrapper"
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
                                                                                                     <tr>
-                                                                                                        <td
+                                                                                                        <td style="padding: 0px; "
+                                                                                                            class="stylingblock-content-wrapper camarker-inner">
+                                                                                                            <div
+                                                                                                                style="text-align: center;">
+                                                                                                                <br>
+                                                                                                                <b><span
+                                                                                                                        style="font-size:20px;"><span
+                                                                                                                            style="color:#ffffff;">&iexcl;</span><span
+                                                                                                                            style="color:#c1d100;">TennisFest
+                                                                                                                            GNP</span>
+                                                                                                                        <span
+                                                                                                                            style="color:#ffffff;">est&aacute;
+                                                                                                                            cada
+                                                                                                                            vez
+                                                                                                                            m&aacute;s
+                                                                                                                            cerca!</span></span></b><br>
+                                                                                                                &nbsp;
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                                <table
+                                                                                                    role="presentation"
+                                                                                                    style="background-color: #00303C; min-width: 100%; "
+                                                                                                    class="stylingblock-content-wrapper"
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td style="padding: 0px; "
                                                                                                             class="stylingblock-content-wrapper camarker-inner">
                                                                                                             <table
-                                                                                                                width="100%"
-                                                                                                                cellspacing="0"
-                                                                                                                cellpadding="0"
-                                                                                                                role="presentation">
+                                                                                                                align="center">
                                                                                                                 <tr>
-                                                                                                                    <td
-                                                                                                                        align="center">
-                                                                                                                        <a href="https://boletea.com.mx/ordertickets.asp?p=4502&backurl=%2F%2Fboletea.com.mx%2Fdefault.asp&utm_source=salesforce&utm_medium=email&utm_campaign=conversion-tennisfest&utm_content=infog-ruud-plaza"
-                                                                                                                            title="infographic"
-                                                                                                                            alias="infog"
-                                                                                                                            conversion="true"
-                                                                                                                            data-linkto="https://"><img
-                                                                                                                                data-assetid="70700"
-                                                                                                                                src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/79e2096d-0bca-4303-a758-6253e35088f0.png"
-                                                                                                                                alt=""
-                                                                                                                                width="650"
-                                                                                                                                style="display: block; padding: 0px; text-align:
-center; height: auto; width: 100%; border:
-0px;"></a>
+                                                                                                                    <td> <img
+                                                                                                                            src="https://gen.sendtric.com/countdown/t2o8h2aemd"
+                                                                                                                            style="display:
+block;max-width:100%">
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                             </table>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
-                                                                                                <table cellpadding="0"
-                                                                                                    cellspacing="0"
+                                                                                                <table
+                                                                                                    role="presentation"
+                                                                                                    style="min-width: 100%; "
+                                                                                                    class="stylingblock-content-wrapper"
                                                                                                     width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td
+                                                                                                            class="stylingblock-content-wrapper
+camarker-inner">
+                                                                                                            <table
+                                                                                                                role="presentation"
+                                                                                                                width="100%"
+                                                                                                                cellspacing="0"
+                                                                                                                cellpadding="0">
+                                                                                                                <tr>
+                                                                                                                    <td
+                                                                                                                        align="center">
+                                                                                                                        <a href="https://boletea.com.mx/ordertickets.asp?p=4502&backurl=%2F%2Fboletea.com.mx%2Fdefault.asp&utm_source=salesforce&utm_medium=email&utm_campaign=conversion-tennisfest&utm_content=leads-santiago"
+                                                                                                                            title="infographic"
+                                                                                                                            alias="infog"
+                                                                                                                            conversion="true"
+                                                                                                                            data-linkto="https://"><img
+                                                                                                                                data-assetid="72485"
+                                                                                                                                src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/bde50ab2-1fa5-4f09-ac14-e1a9b490cf62.jpg"
+                                                                                                                                alt=""
+                                                                                                                                style="display: block; padding: 0px; text-align: center; height:
+auto; width: 100%; border: 0px none transparent;"
+                                                                                                                                width="650"></a>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                                <table
                                                                                                     role="presentation"
                                                                                                     class="stylingblock-content-wrapper"
-                                                                                                    style="min-width: 100%; ">
+                                                                                                    style="min-width: 100%; "
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
                                                                                                     <tr>
                                                                                                         <td class="stylingblock-content-margin-cell"
-                                                                                                            style="padding: 15px; ">
+                                                                                                            style="padding: 10px; ">
                                                                                                             <table
-                                                                                                                cellpadding="0"
-                                                                                                                cellspacing="0"
-                                                                                                                width="100%"
                                                                                                                 role="presentation"
                                                                                                                 style="background-color: transparent; min-width: 100%; "
-                                                                                                                class="stylingblock-content-wrapper">
+                                                                                                                class="stylingblock-content-wrapper"
+                                                                                                                width="100%"
+                                                                                                                cellspacing="0"
+                                                                                                                cellpadding="0">
                                                                                                                 <tr>
                                                                                                                     <td style="padding: 0px; "
                                                                                                                         class="stylingblock-content-wrapper camarker-inner">
                                                                                                                         <div
-                                                                                                                            style="text-align: justify;">
-                                                                                                                            <span
-                                                                                                                                style="font-size:14px;"><span
-                                                                                                                                    style="font-family:Arial,Helvetica,sans-serif;"><span
-                                                                                                                                        style="line-height:115%"><span
-                                                                                                                                            lang="es-419"
-                                                                                                                                            style="background:white"><span
-                                                                                                                                                style="color:#1f2223">Naci&oacute;
-                                                                                                                                                en
-                                                                                                                                                Oslo,
-                                                                                                                                                Noruega,
-                                                                                                                                                el
-                                                                                                                                                20
-                                                                                                                                                de
-                                                                                                                                                diciembre
-                                                                                                                                                de
-                                                                                                                                                1998,
-                                                                                                                                                es
-                                                                                                                                                el
-                                                                                                                                                <b>primer
-                                                                                                                                                    noruego
-                                                                                                                                                    en
-                                                                                                                                                    ganar
-                                                                                                                                                    un
-                                                                                                                                                    torneo
-                                                                                                                                                    ATP
-                                                                                                                                                    Tour</b>
-                                                                                                                                                y
-                                                                                                                                                el
-                                                                                                                                                primer
-                                                                                                                                                jugador
-                                                                                                                                                de
-                                                                                                                                                su
-                                                                                                                                                pa&iacute;s
-                                                                                                                                                en
-                                                                                                                                                lograr
-                                                                                                                                                posicionarse
-                                                                                                                                                como
-                                                                                                                                                el
-                                                                                                                                                segundo
-                                                                                                                                                mejor
-                                                                                                                                                tenista
-                                                                                                                                                del
-                                                                                                                                                mundo,
-                                                                                                                                                <b>actualmente
-                                                                                                                                                    tiene
-                                                                                                                                                    el
-                                                                                                                                                    tercer
-                                                                                                                                                    puesto
-                                                                                                                                                    del
-                                                                                                                                                    ranking.</b></span></span></span><br>
-                                                                                                                                    <br>
-                                                                                                                                    <span
-                                                                                                                                        style="line-height:115%"><span
-                                                                                                                                            lang="es-419"
-                                                                                                                                            style="background:white"><span
-                                                                                                                                                style="color:#1f2223">Del
-                                                                                                                                                mismo
-                                                                                                                                                modo,
-                                                                                                                                                <b>Ruud
-                                                                                                                                                    es
-                                                                                                                                                    el
-                                                                                                                                                    &uacute;nico
-                                                                                                                                                    tenista
-                                                                                                                                                    noruego
-                                                                                                                                                    que
-                                                                                                                                                    ha
-                                                                                                                                                    disputado
-                                                                                                                                                    una
-                                                                                                                                                    final
-                                                                                                                                                    de
-                                                                                                                                                    Grand
-                                                                                                                                                    Slam,
-                                                                                                                                                    esto
-                                                                                                                                                    en
-                                                                                                                                                    el
-                                                                                                                                                    Roland
-                                                                                                                                                    Garros
-                                                                                                                                                    del
-                                                                                                                                                    2022</b>,
-                                                                                                                                                donde
-                                                                                                                                                se
-                                                                                                                                                midi&oacute;
-                                                                                                                                                con
-                                                                                                                                                Rafael
-                                                                                                                                                Nadal,
-                                                                                                                                                y
-                                                                                                                                                el
-                                                                                                                                                &uacute;nico
-                                                                                                                                                en
-                                                                                                                                                disputar
-                                                                                                                                                una
-                                                                                                                                                final
-                                                                                                                                                de
-                                                                                                                                                Masters
-                                                                                                                                                1000
-                                                                                                                                                al
-                                                                                                                                                hacerlo
-                                                                                                                                                el
-                                                                                                                                                mismo
-                                                                                                                                                a&ntilde;o
-                                                                                                                                                en
-                                                                                                                                                Miami,
-                                                                                                                                                luego
-                                                                                                                                                de
-                                                                                                                                                superar
-                                                                                                                                                al
-                                                                                                                                                cuarto
-                                                                                                                                                puesto
-                                                                                                                                                dentro
-                                                                                                                                                del
-                                                                                                                                                ranking
-                                                                                                                                                mundial,
-                                                                                                                                                Andrei
-                                                                                                                                                Zverev
-                                                                                                                                                y
-                                                                                                                                                lograr
-                                                                                                                                                as&iacute;
-                                                                                                                                                la
-                                                                                                                                                mayor
-                                                                                                                                                victoria
-                                                                                                                                                de
-                                                                                                                                                su
-                                                                                                                                                carrera.</span></span></span><br>
-                                                                                                                                    <br>
-                                                                                                                                    <span
-                                                                                                                                        style="line-height:115%"><span
-                                                                                                                                            lang="es-419"
-                                                                                                                                            style="background:white"><span
-                                                                                                                                                style="color:#1f2223"><b>Casper,
-                                                                                                                                                    hijo
-                                                                                                                                                    del
-                                                                                                                                                    ex-tenista
-                                                                                                                                                    profesional,
-                                                                                                                                                    Christian
-                                                                                                                                                    Ruud,
-                                                                                                                                                    quien
-                                                                                                                                                    durante
-                                                                                                                                                    su
-                                                                                                                                                    carrera
-                                                                                                                                                    logr&oacute;
-                                                                                                                                                    posicionarse
-                                                                                                                                                    como
-                                                                                                                                                    el
-                                                                                                                                                    n&uacute;mero
-                                                                                                                                                    39
-                                                                                                                                                    dentro
-                                                                                                                                                    del
-                                                                                                                                                    ranking
-                                                                                                                                                    ATP,</b>
-                                                                                                                                                es
-                                                                                                                                                especialista
-                                                                                                                                                en
-                                                                                                                                                canchas
-                                                                                                                                                de
-                                                                                                                                                arcilla,
-                                                                                                                                                siendo
-                                                                                                                                                el
-                                                                                                                                                &uacute;nico
-                                                                                                                                                jugador
-                                                                                                                                                profesional
-                                                                                                                                                en
-                                                                                                                                                lograr
-                                                                                                                                                consagrarse
-                                                                                                                                                en
-                                                                                                                                                este
-                                                                                                                                                tipo
-                                                                                                                                                de
-                                                                                                                                                superficies
-                                                                                                                                                en
-                                                                                                                                                tres
-                                                                                                                                                torneos
-                                                                                                                                                distintos
-                                                                                                                                                de
-                                                                                                                                                forma
-                                                                                                                                                consecutiva
-                                                                                                                                                en
-                                                                                                                                                el
-                                                                                                                                                2021.</span></span></span><br>
-                                                                                                                                    <br>
-                                                                                                                                    <span
-                                                                                                                                        style="line-height:115%"><span
-                                                                                                                                            lang="es-419"
-                                                                                                                                            style="background:white"><span
-                                                                                                                                                style="color:#1f2223"><b>El
-                                                                                                                                                    tenista
-                                                                                                                                                    noruego
-                                                                                                                                                    es
-                                                                                                                                                    el
-                                                                                                                                                    antiguo
-                                                                                                                                                    n&uacute;mero
-                                                                                                                                                    1
-                                                                                                                                                    mundial
-                                                                                                                                                    a
-                                                                                                                                                    nivel
-                                                                                                                                                    junior
-                                                                                                                                                    y
-                                                                                                                                                    desde
-                                                                                                                                                    la
-                                                                                                                                                    temporada
-                                                                                                                                                    2020
-                                                                                                                                                    lidera
-                                                                                                                                                    el
-                                                                                                                                                    ATP
-                                                                                                                                                    Tour
-                                                                                                                                                    con
-                                                                                                                                                    66
-                                                                                                                                                    victorias,
-                                                                                                                                                    9
-                                                                                                                                                    finales
-                                                                                                                                                    y
-                                                                                                                                                    7
-                                                                                                                                                    t&iacute;tulos
-                                                                                                                                                    en
-                                                                                                                                                    arcilla</b>.
-                                                                                                                                                El
-                                                                                                                                                jugador
-                                                                                                                                                de
-                                                                                                                                                23
-                                                                                                                                                a&ntilde;os
-                                                                                                                                                ha
-                                                                                                                                                expresado
-                                                                                                                                                abiertamente
-                                                                                                                                                que
-                                                                                                                                                <b>su
-                                                                                                                                                    &iacute;dolo
-                                                                                                                                                    de
-                                                                                                                                                    infancia
-                                                                                                                                                    es
-                                                                                                                                                    el
-                                                                                                                                                    espa&ntilde;ol,
-                                                                                                                                                    Rafael
-                                                                                                                                                    Nadal,</b>
-                                                                                                                                                motivo
-                                                                                                                                                por
-                                                                                                                                                el
-                                                                                                                                                cual
-                                                                                                                                                desde
-                                                                                                                                                2018
-                                                                                                                                                se
-                                                                                                                                                entrena
-                                                                                                                                                en
-                                                                                                                                                la
-                                                                                                                                                Rafa
-                                                                                                                                                Nadal
-                                                                                                                                                Academy,
-                                                                                                                                                ubicada
-                                                                                                                                                en
-                                                                                                                                                las
-                                                                                                                                                Islas
-                                                                                                                                                Baleares.</span></span></span><br>
-                                                                                                                                    <br>
-                                                                                                                                    <span
-                                                                                                                                        style="line-height:115%"><span
-                                                                                                                                            lang="es-419"
-                                                                                                                                            style="background:white"><span
-                                                                                                                                                style="color:#1f2223">Adem&aacute;s,
-                                                                                                                                                <b>Rafael
-                                                                                                                                                    Nadal
-                                                                                                                                                    confirm&oacute;
-                                                                                                                                                    que,
-                                                                                                                                                    probablemente,
-                                                                                                                                                    este&nbsp;
-                                                                                                                                                    1
-                                                                                                                                                    de
-                                                                                                                                                    diciembre
-                                                                                                                                                    en
-                                                                                                                                                    TennisFest
-                                                                                                                                                    GNP
-                                                                                                                                                    sea
-                                                                                                                                                    una
-                                                                                                                                                    de
-                                                                                                                                                    las
-                                                                                                                                                    &uacute;ltimas
-                                                                                                                                                    veces
-                                                                                                                                                    que
-                                                                                                                                                    pueda
-                                                                                                                                                    estar
-                                                                                                                                                    jugando
-                                                                                                                                                    en
-                                                                                                                                                    Latinoam&eacute;rica</b>
-                                                                                                                                                siendo
-                                                                                                                                                tenista
-                                                                                                                                                profesional,
-                                                                                                                                                por
-                                                                                                                                                lo
-                                                                                                                                                que
-                                                                                                                                                espera
-                                                                                                                                                poder
-                                                                                                                                                disfrutar
-                                                                                                                                                este
-                                                                                                                                                momento
-                                                                                                                                                de
-                                                                                                                                                una
-                                                                                                                                                manera
-                                                                                                                                                &uacute;nica
-                                                                                                                                                y
-                                                                                                                                                especial.&nbsp;</span></span></span></span></span><br>
+                                                                                                                            style="text-align: center;">
+                                                                                                                            <b>&iexcl;Arma
+                                                                                                                                tus
+                                                                                                                                dobles
+                                                                                                                                y
+                                                                                                                                aprovecha
+                                                                                                                                este
+                                                                                                                                #BuenFin
+                                                                                                                                junto
+                                                                                                                                a
+                                                                                                                                GNP
+                                                                                                                                Seguros!</b>
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            style="text-align: center;">
+                                                                                                                            <br>
+                                                                                                                            Compra
+                                                                                                                            2
+                                                                                                                            o
+                                                                                                                            m&aacute;s
+                                                                                                                            boletos
+                                                                                                                            del
+                                                                                                                            18
+                                                                                                                            al
+                                                                                                                            21
+                                                                                                                            de
+                                                                                                                            noviembre
+                                                                                                                            y
+                                                                                                                            obt&eacute;n:<br>
                                                                                                                             &nbsp;
                                                                                                                         </div>
                                                                                                                         <div
                                                                                                                             style="text-align: center;">
                                                                                                                             <span
-                                                                                                                                style="font-size:14px;"><span
-                                                                                                                                    style="font-family:Arial,Helvetica,sans-serif;"><span
-                                                                                                                                        style="line-height:115%"><span
-                                                                                                                                            lang="es-419"
-                                                                                                                                            style="background:white"><span
-                                                                                                                                                style="color:#1f2223">&iexcl;No
-                                                                                                                                                te
-                                                                                                                                                lo
-                                                                                                                                                puedes
-                                                                                                                                                perder!</span></span></span></span></span>
+                                                                                                                                style="font-size:20px;"><b>-25%
+                                                                                                                                    de
+                                                                                                                                    descuento
+                                                                                                                                    y
+                                                                                                                                    hasta
+                                                                                                                                    3
+                                                                                                                                    Meses
+                                                                                                                                    Sin
+                                                                                                                                    Intereses*</b></span><br>
+                                                                                                                            <br>
+                                                                                                                            Aprovecha
+                                                                                                                            este
+                                                                                                                            <b>Buen
+                                                                                                                                Fin</b>
+                                                                                                                            para
+                                                                                                                            comprar
+                                                                                                                            tus
+                                                                                                                            boletos
+                                                                                                                            con
+                                                                                                                            esta
+                                                                                                                            promoci&oacute;n
+                                                                                                                            que<br>
+                                                                                                                            <b>GNP
+                                                                                                                                Seguros
+                                                                                                                                y
+                                                                                                                                TennisFest
+                                                                                                                                GNP</b>
+                                                                                                                            tienen
+                                                                                                                            para
+                                                                                                                            ti.
                                                                                                                         </div>
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -688,57 +494,63 @@ center; height: auto; width: 100%; border:
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
-                                                                                                <table cellpadding="0"
-                                                                                                    cellspacing="0"
-                                                                                                    width="100%"
+                                                                                                <table
                                                                                                     role="presentation"
                                                                                                     class="stylingblock-content-wrapper"
-                                                                                                    style="min-width: 100%; ">
+                                                                                                    style="min-width: 100%; "
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
                                                                                                     <tr>
                                                                                                         <td class="stylingblock-content-margin-cell"
-                                                                                                            style="padding: 27px; ">
+                                                                                                            style="padding: 10px; ">
                                                                                                             <table
-                                                                                                                cellpadding="0"
-                                                                                                                cellspacing="0"
-                                                                                                                width="100%"
                                                                                                                 role="presentation"
-                                                                                                                style="background-color: transparent; min-width: 100%; "
-                                                                                                                class="stylingblock-content-wrapper">
+                                                                                                                style="background-color: transparent; min-width:
+100%; "
+                                                                                                                class="stylingblock-content-wrapper"
+                                                                                                                width="100%"
+                                                                                                                cellspacing="0"
+                                                                                                                cellpadding="0">
                                                                                                                 <tr>
                                                                                                                     <td style="padding: 0px; "
                                                                                                                         class="stylingblock-content-wrapper camarker-inner">
                                                                                                                         <table
+                                                                                                                            role="presentation"
                                                                                                                             width="100%"
-                                                                                                                            border="0"
                                                                                                                             cellspacing="0"
                                                                                                                             cellpadding="0"
-                                                                                                                            role="presentation">
+                                                                                                                            border="0">
                                                                                                                             <tr>
                                                                                                                                 <td
                                                                                                                                     align="center">
                                                                                                                                     <table
-                                                                                                                                        border="0"
+                                                                                                                                        role="presentation"
                                                                                                                                         cellspacing="0"
                                                                                                                                         cellpadding="0"
-                                                                                                                                        role="presentation">
+                                                                                                                                        border="0">
                                                                                                                                         <tr>
-                                                                                                                                            <td class="innertd buttonblock"
-                                                                                                                                                bgcolor="#C2D500"
+                                                                                                                                            <td class="innertd
+buttonblock"
                                                                                                                                                 style=" border-radius: 3px; -moz-border-radius: 3px;
--webkit-border-radius: 3px; background-color: #C2D500;">
+-webkit-border-radius: 3px; background-color: #C2D500;"
+                                                                                                                                                bgcolor="#C2D500">
                                                                                                                                                 <a target="_blank"
                                                                                                                                                     class="buttonstyles"
-                                                                                                                                                    style=" font-size: 20px;
-font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; text-align:
-center; text-decoration: none; display: block; background-color:
-#C2D500; border: 1px solid #C2D500; padding: 17px; border-radius: 3px;
--moz-border-radius: 3px; -webkit-border-radius: 3px;"
-                                                                                                                                                    href="https://boletea.com.mx/ordertickets.asp?p=4502&backurl=%2F%2Fboletea.com.mx%2Fdefault.asp&utm_source=salesforce&utm_medium=email&utm_campaign=conversion-tennisfest&utm_content=infog-ruud-plaza"
+                                                                                                                                                    style="
+font-size: 20px; font-family: Arial, Helvetica, sans-serif; color:
+#FFFFFF; text-align: center; text-decoration: none; display: block;
+background-color: #C2D500; border: 1px solid transparent; padding: 15px;
+border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius:
+3px;"
+                                                                                                                                                    href="https://boletea.com.mx/ordertickets.asp?p=4502&backurl=%2F%2Fboletea.com.mx%2Fdefault.asp&utm_source=salesforce&utm_medium=email&utm_campaign=conversion-tennisfest&utm_content=leads-santiago"
                                                                                                                                                     title=""
                                                                                                                                                     alias=""
                                                                                                                                                     conversion="true"
                                                                                                                                                     data-linkto="https://">&iexcl;Compra
-                                                                                                                                                    ya!</a>
+                                                                                                                                                    YA
+                                                                                                                                                    tus
+                                                                                                                                                    boletos!</a>
                                                                                                                                             </td>
                                                                                                                                         </tr>
                                                                                                                                     </table>
@@ -751,170 +563,100 @@ center; text-decoration: none; display: block; background-color:
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
-                                                                                                <table cellpadding="0"
-                                                                                                    cellspacing="0"
-                                                                                                    width="100%"
+                                                                                                <table
                                                                                                     role="presentation"
                                                                                                     style="min-width: 100%; "
-                                                                                                    class="stylingblock-content-wrapper">
+                                                                                                    class="stylingblock-content-wrapper"
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
                                                                                                     <tr>
                                                                                                         <td
-                                                                                                            class="stylingblock-content-wrapper camarker-inner">
+                                                                                                            class="stylingblock-content-wrapper
+camarker-inner">
                                                                                                             <table
+                                                                                                                role="presentation"
                                                                                                                 width="100%"
                                                                                                                 cellspacing="0"
-                                                                                                                cellpadding="0"
-                                                                                                                role="presentation">
+                                                                                                                cellpadding="0">
                                                                                                                 <tr>
                                                                                                                     <td
                                                                                                                         align="center">
-                                                                                                                        <a href="https://tennisfest.mx/terminos-y-condiciones/"
-                                                                                                                            title="3MSI"
+                                                                                                                        <a href="https://boletea.com.mx/ordertickets.asp?p=4502&backurl=%2F%2Fboletea.com.mx%2Fdefault.asp&utm_source=salesforce&utm_medium=email&utm_campaign=conversion-tennisfest&utm_content=leads-santiago"
+                                                                                                                            title=""
                                                                                                                             alias=""
                                                                                                                             conversion="false"
                                                                                                                             data-linkto="https://"><img
-                                                                                                                                data-assetid="70596"
-                                                                                                                                src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/1f0cdf13-1f53-4674-848d-3cfab9dd7613.png"
+                                                                                                                                data-assetid="72486"
+                                                                                                                                src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/d0bb1923-fe7e-479d-846b-5aab6154dfdf.jpg"
                                                                                                                                 alt=""
-                                                                                                                                width="1920"
-                                                                                                                                style="display: block; padding: 0px; text-align:
-center; height: auto; width: 100%; border:
-0px;"></a>
+                                                                                                                                style="display: block; padding: 0px; text-align: center; height:
+auto; width: 100%; border: 0px none;"
+                                                                                                                                width="900"></a>
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                             </table>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
-                                                                                                <table cellpadding="0"
-                                                                                                    cellspacing="0"
-                                                                                                    width="100%"
+                                                                                                <table
                                                                                                     role="presentation"
-                                                                                                    style="min-width: 100%;
-"
-                                                                                                    class="stylingblock-content-wrapper">
+                                                                                                    style="background-color: #00303C; border: 1px solid
+transparent; min-width: 100%; "
+                                                                                                    class="stylingblock-content-wrapper"
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
                                                                                                     <tr>
-                                                                                                        <td
+                                                                                                        <td style="padding:
+10px; "
                                                                                                             class="stylingblock-content-wrapper camarker-inner">
                                                                                                             <table
-                                                                                                                width="100%"
-                                                                                                                cellspacing="0"
-                                                                                                                cellpadding="0"
-                                                                                                                role="presentation">
-                                                                                                                <tr>
-                                                                                                                    <td
-                                                                                                                        align="center">
-                                                                                                                        <img data-assetid="70153"
-                                                                                                                            src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/3441b43f-65b7-4c10-aa23-b22bcd9c2854.jpg"
-                                                                                                                            alt=""
-                                                                                                                            width="652"
-                                                                                                                            style="display: block; padding: 0px; text-align:
-center; height: auto; width: 100%; border:
-0px;">
-                                                                                                                    </td>
-                                                                                                                </tr>
-                                                                                                            </table>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </table>
-                                                                                                <table cellpadding="0"
-                                                                                                    cellspacing="0"
-                                                                                                    width="100%"
-                                                                                                    role="presentation"
-                                                                                                    style="background-color: #C2D500; min-width: 100%; "
-                                                                                                    class="stylingblock-content-wrapper">
-                                                                                                    <tr>
-                                                                                                        <td style="padding: 20px 99px;
-"
-                                                                                                            class="stylingblock-content-wrapper camarker-inner">
-                                                                                                            <table
-                                                                                                                cellspacing="0"
-                                                                                                                cellpadding="0"
                                                                                                                 role="presentation"
-                                                                                                                style="width:
-100%;">
+                                                                                                                style="width: 100%;"
+                                                                                                                cellspacing="0"
+                                                                                                                cellpadding="0">
                                                                                                                 <tr>
                                                                                                                     <td>
                                                                                                                         <table
-                                                                                                                            cellspacing="0"
-                                                                                                                            cellpadding="0"
                                                                                                                             role="presentation"
-                                                                                                                            style="width: 100%;">
+                                                                                                                            style="width: 100%;"
+                                                                                                                            cellspacing="0"
+                                                                                                                            cellpadding="0">
                                                                                                                             <tr>
-                                                                                                                                <td valign="top"
-                                                                                                                                    style="width: 35%; padding-right: 3px;">
+                                                                                                                                <td class="responsive-td"
+                                                                                                                                    style="width: 50%; padding-right: 3px;"
+                                                                                                                                    valign="top">
                                                                                                                                     <table
-                                                                                                                                        cellpadding="0"
-                                                                                                                                        cellspacing="0"
-                                                                                                                                        width="100%"
-                                                                                                                                        role="presentation"
-                                                                                                                                        style="min-width: 100%;
-"
-                                                                                                                                        class="stylingblock-content-wrapper">
-                                                                                                                                        <tr>
-                                                                                                                                            <td
-                                                                                                                                                class="stylingblock-content-wrapper camarker-inner">
-                                                                                                                                                <table
-                                                                                                                                                    width="100%"
-                                                                                                                                                    cellspacing="0"
-                                                                                                                                                    cellpadding="0"
-                                                                                                                                                    role="presentation">
-                                                                                                                                                    <tr>
-                                                                                                                                                        <td
-                                                                                                                                                            align="right">
-                                                                                                                                                            <a href="https://www.facebook.com/tennisfestmx"
-                                                                                                                                                                title=""
-                                                                                                                                                                alias=""
-                                                                                                                                                                conversion="false"
-                                                                                                                                                                data-linkto="https://"><img
-                                                                                                                                                                    data-assetid="70156"
-                                                                                                                                                                    src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/8f4c1193-8e22-4a72-9d20-e273e4aa2807.png"
-                                                                                                                                                                    alt=""
-                                                                                                                                                                    height="30"
-                                                                                                                                                                    width="14"
-                                                                                                                                                                    style="display: block; padding: 0px 16px
-0px 0px; text-align: right; height: 30px; width: 14px; border:
-0px;"></a>
-                                                                                                                                                        </td>
-                                                                                                                                                    </tr>
-                                                                                                                                                </table>
-                                                                                                                                            </td>
-                                                                                                                                        </tr>
-                                                                                                                                    </table>
-                                                                                                                                </td>
-                                                                                                                                <td valign="top"
-                                                                                                                                    style="width: 15%; padding-left: 3px; padding-right: 3px;">
-                                                                                                                                    <table
-                                                                                                                                        cellpadding="0"
-                                                                                                                                        cellspacing="0"
-                                                                                                                                        width="100%"
                                                                                                                                         role="presentation"
                                                                                                                                         style="min-width: 100%; "
-                                                                                                                                        class="stylingblock-content-wrapper">
+                                                                                                                                        class="stylingblock-content-wrapper"
+                                                                                                                                        width="100%"
+                                                                                                                                        cellspacing="0"
+                                                                                                                                        cellpadding="0">
                                                                                                                                         <tr>
                                                                                                                                             <td
-                                                                                                                                                class="stylingblock-content-wrapper camarker-inner">
+                                                                                                                                                class="stylingblock-content-wrapper
+camarker-inner">
                                                                                                                                                 <table
+                                                                                                                                                    role="presentation"
                                                                                                                                                     width="100%"
                                                                                                                                                     cellspacing="0"
-                                                                                                                                                    cellpadding="0"
-                                                                                                                                                    role="presentation">
+                                                                                                                                                    cellpadding="0">
                                                                                                                                                     <tr>
                                                                                                                                                         <td
                                                                                                                                                             align="center">
-                                                                                                                                                            <a href="https://www.facebook.com/tennisfestmx"
+                                                                                                                                                            <a href="https://www.youtube.com/watch?v=mErosncwRVI"
                                                                                                                                                                 title=""
                                                                                                                                                                 alias=""
                                                                                                                                                                 conversion="false"
                                                                                                                                                                 data-linkto="https://"><img
-                                                                                                                                                                    data-assetid="70157"
-                                                                                                                                                                    src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/216e2603-de12-4fa5-bbff-c0ccb3c96638.png"
+                                                                                                                                                                    data-assetid="71015"
+                                                                                                                                                                    src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/f5235055-b8db-44a0-b1c9-cb5847141c40.jpg"
                                                                                                                                                                     alt=""
-                                                                                                                                                                    height="28"
-                                                                                                                                                                    width="35"
-                                                                                                                                                                    style="display: block; padding: 0px;
-text-align: center; height: 28px; width: 35px; border:
-0px;"></a>
+                                                                                                                                                                    style="display: block; padding: 0px; text-align: center; height:
+auto; width: 100%; border: 0px;"
+                                                                                                                                                                    width="2880"></a>
                                                                                                                                                         </td>
                                                                                                                                                     </tr>
                                                                                                                                                 </table>
@@ -922,83 +664,91 @@ text-align: center; height: 28px; width: 35px; border:
                                                                                                                                         </tr>
                                                                                                                                     </table>
                                                                                                                                 </td>
-                                                                                                                                <td valign="top"
-                                                                                                                                    style="width: 15%; padding-left: 3px; padding-right: 3px;">
+                                                                                                                                <td class="responsive-td"
+                                                                                                                                    style="width: 50%; padding-left: 3px;"
+                                                                                                                                    valign="top">
                                                                                                                                     <table
-                                                                                                                                        cellpadding="0"
-                                                                                                                                        cellspacing="0"
-                                                                                                                                        width="100%"
                                                                                                                                         role="presentation"
                                                                                                                                         style="min-width: 100%; "
-                                                                                                                                        class="stylingblock-content-wrapper">
-                                                                                                                                        <tr>
-                                                                                                                                            <td
-                                                                                                                                                class="stylingblock-content-wrapper camarker-inner">
-                                                                                                                                                <table
-                                                                                                                                                    width="100%"
-                                                                                                                                                    cellspacing="0"
-                                                                                                                                                    cellpadding="0"
-                                                                                                                                                    role="presentation">
-                                                                                                                                                    <tr>
-                                                                                                                                                        <td
-                                                                                                                                                            align="center">
-                                                                                                                                                            <a href="https://www.instagram.com/tennisfestmx/"
-                                                                                                                                                                title=""
-                                                                                                                                                                alias=""
-                                                                                                                                                                conversion="false"
-                                                                                                                                                                data-linkto="https://"><img
-                                                                                                                                                                    data-assetid="70155"
-                                                                                                                                                                    src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/9d0b9015-150f-4384-9663-e9341b04e088.png"
-                                                                                                                                                                    alt=""
-                                                                                                                                                                    height="32"
-                                                                                                                                                                    width="32"
-                                                                                                                                                                    style="display: block; padding: 0px;
-text-align: center; height: 32px; width: 32px; border:
-0px;"></a>
-                                                                                                                                                        </td>
-                                                                                                                                                    </tr>
-                                                                                                                                                </table>
-                                                                                                                                            </td>
-                                                                                                                                        </tr>
-                                                                                                                                    </table>
-                                                                                                                                </td>
-                                                                                                                                <td valign="top"
-                                                                                                                                    style="width: 35%; padding-left: 3px;">
-                                                                                                                                    <table
-                                                                                                                                        cellpadding="0"
-                                                                                                                                        cellspacing="0"
+                                                                                                                                        class="stylingblock-content-wrapper"
                                                                                                                                         width="100%"
-                                                                                                                                        role="presentation"
-                                                                                                                                        style="min-width: 100%;
-"
-                                                                                                                                        class="stylingblock-content-wrapper">
+                                                                                                                                        cellspacing="0"
+                                                                                                                                        cellpadding="0">
                                                                                                                                         <tr>
                                                                                                                                             <td
-                                                                                                                                                class="stylingblock-content-wrapper camarker-inner">
-                                                                                                                                                <table
-                                                                                                                                                    width="100%"
-                                                                                                                                                    cellspacing="0"
-                                                                                                                                                    cellpadding="0"
-                                                                                                                                                    role="presentation">
-                                                                                                                                                    <tr>
-                                                                                                                                                        <td
-                                                                                                                                                            align="left">
-                                                                                                                                                            <a href="https://www.youtube.com/channel/UCXUZIuoW_KPLrUHCu4Pf87w"
-                                                                                                                                                                title=""
-                                                                                                                                                                alias=""
-                                                                                                                                                                conversion="false"
-                                                                                                                                                                data-linkto="https://"><img
-                                                                                                                                                                    data-assetid="70158"
-                                                                                                                                                                    src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/769989e0-e0a1-42ed-a6db-7711895b45b3.png"
-                                                                                                                                                                    alt=""
-                                                                                                                                                                    height="34"
-                                                                                                                                                                    width="34"
-                                                                                                                                                                    style="display: block; padding: 0px 0px
-0px 14px; text-align: left; height: 34px; width: 34px; border:
-0px;"></a>
-                                                                                                                                                        </td>
-                                                                                                                                                    </tr>
-                                                                                                                                                </table>
+                                                                                                                                                class="stylingblock-content-wrapper
+camarker-inner">
+                                                                                                                                                <div
+                                                                                                                                                    style="text-align: center;">
+                                                                                                                                                    <span
+                                                                                                                                                        style="color:#ffffff;">&nbsp;</span>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                    style="text-align:
+center; line-height: 150%;">
+                                                                                                                                                    <span
+                                                                                                                                                        style="font-size:18px;"><span
+                                                                                                                                                            style="color:#c2d500;"><b>&quot;Probablemente
+                                                                                                                                                                sea
+                                                                                                                                                                una
+                                                                                                                                                                de
+                                                                                                                                                                las
+                                                                                                                                                                &uacute;ltimas
+                                                                                                                                                                veces
+                                                                                                                                                                que
+                                                                                                                                                                pueda
+                                                                                                                                                                estar
+                                                                                                                                                                jugando
+                                                                                                                                                                en
+                                                                                                                                                                Latinoam&eacute;rica&quot;</b></span></span>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                    style="text-align: justify;">
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                    style="text-align: center;">
+                                                                                                                                                    <br>
+                                                                                                                                                    <span
+                                                                                                                                                        style="font-size:14px;"><span
+                                                                                                                                                            style="color:#ffffff;">Rafael
+                                                                                                                                                            Nadal
+                                                                                                                                                            confirm&oacute;
+                                                                                                                                                            que
+                                                                                                                                                            TennisFest
+                                                                                                                                                            GNP
+                                                                                                                                                            podr&iacute;a
+                                                                                                                                                            ser
+                                                                                                                                                            una
+                                                                                                                                                            de
+                                                                                                                                                            las
+                                                                                                                                                            &uacute;ltimas
+                                                                                                                                                            veces
+                                                                                                                                                            que
+                                                                                                                                                            visite
+                                                                                                                                                            Latinoam&eacute;rica
+                                                                                                                                                            siendo
+                                                                                                                                                            tenista
+                                                                                                                                                            profesional,
+                                                                                                                                                            por
+                                                                                                                                                            lo
+                                                                                                                                                            que
+                                                                                                                                                            espera
+                                                                                                                                                            poder
+                                                                                                                                                            disfrutar
+                                                                                                                                                            este
+                                                                                                                                                            momento
+                                                                                                                                                            de
+                                                                                                                                                            una
+                                                                                                                                                            manera
+                                                                                                                                                            &uacute;nica
+                                                                                                                                                            y
+                                                                                                                                                            especial.</span></span>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                    style="text-align: center;">
+
+                                                                                                                                                    &nbsp;
+                                                                                                                                                </div>
                                                                                                                                             </td>
                                                                                                                                         </tr>
                                                                                                                                     </table>
@@ -1011,73 +761,187 @@ text-align: center; height: 32px; width: 32px; border:
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>
-                                                                                                <table cellpadding="0"
-                                                                                                    cellspacing="0"
-                                                                                                    width="100%"
+                                                                                                <table
                                                                                                     role="presentation"
                                                                                                     style="min-width: 100%; "
-                                                                                                    class="stylingblock-content-wrapper">
+                                                                                                    class="stylingblock-content-wrapper"
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
                                                                                                     <tr>
                                                                                                         <td
-                                                                                                            class="stylingblock-content-wrapper camarker-inner">
-                                                                                                            <!--Copyright part
-Start-->
+                                                                                                            class="stylingblock-content-wrapper
+camarker-inner">
+                                                                                                            <table
+                                                                                                                role="presentation"
+                                                                                                                width="100%"
+                                                                                                                cellspacing="0"
+                                                                                                                cellpadding="0">
+                                                                                                                <tr>
+                                                                                                                    <td
+                                                                                                                        align="center">
+                                                                                                                        <img data-assetid="71249"
+                                                                                                                            src="https://image.orlegisportsentertainment.com/lib/fe2b117171640678731079/m/1/ee5f7801-ba0b-41d9-a448-b0e41a43109f.jpg"
+                                                                                                                            alt=""
+                                                                                                                            style="display: block; padding: 0px; text-align: center; border:
+0px solid transparent; height: auto; width: 100%;"
+                                                                                                                            width="800">
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                                <table
+                                                                                                    role="presentation"
+                                                                                                    style="min-width: 100%; "
+                                                                                                    class="stylingblock-content-wrapper"
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td
+                                                                                                            class="stylingblock-content-wrapper
+camarker-inner">
+                                                                                                            <table
+                                                                                                                role="presentation"
+                                                                                                                style="background-color: transparent; min-width: 100%; "
+                                                                                                                class="stylingblock-content-wrapper"
+                                                                                                                width="100%"
+                                                                                                                cellspacing="0"
+                                                                                                                cellpadding="0">
+                                                                                                                <tr>
+                                                                                                                    <td style="padding: 0px; padding-bottom:25px "
+                                                                                                                        class="stylingblock-content-wrapper camarker-inner">
+                                                                                                                        <table
+                                                                                                                            role="presentation"
+                                                                                                                            width="100%"
+                                                                                                                            cellspacing="0"
+                                                                                                                            cellpadding="0">
+                                                                                                                            <tr>
+                                                                                                                                <td
+                                                                                                                                    align="center">
+                                                                                                                                    <img src="https://tennisfest.mx/Mailing-images/invite/vivir.jpg"
+                                                                                                                                        alt=""
+                                                                                                                                        style="display:block;width:100% !important; height:auto
+!important; "
+                                                                                                                                        width="650">
+                                                                                                                                    <br>
+                                                                                                                                    <img src="https://tennisfest.mx/Mailing-images/invite/patrocinios.gif"
+                                                                                                                                        alt=""
+                                                                                                                                        style="display:block;width:100% !important; height:auto !important; "
+                                                                                                                                        width="650">
+
+                                                                                                                                </td>
+                                                                                                                            </tr>
+                                                                                                                        </table>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </table>
 
                                                                                                             <table
+                                                                                                                role="presentation"
+                                                                                                                style="min-width: 100%; "
+                                                                                                                class="stylingblock-content-wrapper"
                                                                                                                 width="100%"
-                                                                                                                border="0"
-                                                                                                                align="center"
-                                                                                                                cellpadding="0"
-                                                                                                                cellspacing="0">
+                                                                                                                cellspacing="0"
+                                                                                                                cellpadding="0">
                                                                                                                 <tr>
-                                                                                                                    <td align="center"
-                                                                                                                        valign="top">
+                                                                                                                    <td
+                                                                                                                        class="stylingblock-content-wrapper
+camarker-inner">
+                                                                                                                        <!--Social Media part Start-->
 
                                                                                                                         <table
-                                                                                                                            width="650"
-                                                                                                                            border="0"
-                                                                                                                            align="center"
-                                                                                                                            cellpadding="0"
+                                                                                                                            width="100%"
                                                                                                                             cellspacing="0"
-                                                                                                                            class="main">
+                                                                                                                            cellpadding="0"
+                                                                                                                            border="0"
+                                                                                                                            align="center">
                                                                                                                             <tr>
-                                                                                                                                <td align="left"
-                                                                                                                                    valign="top"
-                                                                                                                                    bgcolor="#00303c"
-                                                                                                                                    style="background:#00303c;">
-                                                                                                                                    <table
-                                                                                                                                        width="80%"
-                                                                                                                                        border="0"
-                                                                                                                                        align="center"
-                                                                                                                                        cellpadding="0"
-                                                                                                                                        cellspacing="0">
-                                                                                                                                        <tr>
-                                                                                                                                            <td height="25"
-                                                                                                                                                align="center"
-                                                                                                                                                valign="top">
-                                                                                                                                                &nbsp;
-                                                                                                                                            </td>
-                                                                                                                                        </tr>
-                                                                                                                                        <tr>
-                                                                                                                                            <td align="center"
-                                                                                                                                                valign="top"
-                                                                                                                                                style="font:Bold 12px
-Arial, Helvetica, sans-serif; color:#FFF; padding-bottom:8px;"
-                                                                                                                                                mc:edit="copyright">
-                                                                                                                                                <multiline>
-                                                                                                                                                    Copyright
-                                                                                                                                                    &copy;
-                                                                                                                                                    TENNISFEST
-                                                                                                                                                    MX
-                                                                                                                                                    2022.
-                                                                                                                                                    All
-                                                                                                                                                    Rights
-                                                                                                                                                    Reserved.
-                                                                                                                                                </multiline>
-                                                                                                                                            </td>
-                                                                                                                                        </tr>
+                                                                                                                                <td valign="top"
+                                                                                                                                    align="center">
 
+                                                                                                                                    <table
+                                                                                                                                        class="main"
+                                                                                                                                        style="background: #c2d500; "
+                                                                                                                                        width="100%"
+                                                                                                                                        cellspacing="0"
+                                                                                                                                        cellpadding="0"
+                                                                                                                                        border="0"
+                                                                                                                                        align="center">
+
+                                                                                                                                        <tr>
+
+                                                                                                                                            <td class="rsstb"
+                                                                                                                                                valign="middle"
+                                                                                                                                                height="85">
+                                                                                                                                                <table
+                                                                                                                                                    width="60%"
+                                                                                                                                                    cellspacing="0"
+                                                                                                                                                    cellpadding="0"
+                                                                                                                                                    border="0"
+                                                                                                                                                    align="center">
+                                                                                                                                                    <tr>
+
+                                                                                                                                                        <td valign="top"
+                                                                                                                                                            align="left">
+                                                                                                                                                            <a href="https://www.facebook.com/tennisfestmx"
+                                                                                                                                                                target="_blank"><img
+                                                                                                                                                                    class="rssimg fb"
+                                                                                                                                                                    editable="true"
+                                                                                                                                                                    mc:edit="facebook"
+                                                                                                                                                                    src="https://tennisfest.mx/Mailing-images/element/f.png"
+                                                                                                                                                                    style="padding-left: 30px"
+                                                                                                                                                                    alt=""
+                                                                                                                                                                    height="29"></a>
+                                                                                                                                                        </td>
+                                                                                                                                                        <td valign="top"
+                                                                                                                                                            align="center">
+                                                                                                                                                            <a href="https://twitter.com/tennisfestmx"
+                                                                                                                                                                target="_blank"><img
+                                                                                                                                                                    class="rssimg tw"
+                                                                                                                                                                    editable="true"
+                                                                                                                                                                    mc:edit="twitter"
+                                                                                                                                                                    src="https://tennisfest.mx/Mailing-images/element/t.png"
+                                                                                                                                                                    style="padding-left: 20px; padding-top: 4px;"
+                                                                                                                                                                    alt=""
+                                                                                                                                                                    height="27"></a>
+                                                                                                                                                        </td>
+                                                                                                                                                        <td valign="top"
+                                                                                                                                                            align="center">
+                                                                                                                                                            <a href="https://www.instagram.com/tennisfestmx"
+                                                                                                                                                                target="_blank"><img
+                                                                                                                                                                    class="rssimg ins"
+                                                                                                                                                                    editable="true"
+                                                                                                                                                                    mc:edit="instragram"
+                                                                                                                                                                    src="https://tennisfest.mx/Mailing-images/element/i.png"
+                                                                                                                                                                    style="padding-left: 20px; "
+                                                                                                                                                                    alt=""
+                                                                                                                                                                    width="auto"
+                                                                                                                                                                    height="29"></a>
+                                                                                                                                                        </td>
+
+                                                                                                                                                        <td valign="top"
+                                                                                                                                                            align="center">
+                                                                                                                                                            <a href="https://www.youtube.com/channel/UCXUZIuoW_KPLrUHCu4Pf87w"
+                                                                                                                                                                target="_blank"><img
+                                                                                                                                                                    class="rssimg yt"
+                                                                                                                                                                    editable="true"
+                                                                                                                                                                    mc:edit="youtube"
+                                                                                                                                                                    src="https://tennisfest.mx/Mailing-images/element/y.png"
+                                                                                                                                                                    style="padding-left: 20px;  "
+                                                                                                                                                                    alt=""
+                                                                                                                                                                    width="auto"
+                                                                                                                                                                    height="29"></a>
+                                                                                                                                                        </td>
+
+                                                                                                                                                    </tr>
+                                                                                                                                                </table>
+                                                                                                                                            </td>
+                                                                                                                                        </tr>
                                                                                                                                     </table>
+
                                                                                                                                 </td>
                                                                                                                             </tr>
                                                                                                                         </table>
@@ -1085,47 +949,74 @@ Arial, Helvetica, sans-serif; color:#FFF; padding-bottom:8px;"
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                             </table>
-
-                                                                                                            <!--Copyright part End-->
                                                                                                             <table
-                                                                                                                cellpadding="0"
-                                                                                                                cellspacing="0"
-                                                                                                                width="100%"
                                                                                                                 role="presentation"
                                                                                                                 style="min-width: 100%; "
-                                                                                                                class="stylingblock-content-wrapper">
+                                                                                                                class="stylingblock-content-wrapper"
+                                                                                                                width="100%"
+                                                                                                                cellspacing="0"
+                                                                                                                cellpadding="0">
                                                                                                                 <tr>
                                                                                                                     <td
                                                                                                                         class="stylingblock-content-wrapper camarker-inner">
-                                                                                                                        <!--Bottom image
+                                                                                                                        <!--Copyright part
 Start-->
 
                                                                                                                         <table
                                                                                                                             width="100%"
-                                                                                                                            border="0"
-                                                                                                                            align="center"
+                                                                                                                            cellspacing="0"
                                                                                                                             cellpadding="0"
-                                                                                                                            cellspacing="0">
+                                                                                                                            border="0"
+                                                                                                                            align="center">
                                                                                                                             <tr>
-                                                                                                                                <td align="center"
-                                                                                                                                    valign="top">
+                                                                                                                                <td valign="top"
+                                                                                                                                    align="center">
 
                                                                                                                                     <table
+                                                                                                                                        class="main"
                                                                                                                                         width="650"
-                                                                                                                                        border="0"
-                                                                                                                                        align="center"
-                                                                                                                                        cellpadding="0"
                                                                                                                                         cellspacing="0"
-                                                                                                                                        class="main">
+                                                                                                                                        cellpadding="0"
+                                                                                                                                        border="0"
+                                                                                                                                        align="center">
                                                                                                                                         <tr>
-                                                                                                                                            <td align="left"
-                                                                                                                                                valign="top">
-                                                                                                                                                <img src="https://tennisfest.mx/Mailing-images/element/header-bottom-image.png"
-                                                                                                                                                    width="650"
-                                                                                                                                                    height="37"
-                                                                                                                                                    alt=""
-                                                                                                                                                    style="display:block;width:100%
-!important; height:auto !important; ">
+                                                                                                                                            <td style="background:#00303c;"
+                                                                                                                                                valign="top"
+                                                                                                                                                bgcolor="#00303c"
+                                                                                                                                                align="left">
+                                                                                                                                                <table
+                                                                                                                                                    width="80%"
+                                                                                                                                                    cellspacing="0"
+                                                                                                                                                    cellpadding="0"
+                                                                                                                                                    border="0"
+                                                                                                                                                    align="center">
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td valign="top"
+                                                                                                                                                            height="25"
+                                                                                                                                                            align="center">
+                                                                                                                                                            &nbsp;
+                                                                                                                                                        </td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td style="font:Bold 12px Arial, Helvetica, sans-serif;
+color:#FFF; padding-bottom:8px;"
+                                                                                                                                                            mc:edit="copyright"
+                                                                                                                                                            valign="top"
+                                                                                                                                                            align="center">
+                                                                                                                                                            <multiline>
+                                                                                                                                                                Copyright
+                                                                                                                                                                &copy;
+                                                                                                                                                                TENNISFEST
+                                                                                                                                                                GNP
+                                                                                                                                                                2022.
+                                                                                                                                                                All
+                                                                                                                                                                Rights
+                                                                                                                                                                Reserved.
+                                                                                                                                                            </multiline>
+                                                                                                                                                        </td>
+                                                                                                                                                    </tr>
+
+                                                                                                                                                </table>
                                                                                                                                             </td>
                                                                                                                                         </tr>
                                                                                                                                     </table>
@@ -1133,9 +1024,247 @@ Start-->
                                                                                                                                 </td>
                                                                                                                             </tr>
                                                                                                                         </table>
+
+                                                                                                                        <!--Copyright part End-->
+                                                                                                                        <table
+                                                                                                                            role="presentation"
+                                                                                                                            style="min-width: 100%; "
+                                                                                                                            class="stylingblock-content-wrapper"
+                                                                                                                            width="100%"
+                                                                                                                            cellspacing="0"
+                                                                                                                            cellpadding="0">
+                                                                                                                            <tr>
+                                                                                                                                <td
+                                                                                                                                    class="stylingblock-content-wrapper camarker-inner">
+                                                                                                                                    <!--Bottom image
+Start-->
+
+                                                                                                                                    <table
+                                                                                                                                        width="100%"
+                                                                                                                                        cellspacing="0"
+                                                                                                                                        cellpadding="0"
+                                                                                                                                        border="0"
+                                                                                                                                        align="center">
+                                                                                                                                        <tr>
+                                                                                                                                            <td valign="top"
+                                                                                                                                                align="center">
+
+                                                                                                                                                <table
+                                                                                                                                                    class="main"
+                                                                                                                                                    width="650"
+                                                                                                                                                    cellspacing="0"
+                                                                                                                                                    cellpadding="0"
+                                                                                                                                                    border="0"
+                                                                                                                                                    align="center">
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td valign="top"
+                                                                                                                                                            align="left">
+                                                                                                                                                            <img src="https://tennisfest.mx/Mailing-images/element/header-bottom-image.png"
+                                                                                                                                                                alt=""
+                                                                                                                                                                style="display:block;width:100% !important; height:auto
+!important; "
+                                                                                                                                                                width="650"
+                                                                                                                                                                height="37">
+                                                                                                                                                        </td>
+                                                                                                                                                    </tr>
+                                                                                                                                                </table>
+
+                                                                                                                                            </td>
+                                                                                                                                        </tr>
+                                                                                                                                    </table>
+                                                                                                                                </td>
+                                                                                                                            </tr>
+                                                                                                                        </table>
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                             </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                                <table
+                                                                                                    role="presentation"
+                                                                                                    style="min-width: 100%; "
+                                                                                                    class="stylingblock-content-wrapper"
+                                                                                                    width="100%"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0">
+                                                                                                    <tr>
+                                                                                                        <td
+                                                                                                            class="stylingblock-content-wrapper
+camarker-inner">
+                                                                                                            <div
+                                                                                                                style="text-align: center;">
+                                                                                                                <span
+                                                                                                                    style="font-size:10px;"><b>*T&eacute;rminos
+                                                                                                                        y
+                                                                                                                        Condiciones
+                                                                                                                        -
+                                                                                                                        Promoci&oacute;n
+                                                                                                                        Buen
+                                                                                                                        Fin</b></span>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                style="text-align:
+justify;">
+                                                                                                                <span
+                                                                                                                    style="font-size:10px;"><b>1.
+                                                                                                                    </b>Aplica
+                                                                                                                    solo
+                                                                                                                    para
+                                                                                                                    compras
+                                                                                                                    efectuadas
+                                                                                                                    del
+                                                                                                                    18
+                                                                                                                    al
+                                                                                                                    21
+                                                                                                                    de
+                                                                                                                    noviembre
+                                                                                                                    del
+                                                                                                                    2022,
+                                                                                                                    durante
+                                                                                                                    el
+                                                                                                                    Buen
+                                                                                                                    Fin.</span>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                style="text-align: justify;">
+                                                                                                                <span
+                                                                                                                    style="font-size:10px;"><b>2.
+                                                                                                                    </b>Puedes
+                                                                                                                    comprar
+                                                                                                                    1
+                                                                                                                    boleto
+                                                                                                                    a
+                                                                                                                    precio
+                                                                                                                    regular,
+                                                                                                                    2 o
+                                                                                                                    m&aacute;s
+                                                                                                                    boletos,
+                                                                                                                    puedes
+                                                                                                                    aplicar
+                                                                                                                    un
+                                                                                                                    25%
+                                                                                                                    de
+                                                                                                                    descuento
+                                                                                                                    en
+                                                                                                                    el
+                                                                                                                    total
+                                                                                                                    de
+                                                                                                                    tu
+                                                                                                                    compra.
+                                                                                                                    Para
+                                                                                                                    compras
+                                                                                                                    web,
+                                                                                                                    el
+                                                                                                                    usuario
+                                                                                                                    debe
+                                                                                                                    seleccionar
+                                                                                                                    el
+                                                                                                                    bot&oacute;n
+                                                                                                                    &ldquo;Aplicar&rdquo;
+                                                                                                                    previo
+                                                                                                                    a
+                                                                                                                    realizar
+                                                                                                                    su
+                                                                                                                    pago,
+                                                                                                                    este
+                                                                                                                    paso
+                                                                                                                    es
+                                                                                                                    responsabilidad
+                                                                                                                    del
+                                                                                                                    usuario,
+                                                                                                                    de
+                                                                                                                    lo
+                                                                                                                    contrario
+                                                                                                                    no
+                                                                                                                    podr&aacute;
+                                                                                                                    verse
+                                                                                                                    beneficiado
+                                                                                                                    por
+                                                                                                                    la
+                                                                                                                    promoci&oacute;n.</span>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                style="text-align: justify;">
+                                                                                                                <span
+                                                                                                                    style="font-size:10px;"><b>3.
+                                                                                                                    </b>V&aacute;lido
+                                                                                                                    en
+                                                                                                                    todos
+                                                                                                                    los
+                                                                                                                    puntos
+                                                                                                                    de
+                                                                                                                    venta:</span>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                style="text-align: justify;">
+                                                                                                                <span
+                                                                                                                    style="font-size:10px;">-
+                                                                                                                    Web
+                                                                                                                    (www.boletea.com.mx/tennisfest
+                                                                                                                    [1])
+                                                                                                                    24/7<br>
+                                                                                                                    -
+                                                                                                                    Taquilla
+                                                                                                                    Monumental
+                                                                                                                    Plaza
+                                                                                                                    de
+                                                                                                                    Toros
+                                                                                                                    &ldquo;La
+                                                                                                                    M&eacute;xico&rdquo;
+                                                                                                                    &ndash;
+                                                                                                                    Viernes
+                                                                                                                    18 y
+                                                                                                                    S&aacute;bado
+                                                                                                                    19,
+                                                                                                                    de
+                                                                                                                    9:30
+                                                                                                                    a
+                                                                                                                    2pm
+                                                                                                                    y de
+                                                                                                                    3:30
+                                                                                                                    a
+                                                                                                                    7pm.<br>
+                                                                                                                    -
+                                                                                                                    Stands
+                                                                                                                    de
+                                                                                                                    venta
+                                                                                                                    en
+                                                                                                                    Centros
+                                                                                                                    Comerciales
+                                                                                                                    Antar,
+                                                                                                                    Artz
+                                                                                                                    y
+                                                                                                                    Plaza
+                                                                                                                    Sat&eacute;lite:
+                                                                                                                    Viernes
+                                                                                                                    18 a
+                                                                                                                    Lunes
+                                                                                                                    21,
+                                                                                                                    de
+                                                                                                                    11am
+                                                                                                                    a
+                                                                                                                    7pm<br>
+                                                                                                                    <b>4.
+                                                                                                                    </b>Entran
+                                                                                                                    todas
+                                                                                                                    las
+                                                                                                                    localidades,
+                                                                                                                    excepto
+                                                                                                                    Barreras.
+                                                                                                                    No
+                                                                                                                    aplica
+                                                                                                                    para
+                                                                                                                    Elite
+                                                                                                                    Corporate
+                                                                                                                    Experience.<br>
+                                                                                                                    <b>5.
+                                                                                                                    </b>Sujeto
+                                                                                                                    a
+                                                                                                                    disponibilidad.
+                                                                                                                    Aplican
+                                                                                                                    restricciones.</span>
+                                                                                                            </div>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                 </table>

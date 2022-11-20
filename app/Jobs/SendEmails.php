@@ -16,7 +16,7 @@ class SendEmails implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
     protected $email;
-
+    protected $name;
     public $tries = 6;
     public $backoff = 15;
 
@@ -25,9 +25,10 @@ class SendEmails implements ShouldQueue
      *
      * @return void
      */
-    public function __construct($email)
+    public function __construct($email,$name)
     {
         $this->email = $email;
+        $this->name = $name;
     }
 
     /**
@@ -37,7 +38,7 @@ class SendEmails implements ShouldQueue
      */
     public function handle()
     {
-        $email = new TennisFestMailable();
+        $email = new TennisFestMailable('Daniel Gomez');
         Mail::to($this->email)->queue($email);
     }
 }

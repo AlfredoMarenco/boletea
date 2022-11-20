@@ -10,16 +10,15 @@ class TennisFestMailable extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject = "🎾 Prepárate para Nadal vs Ruud en TennisFest GNP";
-
+    public $name;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($name)
     {
-        //
+        $this->name = $name;
     }
 
     /**
@@ -29,6 +28,6 @@ class TennisFestMailable extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.tennisfest1');
+        return $this->subject("🎾 ".$this->name." ¡El Buen Fin llegó a TennisFest GNP! 🔥📅 ")->view('emails.tennisfest1');
     }
 }
