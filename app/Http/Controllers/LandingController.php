@@ -16,7 +16,7 @@ class LandingController extends Controller
     {
         $date = date('Ymd');
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
-        $clients = Client::where('status',null)->take(1)->get();
+        $clients = Client::where('status',null)->take(4)->get();
         foreach ($clients as $client) {
             Mail::to($client->email)->queue(new TennisFestMailable($client->name));
             $client->status = "send";
