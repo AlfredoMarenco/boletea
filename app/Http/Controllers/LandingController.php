@@ -17,11 +17,11 @@ class LandingController extends Controller
         $date = date('Ymd');
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
         $clients = Client::where('status',null)->take(1)->get();
-        /* foreach ($clients as $client) {
+        foreach ($clients as $client) {
             Mail::to($client->email)->queue(new TennisFestMailable($client->name));
             $client->status = "send";
             $client->save();
-        } */
+        }
 
         /* Mail::to('daniel.gomez@boletea.com')->queue(new TennisFestMailable('Daniel')); */
         return view('landing.index', compact('events'));
