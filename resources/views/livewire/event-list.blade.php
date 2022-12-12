@@ -17,7 +17,7 @@
 
     <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-lg bg-white py-4 px-1 rounded-lg">
-        
+
         @foreach ($events as $event)
             @php
                 $fecha = date('Ymd');
@@ -44,9 +44,14 @@
                                     {{-- <a href="{{ $event->link }}"
                                     class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
                                     Boletos</a> --}}
-                                    <a href="{{ route('showEvent', $event) }}"
+                                    @if ($event->id == 234)
+                                    <a href="#"
+                                        class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Próximamente</a>
+                                        @else
+                                        <a href="{{ route('showEvent', $event) }}"
                                         class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
                                         Boletos</a>
+                                    @endif
                                 </div>
                             </div>
                         </a>
