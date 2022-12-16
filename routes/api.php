@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::post('/codereadr',function(Request $request){
-    $request = json_decode($request,true);
+    $request = json_decode($request);
     return $request;
 });
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
