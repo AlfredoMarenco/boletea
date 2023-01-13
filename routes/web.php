@@ -32,7 +32,10 @@ Route::get('/velariaferiagomezpalacio', [LandingController::class, 'eventsVelari
 Route::get('/palenqueferiagomezpalacio', [LandingController::class, 'eventsPalenque'])->name('eventsPalenque');
 Route::get('/tramitar-reembolso', RefundsController::class);
 Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('streamLive');
-
+/* Route::get('/code-generation',function(){
+    $faker = Faker\Factory::create();
+    return view('codes',compact('faker'));
+}); */
 
 /* Route::get('cache', function () {
     Artisan::call('cache:clear');

@@ -6,7 +6,7 @@ use App\Models\Kit;
 use Carbon\Carbon;
 use Livewire\Component;
 
-class Santos extends Component
+class Atlas extends Component
 {
     public $barcode = "";
     public $message;
@@ -25,7 +25,7 @@ class Santos extends Component
     public function check()
     {
         $created_at = Carbon::now()->setTimezone('America/Mexico_City');
-        $kit = Kit::where('barcode', $this->barcode)->where('club','LIKE','santos')->first();
+        $kit = Kit::where('barcode', $this->barcode)->where('club','LIKE','atlas')->first();
 
         if ($kit) {
             switch ($kit->status) {
@@ -52,6 +52,6 @@ class Santos extends Component
     {
         $this->reset('barcode');
         $scanning = Kit::where('user_id', auth()->user()->id)->get();
-        return view('livewire.santos', compact('scanning'))->layout('layouts.santos');
+        return view('livewire.atlas', compact('scanning'))->layout('layouts.atlas');
     }
 }

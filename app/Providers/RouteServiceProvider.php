@@ -58,9 +58,9 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/santos.php'));
 
             Route::middleware('web', 'auth')
-                ->prefix('atlasfc')
+                ->prefix('atlas')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/atlasfc.php'));
+                ->group(base_path('routes/atlas.php'));
         });
     }
 
