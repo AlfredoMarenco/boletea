@@ -37,6 +37,7 @@ class Atlas extends Component
                         'created_at' => $created_at,
                         'updated_at' => $created_at,
                     ]);
+                    $this->barcode ='';
                     break;
                 case 'scanning':
                     $this->message = "ESCANEADO";
@@ -44,7 +45,16 @@ class Atlas extends Component
                     break;
             }
         }else{
-            $this->message = "NO VALIDO";
+            Kit::create([
+                'barcode' => $this->barcode,
+                'status' => 'scanning',
+                'user_id' => auth()->user()->id,
+                'created_at' => $created_at,
+                'updated_at' => $created_at,
+                'club' => 'atlas'
+            ]);
+            $this->message = "VALIDO";
+            $this->barcode = "";
         }
     }
 
