@@ -48,7 +48,7 @@
                                     <a href="#"
                                         class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Próximamente</a>
                                         @else
-                                        <a href="{{ route('showEvent', $event) }}"
+                                        <a href="{{ $event->link }}"
                                         class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
                                         Boletos</a>
                                     @endif
