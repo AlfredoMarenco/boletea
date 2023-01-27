@@ -48,10 +48,10 @@ class LandingController extends Controller
         return view('landing.poliforum', compact('events'));
     }
 
-    public function eventsVelaria()
+    public function eventsColima()
     {
         $date = date('Ymd');
-        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', 'Velaria de la Feria')->where('ciudad', 'LIKE', 'Gómez Palacio, Durango.')->orderBy('fechaBusqueda', 'asc')->get();
+        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', 'La Petatera')->get();
         return view('landing.velaria-feria', compact('events'));
     }
 
