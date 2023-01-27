@@ -4,11 +4,11 @@
     <section>
         <div class="flex justify-center items-end text-rigth mb-6 px-2 md:mb-8 mx-4 mt-4 md:mx-16">
             <div>
-                <h1 class="text-5xl font-bold text-rojo">Velaria - Feria Gómez Palacio</h1>
+                <h1 class="text-5xl font-bold text-rojo">Corridas - La Petatera Colima</h1>
             </div>
         </div>
         <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-md bg-white">
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-md bg-white">
             @forelse ($events as $event)
                 <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
                     <a href="{{ route('showEvent', $event) }}">
