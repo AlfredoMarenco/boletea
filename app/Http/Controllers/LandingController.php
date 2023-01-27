@@ -51,7 +51,7 @@ class LandingController extends Controller
     public function eventsColima()
     {
         $date = date('Ymd');
-        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', 'La Petatera')->get();
+        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', 'La Petatera')->orderBy('fechaBusqueda', 'asc')->get();
         return view('landing.velaria-feria', compact('events'));
     }
 
