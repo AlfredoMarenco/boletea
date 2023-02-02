@@ -68,7 +68,7 @@
                 @if ($event->visible == 'si')
                     <a href="{{ $event->link }}"
                         class="text-white text-lg font-bold bg-rojo md:px-14 px-20 mx-auto py-2 w-full hover:bg-red-700">Comprar
-                        boleto</a>
+                        boletos</a>
                 @endif
             </div>
         </div>
