@@ -79,8 +79,8 @@ class LandingController extends Controller
 
     public function showEvent(Event $event)
     {
-        if ($event->name == 'illusiononicetorreon') {
-            return redirect('https://boletea.com/illusion-on-ice-torreon');
+        if ($event->name == 'juniorhemmyvalenzuelagabitooscarmaydonguadalajara') {
+            return redirect('https://boletea.com/evento/juniorhremmyvalenzuelagabitooscarmaydonguadalajara');
         }
         return view('landing.event', compact('event'));
     }
