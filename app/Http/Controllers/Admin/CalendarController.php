@@ -10,9 +10,15 @@ class CalendarController extends Controller
 {
     public function index()
     {
-        $events = Calendar::all();
+        $events = Calendar::where('recinto','!=','showcase')->get();
         $recinto = '';
         return view('calendar.index', compact('events','recinto'));
+    }
+
+    public function showcase(){
+        $events = Calendar::all();
+        $recinto = '';
+        return view('calendar.index-showcase', compact('events','recinto'));
     }
 
 
