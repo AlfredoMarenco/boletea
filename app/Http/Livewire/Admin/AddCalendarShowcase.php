@@ -9,10 +9,12 @@ use Livewire\Component;
 class AddCalendarShowcase extends Component
 {
     public $open = false;
-    public $title, $start, $time, $status="1", $color, $recinto="showcase",$promotor="Showcase";
+    public $title, $start, $time, $status="1", $color, $recinto="showcase",$promotor="Showcase",$city,$venue;
     protected $rules = [
         'title' => 'required',
         'promotor' => 'required',
+        'city' => 'required',
+        'venue' => 'required',
     ];
 
     public function mount(){
@@ -32,6 +34,8 @@ class AddCalendarShowcase extends Component
             'color' => $this->color,
             'recinto' => $this->recinto,
             'promotor' => $this->promotor,
+            'city' => $this->city,
+            'venue' => $this->venue,
             'user_id' => auth()->user()->id
         ]);
 

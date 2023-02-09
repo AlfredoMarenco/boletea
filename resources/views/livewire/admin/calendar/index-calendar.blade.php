@@ -1,13 +1,5 @@
 <div>
     <div class="px-2">
-        {{-- <x-jet-label value="Recinto" />
-        <select wire:model="recinto" class="form-control py-1" wire:click="selectRecinto">
-            <option value="" selected disabled></option>
-            <option value="coliseocentenario">Coliseo Centenario</option>
-            <option value="auditoriognp">Auditorio GNP</option>
-            <option value="forognp">Foro GNP</option>
-        </select>
-        <x-jet-input-error for="recinto" /> --}}
     </div>
     <div class="py-4 lg:px-24" id='calendar' wire:ignore></div>
     @push('js')
@@ -25,7 +17,7 @@
                     eventDidMount: function(info) {
                         var tooltip = new Tooltip(info.el, {
                             title: info.event.title,
-                            placement: 'right',
+                            placement: 'top',
                             trigger: 'hover',
                             container: 'body'
                         });

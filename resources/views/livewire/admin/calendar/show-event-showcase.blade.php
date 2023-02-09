@@ -32,6 +32,18 @@
                             class="w-full" />
                         <x-jet-input-error for="promotor" />
                     </div>
+                    <div class="col-span-6 sm:col-span-6">
+                        <x-jet-label value="Ciudad" />
+                        <x-jet-input type="text" placeholder="Ciudad" wire:model="city"
+                            class="w-full" />
+                        <x-jet-input-error for="city" />
+                    </div>
+                    <div class="col-span-6 sm:col-span-6">
+                        <x-jet-label value="Venue" />
+                        <x-jet-input type="text" placeholder="Venue" wire:model="venue"
+                            class="w-full" />
+                        <x-jet-input-error for="venue" />
+                    </div>
                     <div class="col-span-6 sm:col-span-3">
                         <x-jet-label value="Fecha" />
                         <x-jet-input type="date" wire:model="start" class="w-full" />
@@ -64,7 +76,7 @@
                 </x-slot>
 
                 <x-slot name="actions">
-                    @if ($calendar->user_id == auth()->user()->id)
+                    @if ($calendar->user_id == auth()->user()->id || auth()->user()->id == 5)
                         <x-jet-danger-button class="mr-2" wire:click="delete">Borrar</x-jet-danger-button>
                     @endif
                     <x-jet-button wire:click="update">Actualizar</x-jet-button>

@@ -19,7 +19,7 @@
                         {{ __('Refunds') }}
                     </x-jet-nav-link> --}}
                     <x-jet-nav-link href="{{ route('calendar.index') }}" :active="request()->routeIs('calendar.index')">
-                        {{ __('Calendario') }}
+                        {{ __('Calendario Coliseo') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('calendar.index.showcase') }}" :active="request()->routeIs('calendar.index.showcase')">
                         {{ __('Calendario Showcase') }}

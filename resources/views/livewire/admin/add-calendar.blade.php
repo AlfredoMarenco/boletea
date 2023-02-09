@@ -17,6 +17,16 @@
                 <x-jet-input wire:model="promotor" type="text" placeholder="Promotor" class="w-full" />
                 <x-jet-input-error for="promotor" />
             </div>
+            <div class="col-span-6 sm:col-span-6">
+                <x-jet-label value="Ciudad" />
+                <x-jet-input type="text" placeholder="Ciudad" wire:model="city" class="w-full" />
+                <x-jet-input-error for="city" />
+            </div>
+            <div class="col-span-6 sm:col-span-6">
+                <x-jet-label value="Venue" />
+                <x-jet-input type="text" placeholder="Venue" wire:model="venue" class="w-full" />
+                <x-jet-input-error for="venue" />
+            </div>
             <div>
                 <x-jet-label value="Fecha" />
                 <x-jet-input wire:model="start" type="date" class="w-full" />
