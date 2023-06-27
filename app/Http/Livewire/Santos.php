@@ -51,7 +51,7 @@ class Santos extends Component
     public function render()
     {
         $this->reset('barcode');
-        $scanning = Kit::where('user_id', auth()->user()->id)->get();
+        $scanning = Kit::where('user_id', auth()->user()->id)->whereBetween('updated_at',[Carbon::today(),Carbon::now()])->get();
         return view('livewire.santos', compact('scanning'))->layout('layouts.santos');
     }
 }
