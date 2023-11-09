@@ -161,7 +161,7 @@
                             <div class="flex">
                                 <img class="w-full h-12 object-contain object-center mx-1"
                                     src="{{ asset('cdvs/logo-bomssa.png') }}" alt="">
-                                <{{-- img class="w-full h-12 object-contain object-center mx-1"
+                                {{--<img class="w-full h-12 object-contain object-center mx-1"
                                     src="{{ asset('cdvs/logo-cancun-plaza.png') }}" alt=""> --}}
                             </div>
                         @break
