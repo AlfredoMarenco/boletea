@@ -162,7 +162,7 @@
                                 <img class="w-full h-12 object-contain object-center mx-1"
                                     src="{{ asset('cdvs/logo-bomssa.png') }}" alt="">
                                 <img class="w-full h-12 object-contain object-center mx-1"
-                                    src="{{ asset('cdvs/logo-plaza-cancun.png') }}" alt="">
+                                    src="{{ asset('cdvs/logo-plaza-cancun.jpg') }}" alt="">
                             </div>
                         @break
 
