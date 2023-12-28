@@ -62,4 +62,26 @@ class User extends Authenticatable
     public function calendars(){
         return $this->hasMany(Calendar::class);
     }
+
+    public function kits(){
+        return $this->hasMany(Kit::class);
+    }
+
+    public function countBetweenDates($date_start,$date_end){
+        $count = Kit::whereBetween('updated_at',[$date_start,$date_end])->where('user_id',$this->id)->where('status','LIKE','scanning')->count();
+        return $count;
+    }
+
+    public function countKitsTemp($date_start,$date_end){
+        $count = Kit::whereBetween('updated_at',[$date_start,$date_end])->where('user_id',$this->id)->where('status','LIKE','scanning')->where('event','LIKE','TEMPORADA2324')->count();
+        return $count;
+    }
+    public function countKitsApert($date_start,$date_end){
+        $count = Kit::whereBetween('updated_at',[$date_start,$date_end])->where('user_id',$this->id)->where('status','LIKE','scanning')->where('event','LIKE','APERTURA23')->count();
+        return $count;
+    }
+    public function countKitsGt($date_start,$date_end){
+        $count = Kit::whereBetween('updated_at',[$date_start,$date_end])->where('user_id',$this->id)->where('status','LIKE','scanning')->where('event','LIKE','GUERRERO TOTAL')->count();
+        return $count;
+    }
 }

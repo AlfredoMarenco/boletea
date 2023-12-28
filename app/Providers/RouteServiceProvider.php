@@ -61,6 +61,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('atlas')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/atlas.php'));
+
+            Route::middleware('web', 'auth')
+            ->prefix('algodoneros')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/algodoneros.php'));
         });
     }
 

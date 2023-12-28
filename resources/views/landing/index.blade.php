@@ -160,6 +160,15 @@
             <img class="object-cover w-full md:w-2/3 mt-4 lg:mt-0" src="{{ asset('img/BANNER_PRN_BOLETEA.png') }}"
                 alt="">
         </div>
+        <div class="md:mx-16 mb-8 md:flex items-center bg-white py-2 shadow-md">
+            <img class="object-cover w-full md:w-2/3" src="{{ asset('img/algodonerosbanner.png') }}" alt="">
+            <div class="text-center mx-auto bg-white">
+                <h3 class="md:text-3xl font-bold mb-2 mt-1 md:mt-0 md:mb-4">Compra tus boletos aquí!!</h3>
+                <a href="https://unionlaguna.boletea.com.mx/default.asp"
+                    class="md:px-3 md:py-2 px-2 py-1 bg-red-700 font-semibold rounded-sm hover:bg-red-900 text-white">Próximos
+                    partidos</a>
+            </div>
+        </div>
     </section>
     <section>
         <div class="grid md:grid-cols-3 gap-6 items-center h-5 bg-white mb-4 mx-4 md:mx-44 shadow-md lg:hidden">
