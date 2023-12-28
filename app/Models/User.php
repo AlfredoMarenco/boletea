@@ -84,4 +84,9 @@ class User extends Authenticatable
         $count = Kit::whereBetween('updated_at',[$date_start,$date_end])->where('user_id',$this->id)->where('status','LIKE','scanning')->where('event','LIKE','GUERRERO TOTAL')->count();
         return $count;
     }
+
+    public function countKitsCl($date_start,$date_end){
+        $count = Kit::whereBetween('updated_at',[$date_start,$date_end])->where('user_id',$this->id)->where('status','LIKE','scanning')->where('event','LIKE','CLAUSURA24')->count();
+        return $count;
+    }
 }

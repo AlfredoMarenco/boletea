@@ -29,6 +29,7 @@
                                             <p class="truncate text-sm text-gray-500">Abonos Temporada: {{ $user->countKitsTemp($date_start,$date_end) }}</p>
                                             <p class="truncate text-sm text-gray-500">Abonos Apertura: {{ $user->countKitsApert($date_start,$date_end) }}</p>
                                             <p class="truncate text-sm text-gray-500">Abonos Guerrero Total: {{ $user->countKitsGt($date_start,$date_end) }}</p>
+                                            <p class="truncate text-sm text-gray-500">Abonos Clausura: {{ $user->countKitsCl($date_start,$date_end) }}</p>
                                         </div>
                                     </a>
                                 </div>
