@@ -83,8 +83,8 @@
         <!-- Bottom-Left Corner -->
         <!-- Bottom-Right Corner -->
         <div class="fixed bottom-4 right-4">
-            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-5 rounded-full shadow-lg">
-                <i class="fab fa-whatsapp text-5xl"> </i>
+            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-full shadow-lg">
+                <a href="https://wa.me/5215644992294"><i class="fab fa-whatsapp text-4xl"> </i></a>
             </button>
         </div>
     </div>
