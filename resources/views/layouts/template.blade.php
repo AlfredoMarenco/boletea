@@ -80,6 +80,13 @@
     <div>
         @yield('slider')
         @yield('content')
+        <!-- Bottom-Left Corner -->
+        <!-- Bottom-Right Corner -->
+        <div class="fixed bottom-4 right-4">
+            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-5 rounded-full shadow-lg">
+                <i class="fab fa-whatsapp text-5xl"> </i>
+            </button>
+        </div>
     </div>
     <footer class="grid grid-cols-1 md:grid-cols-3 items-center bg-black h-56">
         <div class="px-10 mx-auto mt-3">
@@ -103,10 +110,10 @@
         <div class="text-gray-300 text-md hidden lg:block">
             <h2 class="text-2xl mb-2 font-semibold">Contáctanos</h2>
             <div>
-                <i class="far fa-envelope"></i> info@boletea.com
+                <i class="far fa-envelope"></i> contacto@boletea.com
             </div>
             <div>
-                <i class="fab fa-whatsapp"></i> 871-277-0030
+                <a href="https://wa.me/5215644992294"><i class="fab fa-whatsapp"> </i> +52 56-44-99-22-94</a>
             </div>
         </div>
         <div class="bg-black text-center col-span-3 text-gray-100 text-xs">
