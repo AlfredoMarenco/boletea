@@ -37,7 +37,7 @@ class LandingController extends Controller
     public function eventsFeria()
     {
         $date = date('Ymd');
-        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', '%Explanada%')->orderBy('fechaBusqueda', 'asc')->get();
+        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('recinto', 'LIKE', '%Feria Torreón%')->orderBy('fechaBusqueda', 'asc')->get();
         return view('landing.feria-torreon', compact('events'));
     }
 

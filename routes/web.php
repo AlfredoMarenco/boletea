@@ -29,7 +29,7 @@ Route::get('/feria-de-torreon', [LandingController::class, 'eventsFeria'])->name
 Route::get('/poliforum-feria-de-torreon', [LandingController::class, 'eventsPoliforum'])->name('eventsPoliforum');
 Route::get('/illusion-on-ice-torreon',[LandingController::class,'illusiononice'])->name('illusiononice');
 Route::get('/corridascolima', [LandingController::class, 'eventsColima'])->name('eventsVelaria');
-Route::get('/palenqueferiagomezpalacio', [LandingController::class, 'eventsPalenque'])->name('eventsPalenque');
+Route::get('/feriatorreon2024', [LandingController::class, 'eventsFeria'])->name('eventsFeria');
 Route::get('/tramitar-reembolso', RefundsController::class);
 Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('streamLive');
 /* Route::get('/code-generation',function(){
