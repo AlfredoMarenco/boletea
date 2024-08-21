@@ -130,7 +130,7 @@
                                     src="{{ asset('cdvs/cdvVaqueroNorteño.png') }}" title="Paseo Durango">
                             </div>
                         @break
-                        @case('coahuila')
+                        @case('coahuila2')
                             <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
                             <div class="flex flex-wrap justify-start">
                                 <img class="flex-auto w-20 object-contain object-center mx-2"
