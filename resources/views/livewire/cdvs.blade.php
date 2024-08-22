@@ -36,6 +36,16 @@
                             <br>
                             Domingo: 11:00 am a 2:00 pm
                         </p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/RgKt8aHhMNJ1ZfxG7">Cómo llegar</a>
+                        </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
@@ -47,6 +57,38 @@
                             10:00 am a 7:00 pm
                             <br>
                             Domingo: 11:00 am a 2:00 pm
+                        </p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/zBNedWWdxQCduUs27">Cómo llegar</a>
+                        </p>
+                    </div>
+                    <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
+                        <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
+                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Bomssa
+                                - Cancún<br></span>Avenida Lopez Portillo Lote 44 SMZ 66 Manzana 3 Esquina Torcasitas
+                            Cancún, 77500 Cancún, Q.R.</p>
+                        <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
+                            Sábado :
+                            10:00 am a 7:00 pm
+                            <br>
+                            Domingo: 11:00 am a 2:00 pm
+                        </p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/b3uLwQbJAv45UwP19">Cómo llegar</a>
                         </p>
                     </div>
                 </div>
@@ -65,6 +107,16 @@
                             10:00 am a 9:00 pm
                         </p>
                         <p>SOLO BOLETO DIGITAL</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/37Gkc1KHwBZ1xvNF6">Cómo llegar</a>
+                        </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
@@ -78,6 +130,16 @@
                             Domingo: 10:00 am a 3:00 pm
                         </p>
                         <p>SOLO BOLETO DIGITAL</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/ij8BapwGJVSd6EdY7">Cómo llegar</a>
+                        </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
@@ -88,6 +150,16 @@
                             10:00 am a 9:00 pm
                         </p>
                         <p>SOLO BOLETO DIGITAL</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/66bxnCFZD9oti3Ht5">Cómo llegar</a>
+                        </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/logo-bomssa.png') }}" class="mx-auto w-36 mb-2" alt="">
@@ -98,6 +170,16 @@
                             9:00 am a 9:00 pm
                         </p>
                         <p>SOLO BOLETO DIGITAL</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/RKfGVVCRfwDXSYSb6">Cómo llegar</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -132,7 +214,8 @@
                             11:00 am a 7:00 pm</p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
-                        <img src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}" class="mx-auto my-4" alt="">
+                        <img src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}" class="mx-auto my-4"
+                            alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Suc. Fco. I.
                                 Madero<br></span>Nicolás Bravo #20-local 2. Madero. 27900 Fco. I. Madero, Coah.</p>
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
