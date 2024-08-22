@@ -88,7 +88,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                             </svg>
-                            <a href="https://maps.app.goo.gl/b3uLwQbJAv45UwP19">Cómo llegar</a>
+                            <a href="https://maps.app.goo.gl/RKfGVVCRfwDXSYSb6">Cómo llegar</a>
                         </p>
                     </div>
                 </div>
@@ -196,6 +196,16 @@
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Sábado :
                             10:00 am a 6:00 pm</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/uer4iqZH5rRzCy1v8">Cómo llegar</a>
+                        </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/imgCintilloCimaco.png') }}" class="mx-auto my-4" alt="">
@@ -204,6 +214,16 @@
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Domingo :
                             11:00 am a 7:00 pm</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/iVgcqPmcrhyfmBiN8">Cómo llegar</a>
+                        </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/imgCintilloCimaco.png') }}" class="mx-auto my-4" alt="">
@@ -212,6 +232,16 @@
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Domingo :
                             11:00 am a 7:00 pm</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/bJsnwsEQVu5umFcu8">Cómo llegar</a>
+                        </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}" class="mx-auto my-4"
@@ -224,6 +254,16 @@
                             <br>
                             Domingo: 10:00 am a 2:00 pm
                         </p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/LKPESqSczALWCr648">Cómo llegar</a>
+                        </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}" class="mx-auto my-4"
@@ -233,6 +273,16 @@
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Sábados :
                             11:00 am a 7:00 pm</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/2aPKMtPXnrr4uhki6">Cómo llegar</a>
+                        </p>
                     </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/cdvVaqueroNorteño.png') }}" class="mx-auto my-4" alt="">
@@ -243,6 +293,35 @@
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Domingo :
                             11:00 am a 9:00 pm</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/AszMEWHsmZ44n852A">Cómo llegar</a>
+                        </p>
+                    </div>
+                    <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
+                        <img src="{{ asset('cdvs/imgeSombrererialafe.jpeg') }}" class="mx-auto my-4" alt="">
+                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Sombrereria la fe<br>
+                            </span>Cepeda 111, Zona Centro, Francisco I. Madero, Coah. CP: 27900
+                        </p>
+                        <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
+                            Domingo :
+                            11:00 am a 9:00 pm</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/2UGHY7B4i7i3zdBU8">Cómo llegar</a>
+                        </p>
                     </div>
                 </div>
             </div>
