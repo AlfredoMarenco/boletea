@@ -151,10 +151,15 @@
                         @case('coahuila3')
                             <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
                             <div class="flex flex-wrap justify-start">
-                                <img class="md:flex-auto w-13 md:w-16 object-contain object-center mx-2"
-                                    src="{{ asset('cdvs/imgeSombrererialafe.jpeg') }}" alt="">
+                                <img class="flex-auto w-20 object-contain object-center mx-2"
+                                    src="{{ asset('cdvs/imgCintilloColiseoCentenario.png') }}" alt="">
+                                <img class="flex-auto w-24 object-contain object-center mx-2"
+                                    src="{{ asset('cdvs/imgCintilloCimaco.png') }}" alt="">
                                 <img class="w-13 md:w-13 object-contain object-center mx-2"
-                                    src="{{ asset('cdvs/cdvVaqueroNorteño.png') }}" title="Paseo Durango">
+                                    src="{{ asset('cdvs/imgCintilloLos3garcia.png') }}"
+                                    title="Suc. Fco. I. Madero, Suc. San Pedro">
+                                <img class="w-13 md:w-13 object-contain object-center mx-2"
+                                    src="{{ asset('cdvs/maderablefactory.jpg') }}" title="Maderable Factory">
                             </div>
                         @break
 
