@@ -1,7 +1,7 @@
 <div wire:poll.1000ms='counter'>
     <div class="text-2xl text-rojo font-bold shadow-md">
-        Inicio de venta en:
         @if ($eventName == 'jorgemedinayjosicuenjuntostorreon')
+            Inicio de venta en:
             {{ $countdown }}
         @endif
     </div>
