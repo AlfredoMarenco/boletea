@@ -104,6 +104,9 @@
                     class="fas fa-map-marker-alt text-2xl text-center mr-3"></i>
                 <span>{{ $event->ciudad }}</span>
             </p>
+            <p class="font-semibold text-gray-800 mb-2 md:mb-4">
+                @livewire('countdown', ['updated_at' => $event->updated_at])
+            </p>
             <div class="md:flex items-center justify-around">
                 <div class="block md:hidden my-6">
                     @if ($event->visible == 'si')
@@ -130,6 +133,7 @@
                                     src="{{ asset('cdvs/cdvVaqueroNorteño.png') }}" title="Paseo Durango">
                             </div>
                         @break
+
                         @case('coahuila2')
                             <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
                             <div class="flex flex-wrap justify-start">
@@ -148,6 +152,7 @@
                                     src="{{ asset('cdvs/maderablefactory.jpg') }}" title="Maderable Factory">
                             </div>
                         @break
+
                         @case('coahuila3')
                             <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
                             <div class="flex flex-wrap justify-start">
@@ -216,8 +221,8 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
             crossorigin="anonymous"></script>
         <!-- Anuncio 1 -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610" data-ad-slot="1210961234"
-            data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610"
+            data-ad-slot="1210961234" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
