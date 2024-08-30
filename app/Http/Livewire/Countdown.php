@@ -9,6 +9,7 @@ use Livewire\Component;
 class Countdown extends Component
 {
     public $updated_at;
+    public $eventName;
     public $countdown;
 
     public function mount($updated_at)
