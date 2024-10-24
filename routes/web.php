@@ -32,6 +32,8 @@ Route::get('/corridascolima', [LandingController::class, 'eventsColima'])->name(
 Route::get('/feriatorreon2024', [LandingController::class, 'eventsFeria'])->name('eventsFeria');
 Route::get('/tramitar-reembolso', RefundsController::class);
 Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('streamLive');
+Route::get('/juntos',[LandingController::class, 'eventsJuntos'])->name('juntos');
+
 /* Route::get('/code-generation',function(){
     $faker = Faker\Factory::create();
     return view('codes',compact('faker'));

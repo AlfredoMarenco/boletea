@@ -97,4 +97,10 @@ class LandingController extends Controller
     public function illusiononice(){
         return view('landing.illusion-on-ice');
     }
+
+    public function eventsJuntos(){
+        $date = date('Ymd');
+        $events = Event::where('title','LIKE','%JORGE MEDINA%')->where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
+        return view('landing.event-juntos',compact('events','date'));
+    }
 }
