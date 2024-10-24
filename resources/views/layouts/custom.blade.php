@@ -75,7 +75,7 @@
 </head>
 
 
-<body style="background-image: url('{{ asset('img/bg-boleto.png') }}');">
+<body CLASS="backdrop-filter backdrop-blur-xl" style="background-image: url('{{ asset('img/juntos_bg.jpg') }}');">
     @include('landing.include.navbar')
     <div>
         @yield('slider')
