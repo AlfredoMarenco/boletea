@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="bg-gray-200 bg-opacity-30 rounded-lg p-2 lg:mx-56">
-            <div class="text-white font-bold text-md lg:text-lg text-center">
+            <div class="text-white font-bold text-xs lg:text-lg text-center">
                 <ul class="list-inside">
                     <li>&#8226; Boleto en las primeras 3 filas &#8226; Articulo de Merch.</li>
                     <li>Acceso preferencial al evento &#8226; Convivencia con los artostas</li>
