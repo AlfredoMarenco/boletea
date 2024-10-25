@@ -10,7 +10,7 @@
             </div>
         </div>
         <div
-            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 text-center mb-6 px-2 py-1.5 bg-blue-600 font-bold text-2xl shadow-sm rounded-md hover:bg-gray-50 text-white hover:text-blue-500 mx-48">
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 text-center mb-6 px-2 py-1.5 bg-blue-600 font-bold text-2xl shadow-sm rounded-md hover:bg-blue-100 text-white hover:text-blue-500 mx-48">
             <a class="flex justify-center items-center" href="{{ route('juntossolofans') }}">Solo Para FANS <svg
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-5 font-bold ml-2">
@@ -47,6 +47,33 @@
                     </a>
                 </div>
             @endforeach
+        </div>
+
+        <div class="flex justify-around lg:p-10 text-white items-center text-2xl ">
+            <p class="hover:text-blue-400 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer">
+                <a href="https://www.instagram.com/j_medina37/"></a>
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 font-semibold text-center mx-auto">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                    </svg>
+                </span>Jorge Medina</p>
+            <p class="hover:text-blue-400 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer">
+                <a href="https://www.instagram.com/josicuenoficial/?hl=es"></a>
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 font-semibold text-center mx-auto">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                    </svg>
+                </span>Josi Cuen</p>
+            <p class="hover:text-blue-400 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer">
+                <a href="https://www.instagram.com/j_medina37/"></a>
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 font-semibold text-center mx-auto">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                    </svg>
+                </span>Star Media</p>
         </div>
     </section>
 @endsection
