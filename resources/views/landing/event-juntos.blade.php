@@ -6,7 +6,7 @@
             <div>
                 {{-- <h1 class="text-5xl font-bold text-blue-500 bg-white bg-opacity-80 p-4 rounded-2xl shadow-2xl"> JUNTOS TOUR
                 </h1> --}}
-                <img class="mx-auto w-1/2 lg:-mb-10 lg:-mt-32 -mb-5 -mt-12" src="{{ asset('/img/logo_juntos.png') }}"
+                <img class="mx-auto w-24 lg:w-1/2 lg:-mb-10 lg:-mt-32 -mb-5 -mt-12" src="{{ asset('/img/logo_juntos.png') }}"
                     alt="">
             </div>
         </div>
