@@ -6,11 +6,12 @@
             <div>
                 {{-- <h1 class="text-5xl font-bold text-blue-500 bg-white bg-opacity-80 p-4 rounded-2xl shadow-2xl"> JUNTOS TOUR
                 </h1> --}}
-                <img class="mx-auto w-1/2 -mb-10 -mt-32" src="{{ asset('/img/logo_juntos.png') }}" alt="">
+                <img class="mx-auto w-1/2 lg:-mb-10 lg:-mt-32 -mb-5 -mt-12" src="{{ asset('/img/logo_juntos.png') }}"
+                    alt="">
             </div>
         </div>
         <div
-            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 text-center mb-6 px-2 py-1.5 bg-blue-600 font-bold text-2xl shadow-sm rounded-md hover:bg-blue-100 text-white hover:text-blue-500 mx-48">
+            class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 text-center mb-2 lg:mb-6 px-2 py-1.5 bg-blue-600 font-bold text-md lg:text-2xl shadow-sm rounded-md hover:bg-blue-100 text-white hover:text-blue-500 mx-20 lg:mx-48">
             <a class="flex justify-center items-center" href="{{ route('juntossolofans') }}">Solo Para FANS <svg
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-5 font-bold ml-2">
@@ -49,7 +50,7 @@
             @endforeach
         </div>
 
-        <div class="flex justify-around lg:p-10 text-white items-center text-2xl ">
+        <div class="flex justify-around lg:p-10 text-white items-center text-2xl mb-6">
             <a href="https://www.instagram.com/j_medina37/">
                 <p
                     class="hover:text-blue-400 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer">
