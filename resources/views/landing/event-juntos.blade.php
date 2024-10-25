@@ -50,7 +50,7 @@
             @endforeach
         </div>
 
-        <div class="flex justify-around lg:p-10 text-white items-center text-2xl mb-6">
+        <div class="flex justify-around lg:p-10 text-white items-center text-md lg:text-2xl mb-6">
             <a href="https://www.instagram.com/j_medina37/">
                 <p
                     class="hover:text-blue-400 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer">
