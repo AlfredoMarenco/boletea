@@ -103,4 +103,8 @@ class LandingController extends Controller
         $events = Event::where('title','LIKE','%JORGE MEDINA%')->where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
         return view('landing.event-juntos',compact('events','date'));
     }
+
+    public function eventsJuntosFans(){
+        return view('landing.event-juntos-fans');
+    }
 }

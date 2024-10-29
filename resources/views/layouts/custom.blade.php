@@ -75,7 +75,7 @@
 </head>
 
 
-<body CLASS="backdrop-filter backdrop-blur-md" style="background-image: url('{{ asset('img/juntos_bg.jpg') }}');">
+<body CLASS="backdrop-filter backdrop-blur-sm bg-cover bg-no-repeat bg-center" style="background-image: url('{{ asset('img/juntos_bg2.jpg') }}');" >
     @include('landing.include.navbar')
     <div>
         @yield('slider')
