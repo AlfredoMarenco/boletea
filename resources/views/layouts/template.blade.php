@@ -112,9 +112,9 @@
             <div>
                 <i class="far fa-envelope"></i> contacto@boletea.com
             </div>
-            <div>
+            {{-- <div>
                 <a href="https://wa.me/5215644992294"><i class="fab fa-whatsapp"> </i> +52 56-44-99-22-94</a>
-            </div>
+            </div> --}}
         </div>
         <div class="bg-black text-center col-span-3 text-gray-100 text-xs">
             Todos los derechos reservados - Boletea Tickets &copy;
