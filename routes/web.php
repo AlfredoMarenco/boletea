@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArtistController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\RefundsController;
 use App\Http\Livewire\RefundsGenerate;
@@ -34,6 +35,7 @@ Route::get('/tramitar-reembolso', RefundsController::class);
 Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('streamLive');
 Route::get('/juntostour',[LandingController::class, 'eventsJuntos'])->name('juntostour');
 Route::get('/juntostour/solofans',[LandingController::class, 'eventsJuntosFans'])->name('juntossolofans');
+Route::get('/artist', [ArtistController::class, 'show'])->name('artist.show');
 
 /* Route::get('/code-generation',function(){
     $faker = Faker\Factory::create();
