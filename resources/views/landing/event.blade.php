@@ -115,7 +115,7 @@
                             boleto</a>
                     @endif
                     @if ($event->visible == 'agotado')
-                        <a href="{{ $event->link }}"
+                        <a
                             class="text-black text-lg font-bold bg-gray-200 px-6 md:px-24 py-2 w-full hover:bg-gray-100">Boletos Agotados</a>
                     @endif
                 </div>
