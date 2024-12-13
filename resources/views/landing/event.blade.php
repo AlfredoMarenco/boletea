@@ -67,8 +67,7 @@
             <div class="hidden md:block col-span-3 justify-self-auto ml-4 md:text-center my-6">
                 @if ($event->visible == 'si')
                     <a href="{{ $event->link }}"
-                        class="text-white text-lg font-bold bg-rojo md:px-14 px-20 mx-auto py-2 w-full hover:bg-red-700">Comprar
-                        boletos</a>
+                        class="text-white text-lg font-bold bg-rojo md:px-14 px-20 mx-auto py-2 w-full hover:bg-red-700">{{ $event->text_button}}</a>
                 @endif
             </div>
         </div>
@@ -111,7 +110,7 @@
                 <div class="block md:hidden my-6">
                     @if ($event->visible == 'si')
                         <a href="{{ $event->link }}"
-                            class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">{{$event->text_button}}</a>
+                            class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">{{ $event->text_button }}</a>
                     @endif
                 </div>
                 <div class="mx-4 px-1">
