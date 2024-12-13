@@ -111,12 +111,7 @@
                 <div class="block md:hidden my-6">
                     @if ($event->visible == 'si')
                         <a href="{{ $event->link }}"
-                            class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">Comprar
-                            boleto</a>
-                    @endif
-                    @if ($event->visible == 'agotado')
-                        <a
-                            class="text-black text-lg font-bold bg-gray-200 px-6 md:px-24 py-2 w-full hover:bg-gray-100">Boletos Agotados</a>
+                            class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">{{$event->text_button}}</a>
                     @endif
                 </div>
                 <div class="mx-4 px-1">
