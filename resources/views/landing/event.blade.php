@@ -114,6 +114,10 @@
                             class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">Comprar
                             boleto</a>
                     @endif
+                    @if ($event->visible == 'agotado')
+                        <a href="{{ $event->link }}"
+                            class="text-black text-lg font-bold bg-gray-200 px-6 md:px-24 py-2 w-full hover:bg-gray-100">Boletos Agotados</a>
+                    @endif
                 </div>
                 <div class="mx-4 px-1">
                     @switch($event->lugar)
