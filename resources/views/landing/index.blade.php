@@ -70,7 +70,7 @@
                     <li class="splide__slide">
                         <a class="sm:hidden lg:block" href="https://zonacero.accesosferialeon.com/default.asp"
                             class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
-                            <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
+                            <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-top lg:bg-contain bg-no-repeat lg:bg-center"
                                 style="background-image: url('{{ asset('img/bannerFeriaLeon.jpg') }}');">
                                 <div
                                     class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
