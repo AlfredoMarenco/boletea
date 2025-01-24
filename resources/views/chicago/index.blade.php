@@ -20,7 +20,8 @@
                         con toda la banda y reciban artículos exclusivos del paquete VIP de Chicago.</p>
 
                     <p class="mb-4">Todas las experiencias VIP se llevarán a cabo en el lugar del concierto.</p>
-                    <p class="font-bold text-2xl text-yellow-100">Las experiencias VIP 1 y 2 tendrán lugar antes de que comience el espectáculo.</p>
+                    <p class="font-bold text-2xl text-yellow-100">Las experiencias VIP 1 y 2 tendrán lugar antes de que
+                        comience el espectáculo.</p>
 
                     <p class="mb-4">Se anima a todos los invitados VIP a mantenerse al día con la banda uniéndose a su club
                         de fans en
@@ -43,8 +44,14 @@
         <div
             class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 bg-opacity-30 p-1 rounded-lg px-12">
             @forelse ($events as $event)
+
                 <div
                     class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-80 col-span-4 md:col-span-1 rounded-lg border border-gray-800 bg-black shadow-lg">
+                    <div class="text-center mt-4">
+                        <p class="font-semibold text-2xl mb-2 text-white"><i
+                                class="fas fa-map-marker-alt mr-1 text-rojo"></i>
+                            {{ $event->ciudad }}</p>
+                    </div>
                     <a href="{{ route('showEvent', $event) }}">
                         <img class="rounded-t-lg h-auto md:h-auto w-full object-cover object-top mx-auto"
                             src="{{ asset('img/' . $event->image . '') }}" alt="">
@@ -55,9 +62,9 @@
                                 <h3 class="font-bold text-lg mb-2 text-white">{{ Str::limit($event->title, 100, '...') }}
                                 </h3>
                                 {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
-                                <p class="font-semibold text-sm mb-2 text-white"><i
+                                {{-- <p class="font-semibold text-sm mb-2 text-white"><i
                                         class="fas fa-map-marker-alt mr-1 text-rojo"></i>
-                                    {{ $event->ciudad }}</p>
+                                    {{ $event->ciudad }}</p> --}}
                                 <p class="font-semibold text-xs text-white"><i class="far fa-calendar mr-1 text-rojo"></i>
                                     {{ $event->fecha }}</p>
                             </div>
