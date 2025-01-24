@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArtistController;
+use App\Http\Controllers\ChicagoController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\RefundsController;
 use App\Http\Livewire\RefundsGenerate;
@@ -28,14 +29,18 @@ Route::get('/evento/{event}', [LandingController::class, 'showEvent'])->name('sh
 Route::get('/todos-los-eventos', [LandingController::class, 'allEvents'])->name('allEvents');
 Route::get('/feria-de-torreon', [LandingController::class, 'eventsFeria'])->name('eventsFeria');
 Route::get('/poliforum-feria-de-torreon', [LandingController::class, 'eventsPoliforum'])->name('eventsPoliforum');
-Route::get('/illusion-on-ice-torreon',[LandingController::class,'illusiononice'])->name('illusiononice');
+Route::get('/illusion-on-ice-torreon', [LandingController::class, 'illusiononice'])->name('illusiononice');
 Route::get('/corridascolima', [LandingController::class, 'eventsColima'])->name('eventsVelaria');
 Route::get('/feriatorreon2024', [LandingController::class, 'eventsFeria'])->name('eventsFeria');
 Route::get('/tramitar-reembolso', RefundsController::class);
 Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('streamLive');
-Route::get('/juntostour',[LandingController::class, 'eventsJuntos'])->name('juntostour');
-Route::get('/juntostour/solofans',[LandingController::class, 'eventsJuntosFans'])->name('juntossolofans');
+Route::get('/juntostour', [LandingController::class, 'eventsJuntos'])->name('juntostour');
+Route::get('/juntostour/solofans', [LandingController::class, 'eventsJuntosFans'])->name('juntossolofans');
 Route::get('/artist', [ArtistController::class, 'show'])->name('artist.show');
+
+Route::domain('{chicagovip}.boletea.test')->group(function () {
+    Route::get('/performances', [ChicagoController::class,'index'])->name('chicagovip.package');
+});
 
 /* Route::get('/code-generation',function(){
     $faker = Faker\Factory::create();
