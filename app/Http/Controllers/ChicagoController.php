@@ -11,6 +11,7 @@ class ChicagoController extends Controller
     public function index(){
 
         $events = Event::where('visible','ch')->get();
+
         return view('chicago.index',compact('events'));
     }
 }

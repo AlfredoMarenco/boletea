@@ -75,7 +75,8 @@
 </head>
 
 
-<body class="bg-gray-900">
+<body style="--opacidad-negro: 0.85; background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),url('{{ asset('img/bg_chicago.jpg') }}'); background-size: cover;
+">
     @include('landing.include.navbarblack')
     <div>
         @yield('slider')
