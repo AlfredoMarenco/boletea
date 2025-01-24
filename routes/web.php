@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArtistController;
+use App\Http\Controllers\ChicagoController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\RefundsController;
 use App\Http\Livewire\RefundsGenerate;
@@ -36,6 +37,10 @@ Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('stre
 Route::get('/juntostour',[LandingController::class, 'eventsJuntos'])->name('juntostour');
 Route::get('/juntostour/solofans',[LandingController::class, 'eventsJuntosFans'])->name('juntossolofans');
 Route::get('/artist', [ArtistController::class, 'show'])->name('artist.show');
+
+Route::domain('{chicagovip}.boletea.test')->group(function () {
+    Route::get('/home',[ChicagoController::class,'index'])->name('chicagovip.index');
+});
 
 /* Route::get('/code-generation',function(){
     $faker = Faker\Factory::create();
