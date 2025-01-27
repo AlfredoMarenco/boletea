@@ -4,7 +4,7 @@
             <div class="flex justify-start lg:w-0 lg:flex-1">
                 <a href="{{ route('index') }}">
                     <span class="sr-only">Boletea</span>
-                    <img class="h-8 w-auto sm:h-10" src="{{ asset('img/logoBoletea.png') }}" alt="">
+                    <img class="h-8 w-auto sm:h-10" src="{{ asset('img/logoBoleteaNegro.png') }}" alt="">
                 </a>
             </div>
             <div class="-mr-2 -my-2 md:hidden">
