@@ -108,7 +108,7 @@
             </p>
             <div class="md:flex items-center justify-around">
                 <div class="block md:hidden my-6">
-                    @if ($event->visible == 'si')
+                    @if ($event->visible == 'si' || $event->visible = 'ch' )
                         <a href="{{ $event->link }}"
                             class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">{{ $event->text_button }}</a>
                     @endif
