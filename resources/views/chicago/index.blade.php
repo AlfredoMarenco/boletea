@@ -52,7 +52,7 @@
                                 class="fas fa-map-marker-alt mr-1 text-rojo"></i>
                             {{ $event->ciudad }}</p>
                     </div>
-                    <a href="{{ route('showEvent', $event) }}">
+                    <a href="{{ $event->link }}">
                         <img class="rounded-t-lg h-auto md:h-auto w-full object-cover object-top mx-auto"
                             src="{{ asset('img/' . $event->image . '') }}" alt="">
                         <div class="grid grid-cols-1 place-content-end mt-4">
@@ -69,7 +69,7 @@
                                     {{ $event->fecha }}</p>
                             </div>
                             <div class="col-span-3 pt-4 w-full place-self-end">
-                                <a href="{{ route('showEvent', $event) }}"
+                                <a href="{{ $event->link }}"
                                     class="text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg rounded-md mx-2 my-2">Comprar
                                     Boletos</a>
                             </div>

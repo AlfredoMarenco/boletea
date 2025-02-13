@@ -65,7 +65,7 @@
         <div class="col-span-3 md:col-span-1">
             <img class="w-full mx-auto md:ml-4 rounded-md" src="{{ asset('img/' . $event->image . '') }}" alt="">
             <div class="hidden md:block col-span-3 justify-self-auto ml-4 md:text-center my-6">
-                @if ($event->visible == 'si')
+                @if ($event->visible == 'si' || $event->visible = 'ch')
                     <a href="{{ $event->link }}"
                         class="text-white text-lg font-bold bg-rojo md:px-14 px-20 mx-auto py-2 w-full hover:bg-red-700">{{ $event->text_button}}</a>
                 @endif
@@ -108,7 +108,7 @@
             </p>
             <div class="md:flex items-center justify-around">
                 <div class="block md:hidden my-6">
-                    @if ($event->visible == 'si')
+                    @if ($event->visible == 'si' || $event->visible = 'ch' )
                         <a href="{{ $event->link }}"
                             class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">{{ $event->text_button }}</a>
                     @endif
