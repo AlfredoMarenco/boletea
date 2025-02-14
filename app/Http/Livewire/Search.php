@@ -22,6 +22,7 @@ class Search extends Component
 
     public function render()
     {
+        $date = date('Ymd');
         return view('livewire.search',[
             'events' => Event::where('title','LIKE','%'.$this->search.'%')
             ->orWhere('name','LIKE','%'.$this->search.'%')
@@ -29,6 +30,7 @@ class Search extends Component
             ->orWhere('ciudad','LIKE','%'.$this->search.'%')
             ->orWhere('recinto','LIKE','%'.$this->search.'%')
             ->orWhere('fecha','LIKE','%'.$this->search.'%')
+            ->where('fechaBusqueda', '>=', $date)
             ->orderBy('fechaBusqueda', 'asc')
             ->get()
         ]);
