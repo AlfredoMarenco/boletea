@@ -218,6 +218,13 @@
                                     src="{{ asset('cdvs/cdv_jr_logo.png') }}" alt="">
                             </div>
                         @break
+                        @case('saltillo2')
+                            <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
+                            <div class="flex flex-wrap">
+                                <img class="flex-auto w-24 object-contain object-center mx-2"
+                                    src="{{ asset('cdvs/imgCintilloCimaco.png') }}" alt="">
+                            </div>
+                        @break
 
                         @default
                     @endswitch
