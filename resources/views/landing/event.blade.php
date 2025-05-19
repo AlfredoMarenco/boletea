@@ -104,7 +104,9 @@
                 <span>{{ $event->ciudad }}</span>
             </p>
             <p class="font-semibold text-gray-800 mb-2 md:mb-4">
-                {{-- @livewire('countdown', ['updated_at' => $event->updated_at,'eventName' => $event->name]) --}}
+                @if ($event->countdown == 'si')
+                    @livewire('countdown', ['updated_at' => $event->updated_at,'eventName' => $event->name])
+                @endif
             </p>
             <div class="md:flex items-center justify-around">
                 <div class="block md:hidden my-6">
