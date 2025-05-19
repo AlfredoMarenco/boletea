@@ -69,6 +69,11 @@
                     <a href="{{ $event->link }}"
                         class="text-white text-lg font-bold bg-rojo md:px-14 px-20 mx-auto py-2 w-full hover:bg-red-700">{{ $event->text_button}}</a>
                 @endif
+                <p class="font-semibold text-gray-800 mb-2 md:mb-4">
+                @if ($event->countdown == 'si')
+                    @livewire('countdown', ['updated_at' => $event->updated_at,'eventName' => $event->name])
+                @endif
+            </p>
             </div>
         </div>
         <div class="col-span-2 p-4 mt-1 text-center md:text-left">
@@ -103,11 +108,7 @@
                     class="fas fa-map-marker-alt text-2xl text-center mr-3"></i>
                 <span>{{ $event->ciudad }}</span>
             </p>
-            <p class="font-semibold text-gray-800 mb-2 md:mb-4">
-                @if ($event->countdown == 'si')
-                    @livewire('countdown', ['updated_at' => $event->updated_at,'eventName' => $event->name])
-                @endif
-            </p>
+
             <div class="md:flex items-center justify-around">
                 <div class="block md:hidden my-6">
                     @if ($event->visible == 'si' || $event->visible = 'ch' )
