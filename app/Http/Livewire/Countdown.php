@@ -27,7 +27,7 @@ class Countdown extends Component
                 'short' => true,
             ]);
         } else {
-            $this->countdown = "Venta inciada";
+            $this->countdown = "Boletos ya disponibles";
         }
     }
 
