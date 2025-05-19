@@ -65,15 +65,15 @@
         <div class="col-span-3 md:col-span-1">
             <img class="w-full mx-auto md:ml-4 rounded-md" src="{{ asset('img/' . $event->image . '') }}" alt="">
             <div class="hidden md:block col-span-3 justify-self-auto ml-4 md:text-center my-6">
-                @if ($event->visible == 'si' || $event->visible = 'ch')
+                @if ($event->visible == 'si' || ($event->visible = 'ch'))
                     <a href="{{ $event->link }}"
-                        class="text-white text-lg font-bold bg-rojo md:px-14 px-20 mx-auto py-2 w-full hover:bg-red-700">{{ $event->text_button}}</a>
+                        class="text-white text-lg font-bold bg-rojo md:px-14 px-20 mx-auto py-2 w-full hover:bg-red-700">{{ $event->text_button }}</a>
                 @endif
                 <p class="font-semibold text-gray-800 mb-2 md:mb-4">
-                @if ($event->countdown == 'si')
-                    @livewire('countdown', ['updated_at' => $event->updated_at,'eventName' => $event->name])
-                @endif
-            </p>
+                    @if ($event->countdown == 'si')
+                        @livewire('countdown', ['updated_at' => $event->updated_at, 'eventName' => $event->name])
+                    @endif
+                </p>
             </div>
         </div>
         <div class="col-span-2 p-4 mt-1 text-center md:text-left">
@@ -111,10 +111,15 @@
 
             <div class="md:flex items-center justify-around">
                 <div class="block md:hidden my-6">
-                    @if ($event->visible == 'si' || $event->visible = 'ch' )
+                    @if ($event->visible == 'si' || ($event->visible = 'ch'))
                         <a href="{{ $event->link }}"
                             class="text-white text-lg font-bold bg-rojo px-6 md:px-24 py-2 w-full hover:bg-red-700">{{ $event->text_button }}</a>
                     @endif
+                    <p class="font-semibold text-gray-800 mb-2 md:mb-4">
+                        @if ($event->countdown == 'si')
+                            @livewire('countdown', ['updated_at' => $event->updated_at, 'eventName' => $event->name])
+                        @endif
+                    </p>
                 </div>
                 <div class="mx-4 px-1">
                     @switch($event->lugar)
@@ -217,10 +222,11 @@
                             <div class="flex flex-wrap">
                                 <img class="flex-auto w-24 object-contain object-center mx-2"
                                     src="{{ asset('cdvs/imgCintilloCimaco.png') }}" alt="">
-                                    <img class="flex-auto w-24 object-contain object-center mx-2"
+                                <img class="flex-auto w-24 object-contain object-center mx-2"
                                     src="{{ asset('cdvs/cdv_jr_logo.png') }}" alt="">
                             </div>
                         @break
+
                         @case('saltillo2')
                             <h4 class="text-3xl font-bold text-gray-800 text-center mb-3">Centros de venta:</h4>
                             <div class="flex flex-wrap">
