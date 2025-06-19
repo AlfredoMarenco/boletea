@@ -55,7 +55,7 @@
 
     <section>
         <div class="mx-4 md:mx-44 mb-8">
-            <div class="bg-white rounded-lg shadow-md p-4">
+            <div class="block md:hidden mt-8 p-4 border border-gray-200 rounded-lg shadow-sm bg-gray-50">
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
                     crossorigin="anonymous"></script>
                 <ins class="adsbygoogle block w-full" data-ad-client="ca-pub-5976709800052610"
