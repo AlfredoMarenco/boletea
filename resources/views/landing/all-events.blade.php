@@ -1,40 +1,42 @@
 @extends('layouts.template')
 
 @section('content')
-    <section>
-        <div class="flex justify-center items-end text-rigth mb-6 px-2 md:mb-3 mx-4 mt-4 md:mx-16">
-            <div>
-                <h1 class="text-4xl font-bold text-rojo">Todos los eventos</h1>
+<section class="py-10 px-4 md:px-16 bg-zinc-900 text-white">
+    <div class="mb-10 text-center">
+        <h1 class="text-4xl font-extrabold text-yellow-400 tracking-tight">Todos los eventos</h1>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        @forelse ($events as $event)
+            <div class="bg-zinc-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300">
+                <a href="{{ route('showEvent', $event) }}">
+                    <img src="{{ asset('img/' . $event->image) }}"
+                        alt="{{ $event->title }}"
+                        class="w-full h-64 object-cover object-top">
+
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white truncate">
+                            {{ Str::limit($event->title, 30, '...') }}
+                        </h3>
+
+                        <p class="text-sm text-zinc-400 mb-1">
+                            <i class="fas fa-map-marker-alt text-red-500 mr-1"></i> {{ $event->ciudad }}
+                        </p>
+
+                        <p class="text-sm text-zinc-400 mb-4">
+                            <i class="far fa-calendar text-yellow-400 mr-1"></i> {{ $event->fecha }}
+                        </p>
+
+                        <a href="{{ route('showEvent', $event) }}"
+                            class="block w-full text-center bg-yellow-800 hover:bg-yellow-600 text-black font-semibold py-2 rounded transition">
+                            Comprar Boletos
+                        </a>
+                    </div>
+                </a>
             </div>
-        </div>
-        <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-md bg-white">
-            @forelse ($events as $event)
-                <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
-                    <a href="{{ route('showEvent', $event) }}">
-                        <img class="rounded-t-lg h-96 md:h-72 w-full object-cover object-top mx-auto"
-                            src="{{ asset('img/' . $event->image . '') }}" alt="">
-                        <div class="grid grid-cols-1 place-content-end mt-4">
-
-                            <div class="px-2 md:ml-3 col-span-2 text-left">
-                                {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
-                                <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
-                                {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
-                                <p class="font-semibold text-sm mb-2"><i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
-                                    {{ $event->ciudad }}</p>
-                                <p class="font-semibold text-xs"><i class="far fa-calendar mr-1 text-rojo"></i>
-                                    {{ $event->fecha }}</p>
-                            </div>
-                            <div class="col-span-3 pt-4 w-full place-self-end">
-                                <a href="{{ route('showEvent', $event) }}"
-                                    class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
-                                    Boletos</a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            @endforeach
-        </div>
-    </section>
-
+        @empty
+            <p class="col-span-4 text-center text-zinc-300">No hay eventos disponibles en este momento.</p>
+        @endforelse
+    </div>
+</section>
 @endsection

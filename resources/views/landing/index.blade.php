@@ -2,113 +2,25 @@
 
 @section('slider')
     <section>
-        <div class="splide">
+        <div class="splide mx-auto max-w-full">
             <div class="splide__track">
                 <ul class="splide__list">
-                    {{-- <li class="splide__slide">
-                        <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
-                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
-                            <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-contain bg-no-repeat bg-top"
-                                style="background-image: url('{{ asset('img/sliderAperturaAtlas2022.png') }}');">
-                                <div class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
-                                    <div class="text-center w-full text-white py-20">
-                                        <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
-                                        <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
-                                        </h1>
-                                        <h1 class="text-3xl md:text-5xl md:my-3 font-bold">Torneo de Apertura 2022 Varonil
-                                        </h1>
-                                        <a href="https://atlasfc.boletea.com.mx/"
-                                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
-                                            Boletos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="splide__slide">
-                        <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
-                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
-                            <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
-                                style="background-image: url('{{ asset('img/sliderAbonoVaronilAtlas.png') }}');">
-                                <div
-                                    class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
-                                    <div class="text-center w-full text-white py-20">
-                                        <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
-                                        <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
-                                        </h1>
-                                        <h1 class="text-3xl md:text-5xl md:my-3 font-bold">Abono Torneo de Apertura 2022
-                                        </h1>
-                                        <a href="https://atlasfc.boletea.com.mx/"
-                                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
-                                            Boletos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="splide__slide">
-                        <a class="sm:hidden lg:block" href="https://atlasfc.boletea.com.mx/"
-                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
-                            <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-no-repeat bg-top"
-                                style="background-image: url('{{ asset('img/sliderAperturaFemenilAtlas2022.png') }}');">
-                                <div
-                                    class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
-                                    <div class="text-center w-full text-white py-20">
-                                        <h1 class="text-xl md:text-sm md:my-1 font-bold">Guadalajara, Jalisco.</h1>
-                                        <h1 class="text-xl md:text-2xl md:my-3 font-bold">Estadio Guadalajara
-                                        </h1>
-                                        <h1 class="text-3xl md:text-5xl md:my-3 font-bold">Torneo de Apertura 2022 Femenil
-                                        </h1>
-                                        <a href="https://atlasfc.boletea.com.mx/"
-                                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
-                                            Boletos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>--}}
-                    {{-- <li class="splide__slide">
-                        <a class="sm:hidden lg:block" href="https://zonacero.accesosferialeon.com/default.asp"
-                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
-                            <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-top lg:bg-contain bg-no-repeat lg:bg-center"
-                                style="background-image: url('{{ asset('img/bannerFeriaLeon.jpg') }}');">
-                                <div
-                                    class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
-                                    <div class="text-center w-full text-white py-20">
-                                        <h1 class="text-xl md:text-sm md:my-1 font-bold">Feria León 25.</h1>
-                                        <h1 class="text-xl md:text-2xl md:my-3 font-bold">León Guanajuato
-                                        </h1>
-                                        <h1 class="text-3xl md:text-5xl md:my-3 font-bold">Eventos
-                                        </h1>
-                                        <a href="https://zonacero.accesosferialeon.com/default.asp"
-                                            class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
-                                            Boletos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li> --}}
                     @foreach ($events as $event)
-                        @if ($event->slider != null)
+                        @if ($event->slider)
                             <li class="splide__slide">
-                                <a class="sm:hidden lg:block" href="{{ route('showEvent', $event) }}"
-                                    class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">
-                                    <div class="relative flex flex-cols-2 h-56 md:h-96 md:w-full justify-center items-center bg-cover bg-top lg:bg-contain bg-no-repeat lg:bg-center"
+                                <a href="{{ route('showEvent', $event) }}">
+                                    <div class="relative h-96 md:h-[40rem] w-full bg-cover bg-center rounded-lg shadow-lg overflow-hidden"
                                         style="background-image: url('{{ asset('img/' . $event->slider) }}');">
-                                        <div
-                                            class="md:hidden lg:absolute w-full md:h-96 bg-black bg-opacity-30 hover:bg-opacity-60">
-                                            <div class="text-center w-full text-white py-20">
-                                                <h1 class="text-xl md:text-sm md:my-1 font-bold">{{ $event->ciudad }}</h1>
-                                                <h1 class="text-xl md:text-2xl md:my-3 font-bold">{{ $event->recinto }}
-                                                </h1>
-                                                <h1 class="text-3xl md:text-5xl md:my-3 font-bold">{{ $event->title }}
-                                                </h1>
-                                                <h1 class="text-2xl md:text-3xl md:mt-3 mb-2 md:mb-6 font-bold ">
-                                                    {{ $event->fecha }}
-                                                </h1>
+                                        <div class="absolute inset-0 bg-black bg-opacity-40 hover:bg-opacity-60 transition duration-300">
+                                            <div class="flex flex-col justify-center items-center h-full text-center text-white p-4 md:p-12">
+                                                <h2 class="text-base md:text-xl font-semibold uppercase tracking-wide">{{ $event->ciudad }}</h2>
+                                                <h3 class="text-lg md:text-2xl font-bold mt-1">{{ $event->recinto }}</h3>
+                                                <h1 class="text-2xl md:text-5xl font-extrabold mt-2">{{ $event->title }}</h1>
+                                                <p class="text-lg md:text-2xl font-semibold mt-3">{{ $event->fecha }}</p>
                                                 <a href="{{ route('showEvent', $event) }}"
-                                                    class="text-sm md:text-xl border-solid border-2 font-bold px-4 rounded-lg py-2 hover:bg-white hover:text-black">Comprar
-                                                    Boletos</a>
+                                                    class="mt-4 inline-block bg-red-600 hover:bg-white hover:text-red-600 border-2 border-white transition-colors duration-300 px-6 py-2 text-sm md:text-base font-bold rounded-full">
+                                                    Comprar Boletos
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -123,43 +35,35 @@
 @endsection
 
 @section('content')
-    <section class="">
-        {{-- <div class="grid md:grid-cols-3 gap-6 items-center bg-white mt-4 mx-auto md:mx-44 shadow-md lg:hidden"
-            style="width: 250px; height: 50px;">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
-                crossorigin="anonymous"></script>
-            <!-- search -->
-            <ins class="adsbygoogle" style="display:inline-block;width:250px;height:50px"
-                data-ad-client="ca-pub-5976709800052610" data-ad-slot="9361422184"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div> --}}
+    <section class="py-8">
         @livewire('search')
         @livewire('event-list')
     </section>
 
     <section>
-        <div class="md:mx-16 mb-8 md:flex items-center bg-white py-2 shadow-md">
-            <img class="object-cover w-full md:w-2/3" src="{{ asset('img/algodonerosbanner.png') }}" alt="">
-            <div class="text-center mx-auto bg-white">
-                <h3 class="md:text-3xl font-bold mb-2 mt-1 md:mt-0 md:mb-4">Compra tus boletos aquí!!</h3>
+        <div class="mx-4 md:mx-16 mb-10 flex flex-col md:flex-row items-center bg-white p-4 rounded-lg shadow-lg">
+            <img class="w-full md:w-2/3 rounded-lg shadow-sm object-cover" src="{{ asset('img/algodonerosbanner.png') }}" alt="Algodoneros Banner">
+            <div class="text-center md:text-left mt-4 md:mt-0 md:ml-6">
+                <h3 class="text-xl md:text-3xl font-bold text-gray-800">¡Compra tus boletos aquí!</h3>
                 <a href="https://unionlaguna.boletea.com.mx/default.asp"
-                    class="md:px-3 md:py-2 px-2 py-1 bg-red-700 font-semibold rounded-sm hover:bg-red-900 text-white">Próximos
-                    partidos</a>
+                    class="inline-block mt-3 bg-red-700 hover:bg-red-800 text-white font-semibold px-5 py-2 rounded-full transition duration-300 shadow-md">
+                    Próximos Partidos
+                </a>
             </div>
         </div>
     </section>
+
     <section>
-        <div class="grid md:grid-cols-3 gap-6 items-center h-5 bg-white mb-4 mx-4 md:mx-44 shadow-md lg:hidden">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
-                crossorigin="anonymous"></script>
-            <!-- Index -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610"
-                data-ad-slot="4520637976" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+        <div class="mx-4 md:mx-44 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
+                    crossorigin="anonymous"></script>
+                <ins class="adsbygoogle block w-full" data-ad-client="ca-pub-5976709800052610"
+                    data-ad-slot="4520637976" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
         </div>
     </section>
 @endsection
