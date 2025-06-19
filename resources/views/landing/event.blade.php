@@ -60,6 +60,13 @@
 @endpush
 
 @section('content')
+    @php
+        // Ejemplo variable que indica región del usuario
+        // Debes asignar esta variable en tu controlador o middleware, ejemplo: 'coahuila', 'yucatan', etc.
+        $userRegion = request()->header('X-User-Region') ?? 'unknown';
+        // O hardcodea para probar: $userRegion = 'coahuila';
+    @endphp
+
     <div class="max-w-6xl mx-auto px-4 md:px-8 py-12 bg-white rounded-2xl shadow-xl grid grid-cols-1 md:grid-cols-3 gap-10">
         <!-- Imagen y CTA -->
         <div>
@@ -67,15 +74,31 @@
                 <img src="{{ asset('img/' . $event->image) }}" alt="{{ $event->title }}"
                     class="w-full aspect-video object-cover">
             </div>
+
             @if ($event->visible == 'si' || $event->visible == 'ch')
                 <a href="{{ $event->link }}"
                     class="mt-6 block w-full text-center bg-rojo hover:bg-red-600 text-white font-semibold py-3 rounded-lg transition">
                     {{ $event->text_button }}
                 </a>
             @endif
+
             @if ($event->countdown == 'si')
                 <div class="mt-4 text-center">
                     @livewire('countdown', ['updated_at' => $event->updated_at, 'eventName' => $event->name])
+                </div>
+            @endif
+
+            {{-- Anuncio móvil debajo del card (solo visible en móviles) y excluyendo región 'coahuila' por ejemplo --}}
+            @if ($userRegion !== 'coahuila')
+                <div class="block md:hidden mt-6 p-3 border border-gray-200 rounded-lg shadow-sm bg-gray-50">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
+                        crossorigin="anonymous"></script>
+                    <!-- Anuncio 1 -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610"
+                        data-ad-slot="1210961234" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
             @endif
         </div>
@@ -95,18 +118,6 @@
                     {!! $event->description !!}
                 </div>
             @endif
-
-            <!-- Anuncio integrado -->
-            <div class="mt-6 p-4 border border-gray-200 rounded-lg shadow-sm bg-gray-50">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
-                    crossorigin="anonymous"></script>
-                <!-- Anuncio 1 -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5976709800052610"
-                    data-ad-slot="1210961234" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
 
             <!-- Información básica en iconos -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-gray-200">
