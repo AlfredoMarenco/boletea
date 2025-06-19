@@ -107,4 +107,14 @@ class LandingController extends Controller
     public function eventsJuntosFans(){
         return view('landing.event-juntos-fans');
     }
+
+
+
+
+    public function landing2025()
+    {
+        $date = date('Ymd');
+        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
+        return view('landing2025.home', compact('events'));
+    }
 }

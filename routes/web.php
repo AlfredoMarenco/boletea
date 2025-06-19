@@ -20,6 +20,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
 Route::get('/', [LandingController::class, 'index'])->name('index');
 Route::get('/quienessomos', [LandingController::class, 'about'])->name('about');
 Route::get('/centros-de-venta', [LandingController::class, 'cdvs'])->name('cdvs');
@@ -37,6 +40,9 @@ Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('stre
 Route::get('/juntostour', [LandingController::class, 'eventsJuntos'])->name('juntostour');
 Route::get('/juntostour/solofans', [LandingController::class, 'eventsJuntosFans'])->name('juntossolofans');
 Route::get('/artist', [ArtistController::class, 'show'])->name('artist.show');
+
+//Rutas Landing2025
+Route::get('/landing2025', [LandingController::class, 'landing2025'])->name('landing2025');
 
 Route::domain('{chicagovip}.boletea.com')->group(function () {
     Route::get('/home',[ChicagoController::class,'index'])->name('chicagovip.index');
