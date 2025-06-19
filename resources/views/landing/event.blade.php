@@ -222,16 +222,18 @@
                 </a>
             @endif
 
-            {{-- Anuncio móvil debajo de todo, solo en móviles y excluyendo región --}}
-            @if ($userRegion !== 'coahuila')
+
+            <div class="block md:hidden mt-8 p-4 border border-gray-200 rounded-lg shadow-sm bg-gray-50">
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
                     crossorigin="anonymous"></script>
-                <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86"
-                    data-ad-client="ca-pub-5976709800052610" data-ad-slot="3480373523"></ins>
+                <!-- search -->
+                <ins class="adsbygoogle" style="display:inline-block;width:250px;height:50px"
+                    data-ad-client="ca-pub-5976709800052610" data-ad-slot="9361422184"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
-            @endif
+            </div>
+
         </div>
     </div>
 @endsection
