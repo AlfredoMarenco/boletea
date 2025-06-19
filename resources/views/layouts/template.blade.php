@@ -49,13 +49,19 @@
         @yield('content')
     </main>
 
-    <!-- WhatsApp Floating Button -->
-    <div class="fixed bottom-6 right-6 z-50">
+    <!-- WhatsApp Floating Button Mejorado -->
+    <div class="fixed bottom-6 right-6 z-50 group">
         <a href="https://wa.me/5215644992294" target="_blank"
-            class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all">
+            class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-bounce-slow relative">
             <i class="fab fa-whatsapp text-2xl"></i>
+            <!-- Tooltip -->
+            <span
+                class="absolute right-14 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-sm px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                ¿Necesitas ayuda?
+            </span>
         </a>
     </div>
+
 
     <!-- Footer -->
     <footer class="bg-black text-gray-300 py-10 mt-12">
