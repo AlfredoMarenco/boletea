@@ -38,9 +38,22 @@
     </style>
     @livewireStyles
     @stack('styles')
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-24D94XLJ6V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-24D94XLJ6V');
+    </script>
 </head>
 
-<body class="bg-cover bg-fixed bg-no-repeat text-gray-800 font-inter"
+<body class="bg-fixed bg-repeat-x text-gray-800 font-inter"
     style="background-image: url('{{ asset('img/bg-boleto.png') }}');">
     @include('landing.include.navbar')
 
