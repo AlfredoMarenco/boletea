@@ -72,6 +72,11 @@ class LandingController extends Controller
         return view('landing.conditions');
     }
 
+    public function ticketassist()
+    {
+        return view('landing.ticketassist');
+    }
+
     public function privacity()
     {
         return view('landing.privacity');
