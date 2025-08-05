@@ -72,7 +72,7 @@
                 <img src="{{ asset('img/' . $event->image) }}" alt="{{ $event->title }}"
                     class="w-full aspect-video object-cover">
             </div>
-            @if ($event->visible == 'si' || $event->visible == 'ch')
+            @if ($event->visible == 'si' || $event->visible == 'ch' || $event->visible == 'FT')
                 <a href="{{ $event->link }}"
                     class="mt-6 block w-full text-center bg-rojo hover:bg-red-600 text-white font-semibold py-3 rounded-lg transition">
                     {{ $event->text_button }}
