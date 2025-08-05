@@ -10,7 +10,7 @@
 
     <!-- Grid de eventos -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 px-4 md:px-16 mb-12">
-        <div
+        {{-- <div
             class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition duration-300">
             <a href="{{ route('showEvent', $feria_event) }}">
                 <!-- Imagen con efecto de presentación -->
@@ -37,7 +37,7 @@
                     </a>
                 </div>
             </a>
-        </div>
+        </div> --}}
         @foreach ($events as $event)
             @php
                 $fecha = date('Ymd');
