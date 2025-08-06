@@ -1,4 +1,4 @@
-<div>
+<div id="eventos">
     <!-- Título -->
     <div class="flex justify-between items-center mb-8 px-4 md:px-16">
         <h1 class="text-2xl md:text-4xl font-extrabold text-rojo tracking-tight">🎟 Próximos Eventos</h1>
@@ -57,9 +57,9 @@
 
 <script>
     window.addEventListener('scroll-to-top', () => {
-        window.scrollTo({
-            top: 0,
+        document.querySelector('#eventos').scrollIntoView({
             behavior: 'smooth'
         });
     });
 </script>
+
