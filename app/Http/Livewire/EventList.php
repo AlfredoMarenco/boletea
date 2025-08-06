@@ -9,6 +9,13 @@ use Livewire\WithPagination;
 class EventList extends Component
 {
     use WithPagination;
+
+    // Evitar que aparezca page= en la URL
+    protected function getPageName()
+    {
+        return 'p'; // Cambia el nombre del parámetro
+    }
+
     protected $queryString = [];
 
     public function updatingPage()
@@ -21,14 +28,14 @@ class EventList extends Component
         $this->resetPage();
     }
 
-
     public function render()
     {
-        // Obtener eventos visibles y ordenarlos por fecha
         $fecha = date('Ymd');
         return view('livewire.event-list', [
-            'events' => Event::where('visible','LIKE','si')->where('fechaBusqueda', '>=', $fecha)->orderBy('fechaBusqueda', 'asc')->paginate(10)
+            'events' => Event::where('visible', 'LIKE', 'si')
+                ->where('fechaBusqueda', '>=', $fecha)
+                ->orderBy('fechaBusqueda', 'asc')
+                ->paginate(10, ['*'], $this->getPageName()) // 👈 importante
         ]);
     }
-
 }
