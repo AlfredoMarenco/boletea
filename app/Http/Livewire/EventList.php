@@ -9,6 +9,12 @@ use Livewire\WithPagination;
 class EventList extends Component
 {
     use WithPagination;
+
+    public function updatingPage()
+    {
+        $this->dispatchBrowserEvent('scroll-to-top');
+    }
+
     public function render()
     {
         // Obtener eventos visibles y ordenarlos por fecha
