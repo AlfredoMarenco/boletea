@@ -33,7 +33,7 @@
                             <i class="far fa-calendar text-rojo mr-1"></i> {{ $event->fecha }}
                         </p>
                         <a href="{{ route('showEvent', $event) }}"
-                            class="mt-4 block w-full text-md sm:text-xs lg:text-md text-center bg-rojo text-white font-semibold  py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
+                            class="mt-4 block w-full text-sm sm:text-xs lg:text-md text-center bg-rojo text-white font-semibold  py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
                             {{ $event->text_button }}
                         </a>
                     </div>
