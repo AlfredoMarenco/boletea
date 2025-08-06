@@ -9,11 +9,18 @@ use Livewire\WithPagination;
 class EventList extends Component
 {
     use WithPagination;
+    protected $queryString = [];
 
     public function updatingPage()
     {
         $this->dispatchBrowserEvent('scroll-to-top');
     }
+
+    public function updating()
+    {
+        $this->resetPage();
+    }
+
 
     public function render()
     {

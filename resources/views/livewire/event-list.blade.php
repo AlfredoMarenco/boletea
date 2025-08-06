@@ -9,7 +9,7 @@
     </div>
 
     <!-- Grid de eventos -->
-    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 lg:gap-8 xl:gap-8 px-4 md:px-16 mb-12">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-2 lg:gap-8 xl:gap-8 px-4 md:px-16 mb-12">
         @foreach ($events as $event)
             <div
                 class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition duration-300">
@@ -33,7 +33,7 @@
                             <i class="far fa-calendar text-rojo mr-1"></i> {{ $event->fecha }}
                         </p>
                         <a href="{{ route('showEvent', $event) }}"
-                            class="mt-4 block w-full text-center bg-rojo text-white font-semibold  py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
+                            class="mt-4 block w-full text-md sm:text-xs lg:text-md text-center bg-rojo text-white font-semibold  py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
                             {{ $event->text_button }}
                         </a>
                     </div>
