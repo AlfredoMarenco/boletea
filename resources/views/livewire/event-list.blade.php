@@ -9,7 +9,7 @@
     </div>
 
     <!-- Grid de eventos -->
-    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 lg:gap-8 px-4 md:px-16 mb-12">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 lg:gap-8 xl:gap-8 px-4 md:px-16 mb-12">
         @foreach ($events as $event)
             <div
                 class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition duration-300">
