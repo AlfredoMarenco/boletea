@@ -11,10 +11,6 @@
     <!-- Grid de eventos -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 px-4 md:px-16 mb-12">
         @foreach ($events as $event)
-            @php
-                $fecha = date('Ymd');
-            @endphp
-            @if ($event->fechaBusqueda >= $fecha)
                 <div
                     class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition duration-300">
                     <a href="{{ route('showEvent', $event) }}">
@@ -43,7 +39,11 @@
                         </div>
                     </a>
                 </div>
-            @endif
         @endforeach
     </div>
+    <!-- Paginación -->
+    <div class="flex justify-center mt-8">
+        {{ $events->links() }}
+    </div>
+    <!-- Fin de la paginación -->
 </div>
