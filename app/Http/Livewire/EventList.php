@@ -10,12 +10,6 @@ class EventList extends Component
 {
     use WithPagination;
 
-    // Evitar que aparezca page= en la URL
-    protected function getPageName()
-    {
-        return 'p'; // Cambia el nombre del parámetro
-    }
-
     protected $queryString = [];
 
     public function updatingPage()
@@ -35,7 +29,7 @@ class EventList extends Component
             'events' => Event::where('visible', 'LIKE', 'si')
                 ->where('fechaBusqueda', '>=', $fecha)
                 ->orderBy('fechaBusqueda', 'asc')
-                ->paginate(10, ['*'], $this->getPageName()) // 👈 importante
+                ->paginate(10)
         ]);
     }
 }
