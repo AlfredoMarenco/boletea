@@ -40,7 +40,7 @@
 
                     <!-- Botón -->
                     <a href="{{ route('showEvent', $event) }}"
-                        class="mt-4 block w-full text-xs lg:text-md text-center bg-rojo text-white font-semibold py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
+                        class="mt-4 block w-full text-xs lg:text-lg text-center bg-rojo text-white font-semibold py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
                         {{ $event->text_button }}
                     </a>
                 </div>
