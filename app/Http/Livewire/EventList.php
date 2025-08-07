@@ -11,15 +11,11 @@ class EventList extends Component
     use WithPagination;
 
     protected $queryString = [];
+    protected $paginationTheme = 'simple-tailwind';
 
     public function updatingPage()
     {
         $this->dispatchBrowserEvent('scroll-to-top');
-    }
-
-    public function updating()
-    {
-        $this->resetPage();
     }
 
     public function render()
