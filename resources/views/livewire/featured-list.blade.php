@@ -17,9 +17,8 @@
             <div wire:key="event-{{ $event->id }}"
                 class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition duration-300 flex flex-col h-full">
 
-
                 <!-- Imagen con enlace -->
-                <a @if ($event->name == 'feriatorreon2025') href="{{ $event->link }}" @else href="{{ route('showEvent', $event) }}" @endif class="block">
+                <a href="{{ route('showEvent', $event) }}" class="block">
                     <div class="aspect-[16/10] overflow-hidden relative group w-full">
                         <img src="{{ asset('img/' . $event->image) }}"
                             class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -40,19 +39,11 @@
                     </p>
 
                     <div>
-                        @if ($event->name == 'feriatorreon2025')
                         <!-- Botón siempre al fondo -->
-                        <a href="{{ $event->link }}"
+                        <a href="{{ route('showEvent', $event) }}"
                             class="mt-auto block w-full text-xs lg:text-md text-center bg-rojo text-white font-semibold py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
                             {{ $event->text_button }}
                         </a>
-                        @else
-                            <!-- Botón siempre al fondo -->
-                            <a href="{{ route('showEvent', $event) }}"
-                                class="mt-auto block w-full text-xs lg:text-md text-center bg-rojo text-white font-semibold py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
-                                {{ $event->text_button }}
-                            </a>
-                        @endif
                     </div>
                 </div>
             </div>
@@ -66,10 +57,3 @@
     <!-- Fin de la paginación -->
 </div>
 
-<script>
-    window.addEventListener('scroll-to-top', () => {
-        document.querySelector('#eventos').scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-</script>

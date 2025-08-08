@@ -8,33 +8,42 @@
             </div>
         </div>
         <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 md:gap-5 mx-4 md:mx-16 mb-10 shadow-md bg-white bg-opacity-10">
-            @forelse ($events as $event)
-                <div class="col-span-4 md:col-span-1 rounded-lg border bg-white border-gray-300 shadow-lg">
-                    <a href="{{ route('showEvent', $event) }}">
-                        <img class="rounded-t-lg h-auto md:h-auto w-full object-cover object-top mx-auto"
-                            src="{{ asset('img/' . $event->image . '') }}" alt="">
-                        <div class="grid grid-cols-1 place-content-end mt-4">
+            class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-2 lg:gap-8 xl:gap-8 px-4 md:px-16 mb-12 items-stretch">
+            @foreach ($events as $event)
+                <div wire:key="event-{{ $event->id }}"
+                    class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition duration-300 flex flex-col h-full">
 
-                            <div class="px-2 md:ml-3 col-span-2 text-left">
-                                {{-- <h5 class="hidden lg: font-semibold text-md">{{ $event->fecha }}</h5> --}}
-                                <h3 class="font-bold text-lg mb-2">{{ Str::limit($event->title, 15, '...') }}</h3>
-                                {{-- <h3 class="font-semibold text-sm"><i class="fab fa-fort-awesome text-center"></i> {{ $event->recinto }}</h3> --}}
-                                <p class="font-semibold text-sm mb-2"><i class="fas fa-map-marker-alt mr-1 text-rojo"></i>
-                                    {{ $event->ciudad }}</p>
-                                <p class="font-semibold text-xs"><i class="far fa-calendar mr-1 text-rojo"></i>
-                                    {{ $event->fecha }}</p>
-                            </div>
-                            <div class="col-span-3 pt-4 w-full place-self-end">
-                                <a href="{{ route('showEvent', $event) }}"
-                                    class=" text-center block px-3 py-2 bg-rojo text-white font-bold hover:bg-red-600 shadow-lg">Comprar
-                                    Boletos</a>
-                            </div>
+                    <!-- Imagen con enlace -->
+                    <a href="{{ $event->link }}" class="block">
+                        <div class="aspect-[16/10] overflow-hidden relative group w-full">
+                            <img src="{{ asset('img/' . $event->image) }}"
+                                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                                alt="{{ $event->title }}">
                         </div>
                     </a>
+
+                    <!-- Contenido -->
+                    <div class="p-4 space-y-2 flex flex-col flex-1 content-end">
+                        <h3 class="text-sm lg:text-md font-bold text-gray-800">
+                            {{ $event->title }}
+                        </h3>
+                        <p class="text-xs lg:text-sm text-gray-600">
+                            <i class="fas fa-map-marker-alt text-rojo mr-1"></i> {{ $event->ciudad }}
+                        </p>
+                        <p class="text-xs lg:text-sm text-gray-500">
+                            <i class="far fa-calendar text-rojo mr-1"></i> {{ $event->fecha }}
+                        </p>
+
+                        <div>
+                            <!-- Botón siempre al fondo -->
+                            <a href="{{ $event->link }}"
+                                class="mt-auto block w-full text-xs lg:text-md text-center bg-rojo text-white font-semibold py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
+                                {{ $event->text_button }}
+                            </a>
+                        </div>
+                    </div>
                 </div>
             @endforeach
         </div>
     </section>
-
 @endsection
