@@ -28,7 +28,7 @@
 
                 <!-- Contenido -->
                 <div class="p-4 space-y-2 flex flex-col flex-1 content-end">
-                    <h3 class="text-sm lg:text-lg font-bold text-gray-800">
+                    <h3 class="text-sm lg:text-md font-bold text-gray-800">
                         {{ $event->title }}
                     </h3>
                     <p class="text-xs lg:text-sm text-gray-600">
