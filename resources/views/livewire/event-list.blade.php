@@ -38,11 +38,13 @@
                         <i class="far fa-calendar text-rojo mr-1"></i> {{ $event->fecha }}
                     </p>
 
-                    <!-- Botón siempre al fondo -->
-                    <a href="{{ route('showEvent', $event) }}"
-                        class="mt-auto block w-full text-xs lg:text-lg text-center bg-rojo text-white font-semibold py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
-                        {{ $event->text_button }}
-                    </a>
+                    <div>
+                        <!-- Botón siempre al fondo -->
+                        <a href="{{ route('showEvent', $event) }}"
+                            class="mt-auto block w-full text-xs lg:text-lg text-center bg-rojo text-white font-semibold py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
+                            {{ $event->text_button }}
+                        </a>
+                    </div>
                 </div>
             </div>
         @endforeach
