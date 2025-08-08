@@ -12,24 +12,24 @@
 
     <!-- Grid de eventos -->
     <div
-        class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 md:gap-2 lg:gap-8 xl:gap-8 px-4 md:px-16 mb-12">
+        class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 md:gap-2 lg:gap-8 xl:gap-8 px-4 md:px-16 mb-12 items-stretch">
         @foreach ($events as $event)
             <div wire:key="event-{{ $event->id }}"
-                class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition duration-300">
+                class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition duration-300 flex flex-col h-full">
 
                 <!-- Imagen con enlace -->
-                <a href="{{ route('showEvent', $event) }}">
-                    <div class="aspect-[16/10] overflow-hidden relative group">
+                <a href="{{ route('showEvent', $event) }}" class="block">
+                    <div class="aspect-[16/10] overflow-hidden relative group w-full">
                         <img src="{{ asset('img/' . $event->image) }}"
-                            class="w-full h-full lg:object-cover lg:object-center transition-transform duration-500 group-hover:scale-105 rounded-t-2xl"
+                            class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                             alt="{{ $event->title }}">
                     </div>
                 </a>
 
                 <!-- Contenido -->
-                <div class="p-4 space-y-2">
-                    <h3 class="text-sm lg:text-lg font-bold text-gray-800 truncate">
-                        {{ Str::limit($event->title, 40, '...') }}
+                <div class="p-4 space-y-2 flex flex-col flex-1">
+                    <h3 class="text-sm lg:text-lg font-bold text-gray-800">
+                        {{ $event->title }}
                     </h3>
                     <p class="text-xs lg:text-sm text-gray-600">
                         <i class="fas fa-map-marker-alt text-rojo mr-1"></i> {{ $event->ciudad }}
@@ -38,15 +38,16 @@
                         <i class="far fa-calendar text-rojo mr-1"></i> {{ $event->fecha }}
                     </p>
 
-                    <!-- Botón -->
+                    <!-- Botón siempre al fondo -->
                     <a href="{{ route('showEvent', $event) }}"
-                        class="mt-4 block w-full text-xs lg:text-lg text-center bg-rojo text-white font-semibold py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
+                        class="mt-auto block w-full text-xs lg:text-lg text-center bg-rojo text-white font-semibold py-1 lg:py-2 rounded-md hover:bg-red-600 transition">
                         {{ $event->text_button }}
                     </a>
                 </div>
             </div>
         @endforeach
     </div>
+
     <!-- Paginación -->
     <div class="flex justify-center mt-8">
         {{ $events->links('livewire::simple-tailwind') }}
