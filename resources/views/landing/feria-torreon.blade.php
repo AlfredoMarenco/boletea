@@ -46,4 +46,15 @@
             @endforeach
         </div>
     </section>
+
+    <div class="block md:hidden mt-8 p-4 border border-gray-200 rounded-lg shadow-sm bg-gray-50">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
+            crossorigin="anonymous"></script>
+        <!-- search -->
+        <ins class="adsbygoogle" style="display:inline-block;width:250px;height:50px"
+            data-ad-client="ca-pub-5976709800052610" data-ad-slot="9361422184"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 @endsection
