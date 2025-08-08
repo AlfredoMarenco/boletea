@@ -16,7 +16,7 @@ class FeaturedList extends Component
                 ->where('featured', 'LIKE', 1)
                 ->orderBy('fechaBusqueda', 'asc')
                 ->inRandomOrder()
-                ->take(3)
+                ->take(4)
                 ->get()
         ]);
     }
