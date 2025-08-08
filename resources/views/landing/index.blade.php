@@ -37,6 +37,7 @@
 @section('content')
     <section class="py-8">
         @livewire('search')
+        @livewire('featured-list')
         @livewire('event-list')
     </section>
 

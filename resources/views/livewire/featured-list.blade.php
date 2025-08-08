@@ -1,7 +1,7 @@
 <div id="eventos">
     <!-- Título -->
     <div class="flex justify-between items-center mb-8 px-4 md:px-16">
-        <h1 class="text-2xl md:text-3xl font-extrabold text-rojo tracking-tight">🎟 Próximos Eventos</h1>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-rojo tracking-tight">⭐ Eventos destacados</h1>
         {{--
         <a href="{{ route('allEvents') }}"
             class="hidden md:inline-block bg-white text-rojo border border-rojo font-semibold text-base px-4 py-2 rounded-lg hover:bg-rojo hover:text-white transition duration-200">
@@ -12,7 +12,7 @@
 
     <!-- Grid de eventos -->
     <div
-        class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-2 lg:gap-8 xl:gap-8 px-4 md:px-16 mb-12 items-stretch">
+        class="bg-gray-100 py-4 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-2 md:gap-2 lg:gap-8 xl:gap-8 px-4 md:px-16 mb-12 items-stretch">
         @foreach ($events as $event)
             <div wire:key="event-{{ $event->id }}"
                 class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition duration-300 flex flex-col h-full">
@@ -20,7 +20,7 @@
                 <!-- Imagen con enlace -->
                 <a href="{{ route('showEvent', $event) }}" class="block">
                     <div class="aspect-[16/10] overflow-hidden relative group w-full">
-                        <img src="{{ asset('img/' . $event->image) }}"
+                        <img src="{{ asset('img/' . $event->slider) }}"
                             class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                             alt="{{ $event->title }}">
                     </div>
@@ -49,11 +49,5 @@
             </div>
         @endforeach
     </div>
-
-    <!-- Paginación -->
-    <div class="flex justify-center mt-8">
-        {{ $events->links('livewire::simple-tailwind') }}
-    </div>
-    <!-- Fin de la paginación -->
 </div>
 

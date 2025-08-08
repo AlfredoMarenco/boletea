@@ -13,8 +13,11 @@ class FeaturedList extends Component
         return view('livewire.featured-list', [
             'events' => Event::where('visible', 'LIKE', 'si')
                 ->where('fechaBusqueda', '>=', $fecha)
+                ->where('featured', 'LIKE', 1)
                 ->orderBy('fechaBusqueda', 'asc')
-                ->paginate(10)
+                ->inRandomOrder()
+                ->take(3)
+                ->get()
         ]);
     }
 }
