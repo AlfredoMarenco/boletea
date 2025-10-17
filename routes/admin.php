@@ -14,19 +14,6 @@ Route::get('/calendar/showcase', [CalendarController::class, 'showcase'])->name(
 Route::post('/calendar/{recinto?}', [CalendarController::class, 'filter'])->name('calendar.filter');
 Route::get('/calendar/event/{calendar}',ShowEvent::class)->name('calendar.show');
 Route::get('/calendar/calendar/event/{calendar}',ShowEventShowcase::class)->name('calendar.show.showcase');
-Route::get('/sendemail',function(){
-
-    $clients = Client::where('status',null)->inRandomOrder()->take(10)->get();
-
-
-    foreach ($clients as $client) {
-        SendEmails::dispatch($client->email);
-        $client->status = "send";
-        $client->save();
-    }
-
-    return "Email enviado";
-});
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
