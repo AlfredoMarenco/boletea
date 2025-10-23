@@ -59,13 +59,13 @@
 </script>
 @endpush
 
-@push('publish')
+{{-- @push('publish')
     <script>
         (function(s) {
             s.dataset.zone = '10079145', s.src = 'https://forfrogadiertor.com/tag.min.js'
         })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))
     </script>
-@endpush
+@endpush --}}
 @section('content')
     @php
         // Variable para la región del usuario (debes pasar esta info desde backend)

