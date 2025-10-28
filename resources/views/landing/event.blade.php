@@ -137,12 +137,12 @@
                                 'img' => asset('cdvs/imgCintilloLos3garcia.png'),
                                 'alt' => 'Los 3 Garcia',
                                 'title' => 'Suc. Fco. I. Madero, Suc. San Pedro',
-                            ],
-                            [
+                            ]
+                            /*  [
                                 'img' => asset('cdvs/cdvVaqueroNorteño.png'),
                                 'alt' => 'Vaquero Norteño',
                                 'title' => 'Paseo Durango',
-                            ],
+                            ], */
                         ];
                         break;
                     case 'coahuila2':
@@ -155,11 +155,11 @@
                                 'alt' => 'Los 3 Garcia',
                                 'title' => 'Suc. Fco. I. Madero, Suc. San Pedro',
                             ],
-                            [
+                            /* [
                                 'img' => asset('cdvs/cdvVaqueroNorteño.png'),
                                 'alt' => 'Vaquero Norteño',
                                 'title' => 'Paseo Durango',
-                            ],
+                            ], */
                             ['img' => asset('cdvs/maderablefactory.jpg'), 'alt' => 'Maderable Factory'],
                         ];
                         break;
@@ -177,7 +177,7 @@
                         break;
                     case 'durango':
                         $centrosDeVenta = [
-                            ['img' => asset('cdvs/cdvVaqueroNorteño.png'), 'alt' => 'Vaquero Norteño'],
+                            /* ['img' => asset('cdvs/cdvVaqueroNorteño.png'), 'alt' => 'Vaquero Norteño'], */
                             ['img' => asset('cdvs/imgCintilloColiseoCentenario.png'), 'alt' => 'Coliseo Centenario'],
                             ['img' => asset('cdvs/imgCintilloCimaco.png'), 'alt' => 'Cimaco'],
                             ['img' => asset('cdvs/imgeSombrererialafe.jpeg'), 'alt' => 'Sombrereria La Fe'],
