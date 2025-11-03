@@ -178,7 +178,7 @@
                     case 'durango':
                         $centrosDeVenta = [
                             ['img' => asset('cdvs/cdvVaqueroNorteño.png'), 'alt' => 'Vaquero Norteño'],
-                            /* ['img' => asset('cdvs/imgCintilloColiseoCentenario.png'), 'alt' => 'Coliseo Centenario'], */
+                            ['img' => asset('cdvs/cdvSign.png'), 'alt' => 'Signature'],
                             /* ['img' => asset('cdvs/imgCintilloCimaco.png'), 'alt' => 'Cimaco'], */
                             /* ['img' => asset('cdvs/imgeSombrererialafe.jpeg'), 'alt' => 'Sombrereria La Fe'], */
                             /* [
