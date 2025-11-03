@@ -30,7 +30,7 @@ Route::group(['prefix' => 'categories','middleware' => ['role:admin|super-admin'
 
 //Group routes for venues management
 Route::group(['prefix' => 'venues','middleware' => ['role:admin|super-admin']], function () {
-    Route::get('/', [VenueControlle::class, 'index'])->name('venues.index');
+    Route::get('/', [VenueController::class, 'index'])->name('venues.index');
     Route::get('/create', [VenueController::class, 'create'])->name('venues.create');
     Route::get('/{venue}/edit', [VenueController::class, 'edit'])->name('venues.edit');
 });

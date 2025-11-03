@@ -177,15 +177,15 @@
                         break;
                     case 'durango':
                         $centrosDeVenta = [
-                            /* ['img' => asset('cdvs/cdvVaqueroNorteño.png'), 'alt' => 'Vaquero Norteño'], */
-                            ['img' => asset('cdvs/imgCintilloColiseoCentenario.png'), 'alt' => 'Coliseo Centenario'],
-                            ['img' => asset('cdvs/imgCintilloCimaco.png'), 'alt' => 'Cimaco'],
-                            ['img' => asset('cdvs/imgeSombrererialafe.jpeg'), 'alt' => 'Sombrereria La Fe'],
-                            [
+                            ['img' => asset('cdvs/cdvVaqueroNorteño.png'), 'alt' => 'Vaquero Norteño'],
+                            /* ['img' => asset('cdvs/imgCintilloColiseoCentenario.png'), 'alt' => 'Coliseo Centenario'], */
+                            /* ['img' => asset('cdvs/imgCintilloCimaco.png'), 'alt' => 'Cimaco'], */
+                            /* ['img' => asset('cdvs/imgeSombrererialafe.jpeg'), 'alt' => 'Sombrereria La Fe'], */
+                            /* [
                                 'img' => asset('cdvs/imgCintilloLos3garcia.png'),
                                 'alt' => 'Los 3 Garcia',
                                 'title' => 'Suc. Fco. I. Madero, Suc. San Pedro',
-                            ],
+                            ], */
                         ];
                         break;
                     case 'campeche':
