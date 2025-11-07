@@ -25,7 +25,7 @@ class EventList extends Component
             'events' => Event::where('visible', 'LIKE', 'si')
                 ->where('fechaBusqueda', '>=', $fecha)
                 ->orderBy('fechaBusqueda', 'asc')
-                ->paginate(12)
+                ->get()
         ]);
     }
 }
