@@ -127,6 +127,17 @@
                                 {{ __('Manage Account') }}
                             </div>
 
+
+                            <x-jet-dropdown-link href="{{ route('events.index') }}" :active="request()->routeIs('events.*')">
+                                {{ __('Events') }}
+                            </x-jet-dropdown-link>
+                            <x-jet-dropdown-link href="{{ route('categories.index') }}" :active="request()->routeIs('categories.*')">
+                                {{ __('Categories') }}
+                            </x-jet-dropdown-link>
+                            <x-jet-dropdown-link href="{{ route('venues.index') }}" :active="request()->routeIs('venues.*')">
+                                {{ __('Venues') }}
+                            </x-jet-dropdown-link>
+
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
                             </x-jet-dropdown-link>
