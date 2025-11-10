@@ -13,16 +13,16 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     @role('admin')
-                    <x-jet-nav-link href="{{ route('events.index') }}" :active="request()->routeIs('events.*')">
-                        {{ __('Events') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('categories.index') }}" :active="request()->routeIs('categories.*')">
-                        {{ __('Categories') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('venues.index') }}" :active="request()->routeIs('venues.*')">
-                        {{ __('Venues') }}
-                    </x-jet-nav-link>
-                    {{-- <x-jet-nav-link href="{{ route('refunds.index') }}" :active="request()->routeIs('refunds.*')">
+                        <x-jet-nav-link href="{{ route('events.index') }}" :active="request()->routeIs('events.*')">
+                            {{ __('Events') }}
+                        </x-jet-nav-link>
+                        <x-jet-nav-link href="{{ route('categories.index') }}" :active="request()->routeIs('categories.*')">
+                            {{ __('Categories') }}
+                        </x-jet-nav-link>
+                        <x-jet-nav-link href="{{ route('venues.index') }}" :active="request()->routeIs('venues.*')">
+                            {{ __('Venues') }}
+                        </x-jet-nav-link>
+                        {{-- <x-jet-nav-link href="{{ route('refunds.index') }}" :active="request()->routeIs('refunds.*')">
                         {{ __('Refunds') }}
                     </x-jet-nav-link> --}}
                     @endrole
@@ -101,8 +101,7 @@
                                 <button
                                     class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
                                     <img class="h-8 w-8 rounded-full object-cover"
-                                        src="{{ Auth::user()->profile_photo_url }}"
-                                        alt="{{ Auth::user()->name }}" />
+                                        src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
                                 </button>
                             @else
                                 <span class="inline-flex rounded-md">
@@ -127,17 +126,6 @@
                                 {{ __('Manage Account') }}
                             </div>
 
-
-                            <x-jet-dropdown-link href="{{ route('events.index') }}" :active="request()->routeIs('events.*')">
-                                {{ __('Events') }}
-                            </x-jet-dropdown-link>
-                            <x-jet-dropdown-link href="{{ route('categories.index') }}" :active="request()->routeIs('categories.*')">
-                                {{ __('Categories') }}
-                            </x-jet-dropdown-link>
-                            <x-jet-dropdown-link href="{{ route('venues.index') }}" :active="request()->routeIs('venues.*')">
-                                {{ __('Venues') }}
-                            </x-jet-dropdown-link>
-
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
                             </x-jet-dropdown-link>
@@ -154,7 +142,8 @@
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
 
-                                <x-jet-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault();
+                                <x-jet-dropdown-link href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                     {{ __('Log Out') }}
                                 </x-jet-dropdown-link>
@@ -169,10 +158,10 @@
                 <button @click="open = ! open"
                     class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                        <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex"
+                        <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
-                        <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+                        <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
                             stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
@@ -181,7 +170,7 @@
     </div>
 
     <!-- Responsive Navigation Menu -->
-    <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
+    <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
@@ -206,14 +195,37 @@
 
             <div class="mt-3 space-y-1">
                 <!-- Account Management -->
-                <x-jet-responsive-nav-link href="{{ route('profile.show') }}"
-                    :active="request()->routeIs('profile.show')">
+                <x-jet-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
                     {{ __('Profile') }}
                 </x-jet-responsive-nav-link>
 
+
+                @role('admin')
+                    <x-jet-responsive-nav-link href="{{ route('events.index') }}" :active="request()->routeIs('events.*')">
+                        {{ __('Events') }}
+                    </x-jet-responsive-nav-link>
+                    <x-jet-responsive-nav-link href="{{ route('categories.index') }}" :active="request()->routeIs('categories.*')">
+                        {{ __('Categories') }}
+                    </x-jet-responsive-nav-link>
+                    <x-jet-responsive-nav-link href="{{ route('venues.index') }}" :active="request()->routeIs('venues.*')">
+                        {{ __('Venues') }}
+                    </x-jet-responsive-nav-link>
+                    {{-- <x-jet-responsive-nav-link href="{{ route('refunds.index') }}" :active="request()->routeIs('refunds.*')">
+                        {{ __('Refunds') }}
+                    </x-jet-responsive-nav-link> --}}
+                @endrole
+                @role('venue-manager')
+                    <x-jet-responsive-nav-link href="{{ route('calendar.index') }}" :active="request()->routeIs('calendar.index')">
+                        {{ __('Calendario Coliseo') }}
+                    </x-jet-responsive-nav-link>
+                    <x-jet-responsive-nav-link href="{{ route('calendar.index.showcase') }}" :active="request()->routeIs('calendar.index.showcase')">
+                        {{ __('Calendario Showcase') }}
+                    </x-jet-responsive-nav-link>
+                @endrole
+
+
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                    <x-jet-responsive-nav-link href="{{ route('api-tokens.index') }}"
-                        :active="request()->routeIs('api-tokens.index')">
+                    <x-jet-responsive-nav-link href="{{ route('api-tokens.index') }}" :active="request()->routeIs('api-tokens.index')">
                         {{ __('API Tokens') }}
                     </x-jet-responsive-nav-link>
                 @endif
@@ -222,7 +234,8 @@
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
-                    <x-jet-responsive-nav-link href="{{ route('logout') }}" onclick="event.preventDefault();
+                    <x-jet-responsive-nav-link href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
                                     this.closest('form').submit();">
                         {{ __('Log Out') }}
                     </x-jet-responsive-nav-link>
@@ -243,8 +256,7 @@
                     </x-jet-responsive-nav-link>
 
                     @can('create', Laravel\Jetstream\Jetstream::newTeamModel())
-                        <x-jet-responsive-nav-link href="{{ route('teams.create') }}"
-                            :active="request()->routeIs('teams.create')">
+                        <x-jet-responsive-nav-link href="{{ route('teams.create') }}" :active="request()->routeIs('teams.create')">
                             {{ __('Create New Team') }}
                         </x-jet-responsive-nav-link>
                     @endcan
