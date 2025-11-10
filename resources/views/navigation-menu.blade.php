@@ -12,6 +12,7 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    @role('admin')
                     <x-jet-nav-link href="{{ route('events.index') }}" :active="request()->routeIs('events.*')">
                         {{ __('Events') }}
                     </x-jet-nav-link>
@@ -24,6 +25,7 @@
                     {{-- <x-jet-nav-link href="{{ route('refunds.index') }}" :active="request()->routeIs('refunds.*')">
                         {{ __('Refunds') }}
                     </x-jet-nav-link> --}}
+                    @endrole
                     @role('venue-manager')
                         <x-jet-nav-link href="{{ route('calendar.index') }}" :active="request()->routeIs('calendar.index')">
                             {{ __('Calendario Coliseo') }}
