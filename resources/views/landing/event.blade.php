@@ -137,7 +137,12 @@
                                 'img' => asset('cdvs/imgCintilloLos3garcia.png'),
                                 'alt' => 'Los 3 Garcia',
                                 'title' => 'Suc. Fco. I. Madero, Suc. San Pedro',
-                            ]
+                ],
+                [
+                    'img' => asset('cdvs/logo 2 potrillos.png'),
+                    'alt' => '2 Potrillos',
+                    'title' => 'Sucursal Torreón',
+                ]
                             /*  [
                                 'img' => asset('cdvs/cdvVaqueroNorteño.png'),
                                 'alt' => 'Vaquero Norteño',
