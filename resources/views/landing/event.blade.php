@@ -141,7 +141,7 @@
                 [
                     'img' => asset('cdvs/logo 2 potrillos.png'),
                     'alt' => '2 Potrillos',
-                    'title' => 'Sucursal Torreón',
+                    'title' => 'Los 2 Potrillos',
                 ]
                             /*  [
                                 'img' => asset('cdvs/cdvVaqueroNorteño.png'),
