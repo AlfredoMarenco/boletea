@@ -123,6 +123,12 @@
                     <span class="text-gray-800 font-semibold">{{ $event->ciudad }}</span>
                 </div>
             </div>
+            <div>
+                <div class="mt-2 text-gray-800 text-justify leading-relaxed">
+                    <p>No olvides ingresar tu código BOLEPAY para acceder a los pagos diferidos al momento de comprar tus boletos</p>
+                </div>
+                <img src="{{ asset('bolepay.png') }}" alt="">
+            </div>
 
             {{-- Centros de Venta Slider --}}
             @php
