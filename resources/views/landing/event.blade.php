@@ -125,11 +125,11 @@
             </div>
             @if ($event->name == 'grupofronteratorreon')
                 <div>
+                    <img class="w-36 mx-auto" src="{{ asset('img/LOGOBOLEPAY.png') }}" alt="">
                     <div class="mt-2 text-gray-800 text-justify leading-relaxed">
                         <p>No olvides ingresar tu código BOLEPAY para acceder a los pagos diferidos al momento de comprar
                             tus boletos</p>
                     </div>
-                    <img class="w-28 mx-auto" src="{{ asset('img/LOGOBOLEPAY.png') }}" alt="">
                 </div>
             @endif
 
