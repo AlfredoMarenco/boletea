@@ -4,28 +4,23 @@
 
 <div class="max-w-3xl mx-auto">
 
-    <a href="{{ route('bolepay') }}"
-        class="inline-block mb-4 text-sm font-semibold text-blue-600 hover:text-blue-800 transition">
-        ← Volver a Bolepay
-    </a>
-
     <div class="bg-white shadow-md rounded-lg p-6 border">
 
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Modalidad de Pago Bolepay</h2>
+        <h2 class="text-rojo text-3xl font-bold mb-4">Modalidad de Pago Bolepay</h2>
 
         <p class="text-gray-700 mb-4">
             A continuación se describen las condiciones aplicables para realizar compras mediante la modalidad
             <strong>“Crédito sin Tarjeta”</strong> de BOLEPAY.
         </p>
 
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">Condiciones Generales</h3>
+        <h3 class="text-lg font-semibold text-rojo mb-2">Condiciones Generales</h3>
 
         <ol class="list-decimal ml-6 text-gray-700 space-y-2 mb-6">
             <li>Pago de un enganche y cargo por servicio, sobre el total del precio al momento de adquirir el boleto.</li>
             <li>El cliente podrá realizar abonos parciales por cualquier monto y en cualquier fecha, considerando que el total a diferir deberá estar cubierto 8 días naturales antes del evento.</li>
         </ol>
 
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">Declaración de Conformidad</h3>
+        <h3 class="text-lg font-semibold text-rojo mb-2">Declaración de Conformidad</h3>
 
         <p class="font-medium text-gray-700 mb-3">
             Manifiesto conformidad y aceptación con las condiciones establecidas en la compra del boleto en su modalidad
