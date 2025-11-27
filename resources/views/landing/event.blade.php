@@ -129,7 +129,7 @@
                         <p>No olvides ingresar tu código BOLEPAY para acceder a los pagos diferidos al momento de comprar
                             tus boletos</p>
                     </div>
-                    <img src="{{ asset('bolepay.png') }}" alt="">
+                    <img src="{{ asset('LOGOBOLEPAY.png') }}" alt="">
                 </div>
             @endif
 
