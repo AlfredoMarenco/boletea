@@ -1,3 +1,7 @@
+@extends('layouts.template')
+
+@section('content')
+
 <a href="{{ route('bolepay') }}"
     class="text-sm font-semibold text-gray-700 hover:text-rojo transition">
     Bolepay
@@ -40,3 +44,5 @@
     </ul>
 
 </div>
+
+@endsection
