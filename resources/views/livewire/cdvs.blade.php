@@ -9,7 +9,8 @@
                     wire:click="navigation('3')">Mérida</li>
                 <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
                     wire:click="navigation('1')">Quintana Roo</li>
-                {{-- <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer">Durango</li> --}}
+                <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
+                    wire:click="navigation('4')">Durango</li>
                 <li class="mt-10 hidden lg:block">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
                         crossorigin="anonymous"></script>
@@ -284,6 +285,51 @@
                             <a href="https://maps.app.goo.gl/2aPKMtPXnrr4uhki6">Cómo llegar</a>
                         </p>
                     </div>
+
+                    <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
+                        <img src="{{ asset('cdvs/imgeSombrererialafe.jpeg') }}" class="mx-auto my-4" alt="">
+                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Sombrereria la
+                                fe<br>
+                            </span>Cepeda 111, Zona Centro, Francisco I. Madero, Coah. CP: 27900
+                        </p>
+                        <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
+                            Domingo :
+                            11:00 am a 9:00 pm</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/2UGHY7B4i7i3zdBU8">Cómo llegar</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        @endif
+        @if ($durango)
+            <div class="col-span-4 mt-6">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-items-center">
+                    <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
+                        <img src="{{ asset('cdvs/logo 2 potrillos.png') }}" class="mx-auto mb-2" alt="">
+                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Los Dos
+                                Potrillos<br></span>Av. José Maria Morelos 368 Local 2 Centro, 35000 Gómez Palacio, Dgo.</p>
+                        <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
+                            Sábado :
+                            10:00 am a 7:00 pm</p>
+                        <p class="flex justify-center items-center font-bold text-md text-rojo">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <a href="https://maps.app.goo.gl/RW88hENEz1zzx5ux9">Cómo llegar</a>
+                        </p>
+                    </div>
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
                         <img src="{{ asset('cdvs/cdvVaqueroNorteño.png') }}" class="mx-auto my-4" alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Paseo
@@ -301,26 +347,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                             </svg>
-                            <a href="https://maps.app.goo.gl/AszMEWHsmZ44n852A">Cómo llegar</a>
-                        </p>
-                    </div>
-                    <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
-                        <img src="{{ asset('cdvs/imgeSombrererialafe.jpeg') }}" class="mx-auto my-4" alt="">
-                        <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Sombrereria la fe<br>
-                            </span>Cepeda 111, Zona Centro, Francisco I. Madero, Coah. CP: 27900
-                        </p>
-                        <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
-                            Domingo :
-                            11:00 am a 9:00 pm</p>
-                        <p class="flex justify-center items-center font-bold text-md text-rojo">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="size-6 w-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                            </svg>
-                            <a href="https://maps.app.goo.gl/2UGHY7B4i7i3zdBU8">Cómo llegar</a>
+                            <a href="https://maps.app.goo.gl/K2DSKsAchApxYy1W9">Cómo llegar</a>
                         </p>
                     </div>
                 </div>
