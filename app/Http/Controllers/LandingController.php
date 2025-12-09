@@ -78,6 +78,10 @@ class LandingController extends Controller
     {
         return view('landing.ticketassist');
     }
+    public function bolepay()
+    {
+        return view('landing.bolepay');
+    }
 
     public function privacity()
     {

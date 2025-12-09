@@ -123,6 +123,15 @@
                     <span class="text-gray-800 font-semibold">{{ $event->ciudad }}</span>
                 </div>
             </div>
+            @if ($event->name == 'grupofronteratorreon')
+                <div>
+                    <img class="w-36 mx-auto" src="{{ asset('img/LOGOBOLEPAY.png') }}" alt="">
+                    <div class="mt-2 text-gray-800 text-justify leading-relaxed">
+                        <p>No olvides ingresar tu código BOLEPAY para acceder a los pagos diferidos al momento de comprar
+                            tus boletos</p>
+                    </div>
+                </div>
+            @endif
 
             {{-- Centros de Venta Slider --}}
             @php
@@ -137,12 +146,12 @@
                                 'img' => asset('cdvs/imgCintilloLos3garcia.png'),
                                 'alt' => 'Los 3 Garcia',
                                 'title' => 'Suc. Fco. I. Madero, Suc. San Pedro',
-                ],
-                [
-                    'img' => asset('cdvs/logo 2 potrillos.png'),
-                    'alt' => '2 Potrillos',
-                    'title' => 'Los 2 Potrillos',
-                ]
+                            ],
+                            [
+                                'img' => asset('cdvs/logo 2 potrillos.png'),
+                                'alt' => '2 Potrillos',
+                                'title' => 'Los 2 Potrillos',
+                            ],
                             /*  [
                                 'img' => asset('cdvs/cdvVaqueroNorteño.png'),
                                 'alt' => 'Vaquero Norteño',

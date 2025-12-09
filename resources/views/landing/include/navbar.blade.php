@@ -28,6 +28,10 @@
                     class="text-sm font-semibold text-gray-700 hover:text-rojo transition">
                     Ticket Assist
                 </a>
+                <a href="{{ route('bolepay') }}"
+                    class="text-sm font-semibold text-gray-700 hover:text-rojo transition">
+                    Bolepay
+                </a>
                 <a href="{{ route('cdvs') }}" class="text-sm font-semibold text-gray-700 hover:text-rojo transition">
                     Centros de Ventas
                 </a>
