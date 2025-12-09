@@ -6,11 +6,11 @@
                 <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
                     wire:click="navigation('2')">Coahuila</li>
                 <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
+                    wire:click="navigation('4')">Durango</li>
+                <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
                     wire:click="navigation('3')">Mérida</li>
                 <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
                     wire:click="navigation('1')">Quintana Roo</li>
-                <li class="border-rojo p-2 border-2 uppercase my-1 hover:underline cursor-pointer"
-                    wire:click="navigation('4')">Durango</li>
                 <li class="mt-10 hidden lg:block">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5976709800052610"
                         crossorigin="anonymous"></script>
@@ -313,9 +313,11 @@
             <div class="col-span-4 mt-6">
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-items-center">
                     <div class="text-center bg-white rounded shadow-lg py-4 px-1.5">
-                        <img src="{{ asset('cdvs/logo 2 potrillos.png') }}" class="mx-auto mb-2 w-1/2" alt="">
+                        <img src="{{ asset('cdvs/logo 2 potrillos.png') }}" class="mx-auto mb-2 w-1/2"
+                            alt="">
                         <p class="text-sm font-semibold mb-2"><span class="font-bold text-lg text-rojo">Los Dos
-                                Potrillos<br></span>Av. José Maria Morelos 368 Local 2 Centro, 35000 Gómez Palacio, Dgo.</p>
+                                Potrillos<br></span>Av. José Maria Morelos 368 Local 2 Centro, 35000 Gómez Palacio, Dgo.
+                        </p>
                         <p class="text-xs font-semibold"><span class="font-bold">Horarios: <br></span>Lunes -
                             Sábado :
                             10:00 am a 7:00 pm</p>
