@@ -48,9 +48,9 @@
         @livewire('event-list')
     </section>
 
-   {{--  <section>
+    <section>
         <div class="mx-4 md:mx-16 mb-10 flex flex-col md:flex-row items-center bg-white p-4 rounded-lg shadow-lg">
-            <img class="w-full md:w-2/3 rounded-lg shadow-sm object-cover" src="{{ asset('img/algodonerosbanner.png') }}" alt="Algodoneros Banner">
+            <img class="w-full md:w-2/3 rounded-lg shadow-sm object-cover" src="{{ asset('img/banner_web.png') }}" alt="Algodoneros Banner">
             <div class="text-center md:text-left mt-4 md:mt-0 md:ml-6">
                 <h3 class="text-xl md:text-3xl font-bold text-gray-800">¡Compra tus boletos aquí!</h3>
                 <a href="https://unionlaguna.boletea.com.mx/default.asp"
@@ -60,6 +60,7 @@
             </div>
         </div>
     </section>
+{{-- 
 
     <section>
         <div class="mx-4 md:mx-44 mb-8">
