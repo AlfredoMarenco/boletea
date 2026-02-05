@@ -42,6 +42,7 @@ Route::get('/stream-live', [LandingController::class, 'streamLive'])->name('stre
 Route::get('/juntostour', [LandingController::class, 'eventsJuntos'])->name('juntostour');
 Route::get('/juntostour/solofans', [LandingController::class, 'eventsJuntosFans'])->name('juntossolofans');
 Route::get('/artist', [ArtistController::class, 'show'])->name('artist.show');
+Route::get('/events/torreon', [LandingController::class, 'eventsTorreon'])->name('evens.torreon');
 
 //Rutas Landing2025
 Route::get('/landing2025', [LandingController::class, 'landing2025'])->name('landing2025');

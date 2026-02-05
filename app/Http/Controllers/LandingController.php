@@ -128,4 +128,20 @@ class LandingController extends Controller
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
         return view('landing2025.home', compact('events'));
     }
+
+    public function evensTorreon(){
+        $date = date('Ymd');
+        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('ciudad', 'LIKE', '%torreon%')->orderBy('fechaBusqueda')->get();
+        $feria_event = Event::where('name', 'LIKE', 'feriatorreon2025')->get();
+
+       /*  $clients = Client::where('status',null)->take(4)->get();
+        foreach ($clients as $client) {
+            Mail::to($client->email)->queue(new TennisFestMailable($client->name));
+            $client->status = "send";
+            $client->save();
+        } */
+
+        /* Mail::to('daniel.gomez@boletea.com')->queue(new TennisFestMailable('Daniel')); */
+        return view('landing.events-torreon', compact('events', 'feria_event'));
+    }
 }
