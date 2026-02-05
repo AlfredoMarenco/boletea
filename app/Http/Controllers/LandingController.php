@@ -129,7 +129,7 @@ class LandingController extends Controller
         return view('landing2025.home', compact('events'));
     }
 
-    public function evensTorreon(){
+    public function eventsTorreon(){
         $date = date('Ymd');
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('ciudad', 'LIKE', '%torreon%')->orderBy('fechaBusqueda')->get();
         $feria_event = Event::where('name', 'LIKE', 'feriatorreon2025')->get();
