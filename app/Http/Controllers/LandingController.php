@@ -18,7 +18,7 @@ class LandingController extends Controller
         $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
         $feria_event = Event::where('name', 'LIKE', 'feriatorreon2025')->get();
 
-       /*  $clients = Client::where('status',null)->take(4)->get();
+        /*  $clients = Client::where('status',null)->take(4)->get();
         foreach ($clients as $client) {
             Mail::to($client->email)->queue(new TennisFestMailable($client->name));
             $client->status = "send";
@@ -101,21 +101,25 @@ class LandingController extends Controller
         return view('landing.cdvs');
     }
 
-    public function streamLive(){
+    public function streamLive()
+    {
         return view('landing.stream-live');
     }
 
-    public function illusiononice(){
+    public function illusiononice()
+    {
         return view('landing.illusion-on-ice');
     }
 
-    public function eventsJuntos(){
+    public function eventsJuntos()
+    {
         $date = date('Ymd');
-        $events = Event::where('title','LIKE','%JORGE MEDINA%')->where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
-        return view('landing.event-juntos',compact('events','date'));
+        $events = Event::where('title', 'LIKE', '%JORGE MEDINA%')->where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->orderBy('fechaBusqueda')->get();
+        return view('landing.event-juntos', compact('events', 'date'));
     }
 
-    public function eventsJuntosFans(){
+    public function eventsJuntosFans()
+    {
         return view('landing.event-juntos-fans');
     }
 
@@ -129,12 +133,16 @@ class LandingController extends Controller
         return view('landing2025.home', compact('events'));
     }
 
-    public function eventsTorreon(){
+    public function eventsTorreon()
+    {
         $date = date('Ymd');
-        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where('ciudad', 'LIKE', '%torreon%')->orderBy('fechaBusqueda')->get();
+        $events = Event::where('visible', 'LIKE', 'si')->where('fechaBusqueda', '>=', $date)->where(function ($query) {
+            $query->where('ciudad', 'LIKE', '%torreon%')
+                ->orWhere('ciudad', 'LIKE', '%Torreón%');
+        })->orderBy('fechaBusqueda')->get();
         $feria_event = Event::where('name', 'LIKE', 'feriatorreon2025')->get();
 
-       /*  $clients = Client::where('status',null)->take(4)->get();
+        /*  $clients = Client::where('status',null)->take(4)->get();
         foreach ($clients as $client) {
             Mail::to($client->email)->queue(new TennisFestMailable($client->name));
             $client->status = "send";
