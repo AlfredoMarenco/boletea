@@ -13,19 +13,32 @@ class EventList extends Component
     protected $queryString = [];
     protected $paginationTheme = 'simple-tailwind';
 
-    public function updatingPage()
+    public $city;
+
+    public function mount($city = null)
     {
-        $this->dispatchBrowserEvent('scroll-to-top');
+        $this->city = $city;
     }
 
     public function render()
     {
         $fecha = date('Ymd');
+        $query = Event::where('visible', 'LIKE', 'si')
+            ->where('fechaBusqueda', '>=', $fecha);
+
+        if ($this->city) {
+            if (stripos($this->city, 'torreon') !== false) {
+                $query->where(function ($q) {
+                    $q->where('ciudad', 'LIKE', '%torreon%')
+                        ->orWhere('ciudad', 'LIKE', '%Torreón%');
+                });
+            } else {
+                $query->where('ciudad', 'LIKE', '%' . $this->city . '%');
+            }
+        }
+
         return view('livewire.event-list', [
-            'events' => Event::where('visible', 'LIKE', 'si')
-                ->where('fechaBusqueda', '>=', $fecha)
-                ->orderBy('fechaBusqueda', 'asc')
-                ->paginate(50)
+            'events' => $query->orderBy('fechaBusqueda', 'asc')->paginate(50)
         ]);
     }
 }
